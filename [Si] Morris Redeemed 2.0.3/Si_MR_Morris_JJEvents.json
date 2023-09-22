@@ -1,0 +1,65 @@
+{
+	"Changes": [
+
+	// Crossover Events With Juliet And Jessie The Joja Clerks by LemurKat
+
+	{
+	// Event 15, Crossover 02; Event ID 26220115
+	"LogName": "Morris Redeemed/Juliet and Jessie Scene 01",
+	"Action": "EditData",
+	"Target": "Data/Events/Town",
+	"Entries": {
+		"26220115/w sunny": "continue/44 26/farmer 45 26 3 Si_MR_Morris 43 26 1 Juliet 32 20 1/skippable/fade/pause 200/move Juliet 8 0 2 true/emote farmer 8/emote Si_MR_Morris 40/emote farmer 40/emote Si_MR_Morris 16/faceDirection Juliet 2/emote farmer 28/jump Juliet/speak Juliet \"YOU!$5\"/speed Juliet 5/move Juliet 0 6 1 true/emote Si_MR_Morris 8/emote farmer 8/faceDirection Si_MR_Morris 3/speak Juliet \"You were supposed to leave!$5\"/speak Si_MR_Morris \"Do I know you from somewhere?\"/emote Juliet 12/speak Juliet \"SERIOUSLY?!$5#$b#I worked for you for years!$5\"/emote Si_MR_Morris 40/speak Si_MR_Morris \"Now I remember!#$b#You were that brat back at Joja!$3#$b#The one who was always causing trouble!$3\"/speak Juliet \"And you were the worst boss EVER!$5#$b#Why are you still here?!$5\"/emote Si_MR_Morris 12/question fork0 \"#He's actually trying to redeem himself now.#He's started working at the community center.#What's your problem?\"/emote Juliet 12/speak Juliet \"You're taking HIS side @?!$5#$b#I can't believe this!$5\"/speak Si_MR_Morris \"Like you have any right to talk!$3#$b#I know why you were sent out here in the first place!$3\"/pause 700/emote farmer 16/emote Juliet 40/pause 700/speak Juliet \"You know what?$5#$b#I don't have to put up with this anymore.$5\"/faceDirection Juliet 2/speak Juliet \"See you later @.$5\"/speed Juliet 5/move Juliet 0 12 2 true/pause 500/faceDirection Si_MR_Morris 1/emote farmer 40/speak Si_MR_Morris \"What? I'm not wrong.\"/emote farmer 40/speak Si_MR_Morris \"...right?$3\"/emote farmer 28/pause 200/end/fade",
+		}
+	},
+
+
+
+// f: X emoji; m: i wasn;t trying to hurt her! I just wanted to show her that I've changed and should understand that!; f but you did that by targeting her pain/she doesn't owe you understanding or forgiveness after the way you;ve treated her; m look I'm trying my best alright, what more do you want from me?; f frustrated
+// + convotopic juliet 'I'm mad at you right now, remember?
+
+
+
+
+	{
+	// Event 16, Crossover 03; Event ID 26220116  F 15 10 1 - 25 10 1 M 15 9 - 25 9 1; talking
+	"LogName": "Morris Redeemed/Juliet and Jessie Scene 02",
+	"Action": "EditData",
+	"Target": "Data/Events/Mountain",
+	"Entries": {
+		"26220116/w sunny": "continue/29 11/farmer 15 10 1 Si_MR_Morris 15 9 1 Linus 30 9 3 Jessie 28 9 1/skippable/fade/pause 400/
+
+/end/fade",
+		}
+	},
+
+
+
+// L good evening mr morris; m evening linus and um ... you look fmiliar; j yes, from Joja; m oh! right. um... good to see you again?; j you do seem to be in good spirits; m wll i suppse getting away from joj has been good for me; j indeed; m ...has it for you too?; j yes; j it seems much as changed for your outlook on the world; m yeah exactly! i wish she'd understand that!; j juliet?; m ...; j much has changed for her too. both of you have grown beyond joja, in different ways. it may be hard to see on your own, but perhaps together you can come to understand that.
+
+
+
+
+	{
+	// Event 17, Crossover 04; Event ID 26220117 96 55 J 97 55 0 F 88 61 0 - 88 58 M 89 61 0 - 89 58 0 wt here 96 58 - 96 55 0
+	"LogName": "Morris Redeemed/Juliet and Jessie Scene 03",
+	"Action": "EditData",
+	"Target": "Data/Events/Town",
+	"Entries": {
+		"26220116/w sunny": "continue/44 26/farmer 45 26 3 Si_MR_Morris 43 26 1 Juliet 32 20 1/skippable/fade/pause 200/
+
+/end/fade",
+		}
+	},
+
+
+
+// m i'll be right back; ...; m listen, i...; j you hurt me, and I need you to understand and accept that;  you are right. joja was my excuse, but ultimately it was all me/my actions.; j i'm sorry for acting out while wotking for joja, it wasn't your fault i was sent there. you were just a victim of a corporate shill too.; j I'm sorry i tried to use your past aginst you. i had no right.; j i forgive you. but that doesn't mean we're all buddy buddy now! im just tolerating you so i don't have to awkwardly avoid the farmer!; m sweat laugh; fade to black; box 'perhaps this is a good place for redemption for both of us'
+
+
+
+
+
+	]
+},
+
