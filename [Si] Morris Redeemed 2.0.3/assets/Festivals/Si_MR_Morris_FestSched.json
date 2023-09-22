@@ -1,0 +1,128 @@
+{
+
+	"Changes": [
+
+	// Egg Festival
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring13",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 30 62 0",
+				"Delimiter": "/"
+			},
+		]
+	},
+
+	// Flower Dance
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring24",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 19 20 2",
+				"Delimiter": "/"
+			},
+		]
+	},
+
+	// Luau
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer11",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 33 13 1",
+				"Delimiter": "/"
+			},
+		]
+	},
+
+	// Moonlight Jellies
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer28",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 88 32 1",
+				"Delimiter": "/"
+			},
+		]
+	},
+
+	// Stardew Valley Fair
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall16",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 39 33 3",
+				"Delimiter": "/"
+			},
+		]
+	},
+
+	// Spirit's Eve
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall27",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 34 73 0",
+				"Delimiter": "/"
+			},
+		]
+	},
+
+	// Ice Festival
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter8",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 73 18 0",
+				"Delimiter": "/"
+			},
+		]
+	},
+
+	// Winter Star
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter25",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 30 60 2",
+				"Delimiter": "/"
+			},
+		]
+	},
+    
+
+	]
+
+}

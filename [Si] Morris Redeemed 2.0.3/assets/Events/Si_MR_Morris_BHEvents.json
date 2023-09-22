@@ -1,0 +1,17 @@
+{
+	"Changes": [
+
+	// Crossover Events With Boarding House by TrentXV
+
+	{
+	// Event 12; Mail ID Si_MR_Morris_Mail_01; Event ID 26220112
+	"LogName": "Morris Redeemed Moving In Letter",
+	"Action": "EditData",
+	"Target": "Data/Events/Farm",
+	"Entries": {
+		"26220112/e 26220101/x Si_MR_Morris_Mail_01": "null",
+		},
+	},
+
+	]
+}

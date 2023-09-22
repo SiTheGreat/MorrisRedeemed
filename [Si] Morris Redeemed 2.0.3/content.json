@@ -1,0 +1,394 @@
+{
+
+	"Format": "1.26.0",
+	"Changes": [
+
+	// Images //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "MR Sprite",
+			"Action": "Load",
+			"Target": "Characters/Si_MR_Morris",
+			"FromFile": "assets/Images/Si_MR_Morris_Sprite.png",
+		},
+
+		{
+			"LogName": "MR Portrait",
+			"Action": "Load",
+			"Target": "Portraits/Si_MR_Morris",
+			"FromFile": "assets/Images/Si_MR_Morris_Portrait.png",
+		},
+
+	// Disposition & Gifts //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "MR NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+
+				"Si_MR_Morris": "adult/rude/neutral/positive/male/not-datable/null/Town/winter 7//Custom_Si_MR_Morris_CCRoom 4 6 0/Morris",
+
+			},
+		},
+
+		{
+			"LogName": "MR Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+
+				"Si_MR_Morris": "This is for me? Wonderful!/197 198 199 202 204 207 209 210 211 212 213 214 215 218 219 222 224 225 226 227 228 231 235 236 237 238 239 241 242 253 348 604 606 649 727 728 730 733/How generous of you./196 200 220 221 223 230 232 233 234 395 426 430 605 607 608 609 610 611 612 618 648 907/What am I supposed to do with this?/107 174 176 180 182 194 195 201 289 442 732 928/Get that thing away from me!/208 250 280 416 729 903 921/Thanks, I think./72 167 205 206 216 229 240 244 303 346 446 458 651 731 789 812 904 905 906/",
+
+			},
+		},
+
+	// NPC Exclusions and Anti-Social Flag //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Morris Anti-Social Flag",
+			"Action": "EditData",
+			"Target": "Data/AntiSocialNPCs",
+			"Entries": {
+				"Si_MR_Morris": true
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": false,
+			},
+},
+
+		{
+			"LogName": "MR Initial Custom NPC Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_MR_Morris": "All"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": false,
+			},
+		},
+
+		{
+			"LogName": "MR Start Custom NPC Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_MR_Morris": "MovieInvite ShopDialog WinterStar IslandVisit Greet"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+				"HasSeenEvent:hostPlayer |contains=26220104": false
+			},
+		},
+
+		{
+			"LogName": "MR Middle Custom NPC Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_MR_Morris": "MovieInvite ShopDialog WinterStar IslandVisit Greet"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220104": true,
+				"HasSeenEvent:hostPlayer |contains=26220106": false
+			},
+		},
+
+		{
+			"LogName": "MR End Custom NPC Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_MR_Morris": "MovieInvite"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true
+			},
+		},
+
+	// Schedules //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "MR Initial Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_InitSched.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": false
+			},
+		},
+
+		// Schedules when Boarding House installed
+
+		{
+			"LogName": "MR BH Starting Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_BHStartSched.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": "true",
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+				"HasSeenEvent:hostPlayer |contains=26220104": false
+			},
+		},
+
+		{
+			"LogName": "MR BH Middle Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_BHMidSched.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": "true",
+				"HasSeenEvent:hostPlayer |contains=26220104": true,
+				"HasSeenEvent:hostPlayer |contains=26220106": false
+			},
+		},
+
+		{
+			"LogName": "MR BH End Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_BHEndSched.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": "true",
+				"HasSeenEvent:hostPlayer |contains=26220106": true
+			},
+		},
+
+		// Schedules when Boarding House NOT installed
+
+		{
+			"LogName": "MR Non-BH Starting Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_CCStartSched.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": "false",
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+				"HasSeenEvent:hostPlayer |contains=26220104": false
+			},
+		},
+
+		{
+			"LogName": "MR Non-BH Middle Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_CCMidSched.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": "false",
+				"HasSeenEvent:hostPlayer |contains=26220104": true,
+				"HasSeenEvent:hostPlayer |contains=26220106": false
+			},
+		},
+
+		{
+			"LogName": "MR Non-BH End Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_CCEndSched.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": "false",
+				"HasSeenEvent:hostPlayer |contains=26220106": true
+			},
+		},
+
+	// Dialogue //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "MR Initial Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Si_MR_Morris",
+			"FromFile": "assets/Dialogue/Si_MR_Morris_InitDial.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": false,
+			},
+		},
+
+		{
+			"LogName": "MR Starting Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Si_MR_Morris",
+			"FromFile": "assets/Dialogue/Si_MR_Morris_StartDial.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+				"HasSeenEvent:hostPlayer |contains=26220104": false
+			},
+		},
+
+		{
+			"LogName": "MR Middle Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Si_MR_Morris",
+			"FromFile": "assets/Dialogue/Si_MR_Morris_MidDial.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220104": true,
+				"HasSeenEvent:hostPlayer |contains=26220106": false
+			},
+		},
+
+		{
+			"LogName": "MR End Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Si_MR_Morris",
+			"FromFile": "assets/Dialogue/Si_MR_Morris_EndDial.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true
+			},
+		},
+
+		{
+			"LogName": "MR NPC Conversation Topics",
+			"Action": "Include",
+			"FromFile": "assets/Dialogue/Si_MR_CT.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+			},
+		},
+		
+	// Events //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "MR Events",
+			"Action": "Include",
+			"FromFile": "assets/Events/Si_MR_Morris_Events.json",
+			"When": {
+				"IsCommunityCenterComplete": true,
+				"Year |contains=1": false
+			},
+    		},
+
+		{
+			// Mail refers to CC Attic when BH NOT installed
+			"LogName": "MR Non-BH Events",
+			"Action": "Include",
+			"FromFile": "assets/Events/Si_MR_Morris_CCEvents.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": false,
+				"IsCommunityCenterComplete": "true",
+				"Year |contains=1": false
+			},
+    		},
+
+		{
+			// Mail refers to Boarding House when BH installed
+			"LogName": "MR BH Crossover Events",
+			"Action": "Include",
+			"FromFile": "assets/Events/Si_MR_Morris_BHEvents.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": true,
+				"IsCommunityCenterComplete": true,
+				"Year |contains=1": false
+			},
+    		},
+
+		{
+			// Crossover Events for Marry Morris
+			"LogName": "MR MM Crossover Events",
+			"Action": "Include",
+			"FromFile": "assets/Events/Si_MR_Morris_MMEvents.json",
+			"When": {
+				"HasMod |contains=Yoshimax.MarryMorris": true,
+				"Relationship:MorrisTod": "Friendly",
+				"IsCommunityCenterComplete": true,
+				"Year |contains=1": false
+			},
+    		},
+
+	// Mail //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "MR Mail",
+			"Action": "Include",
+			"FromFile": "assets/Mail/Si_MR_Morris_Mail.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true
+			},
+    		},
+
+	// Festivals //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "MR Festival Locations",
+			"Action": "Include",
+			"FromFile": "assets/Festivals/Si_MR_Morris_FestSched.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		},
+
+		{
+			"LogName": "MR SVE Festival Locations",
+			"Action": "Include",
+			"FromFile": "assets/Festivals/Si_MR_Morris_SVEFestSched.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+			},
+		},
+
+		{
+			"LogName": "MR Festival Dialogue",
+			"Action": "Include",
+			"FromFile": "assets/Festivals/Si_MR_Morris_FestDial.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true
+			},
+		},
+
+	// Maps //////////////////////////////////////////////////////////
+
+		{
+			// Add Boarding House room when BH is installed
+			"LogName": "MR Boarding House Room",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_BoardingHouse_BoardingHouse2",
+			"FromFile": "assets/Maps/Si_MR_Morris_BHRoom.tmx",
+			"ToArea": { "X": 24, "Y": 14, "Width": 11, "Height": 10 },
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+				"HasMod |contains=CPBoardingHouse": true,
+			},
+		},
+
+		{
+			// Add Community Center attic entrance when BH is NOT installed
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"AddWarps": [
+				"58 18 Custom_Si_MR_Morris_CCRoom 5 2"
+			],
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+				"HasMod |contains=CPBoardingHouse": false,
+			},
+		},
+
+		{
+			// Add Community Center attic warp when BH is NOT installed
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_MR_Morris_CCRoom",
+			"AddWarps": [
+				"5 1 Town 59 18"
+			],
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+				"HasMod |contains=CPBoardingHouse": false,
+			},
+		},
+
+	],
+
+	"CustomLocations": [
+
+		{
+			// Add Community Center attic
+			"Name": "Custom_Si_MR_Morris_CCRoom",
+			"FromMapFile": "assets/Maps/Si_MR_Morris_CCRoom.tmx",
+		},
+],
+
+	// End //////////////////////////////////////////////////////////
+
+}

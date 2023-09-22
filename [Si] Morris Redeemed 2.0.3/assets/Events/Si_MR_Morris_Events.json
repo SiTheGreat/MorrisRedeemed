@@ -1,0 +1,123 @@
+{
+	"Changes": [
+
+	// Morris Redeemed Morris' Heart Events
+
+	{
+	// Event 01, 0 Hearts; Event ID 26220101
+	"LogName": "Morris Redeemed Intro",
+	"Action": "EditData",
+	"Target": "Data/Events/BusStop",
+	"Entries": {
+		"26220101/w rainy/r 0.5": "continue/13 15/farmer -100 100 0 Si_MR_Morris 13 12 1/skippable/fade/addConversationTopic SiMorrisReturns 4/pause 200/textAboveHead Si_MR_Morris \"What am I going to do...\"/warp farmer 0 23/pause 100/move farmer 13 0 1/faceDirection Si_MR_Morris 2/emote Si_MR_Morris 16/speak Si_MR_Morris \"Farmer @! I'm so happy to see you!\"/faceDirection farmer 0/move farmer 0 -3 0 true/move Si_MR_Morris 0 2 2/speak Si_MR_Morris \"Please help me!$3#$b#After Joja Mart left town, I lost everything!$3#$b#I was fired from my job, my wife divorced me, and she kicked me out of the house!$3#$b#Please, you've got to help me. I have nowhere else to go...$3\"/pause 300/question fork0 \"#Serves you right after everything you've done.#Fine, I'll help you.\"/fork helpFault/pause 300/friendship Si_MR_Morris 60/jump Si_MR_Morris/speak Si_MR_Morris \"Really? You mean it?#$b#Thank you so much Farmer @! You won't regret it!\"/emote farmer 40/end/fade",
+
+		"helpFault": "speak Si_MR_Morris \"It's not my fault!$3#$b#All I did was accept a branch manager position, and they moved me out here!$3#$b#Please, I'm begging you...$3\"/emote farmer 40/end/fade",
+		}
+	},
+
+	{
+	// Event 02, 2 Hearts, Part 1; Event ID 26220102
+	"LogName": "Morris Redeemed 2 Hearts P1",
+	"Action": "EditData",
+	"Target": "Data/Events/Mountain",
+	"Entries": {
+		"26220102/f Si_MR_Morris 500/p Linus/w sunny/e 26220101": "continue/24 24/farmer 38 23 3 Si_MR_Morris 25 24 2 Linus 23 9 2/skippable/fade/move farmer -5 0 3/move Linus 0 15 1/pause 500/jump Si_MR_Morris/faceDirection Si_MR_Morris 3/speak Si_MR_Morris \"ACK!$3#$b#Don't startle me like that!$3#$b#I could have fallen!$3\"/speak Linus \"I'm sorry, I didn't mean to frighten you.#$b#I thought I would offer you some food.\"/addObject 24 24 280/pause 500/emote Si_MR_Morris 16/speak Si_MR_Morris \"Eurgh... What is this sludge?$3\"/speak Linus \"It's freshly foraged.\"/emote Si_MR_Morris 12/speak Si_MR_Morris \"You picked this up off the ground?!$3#$b#That's disgusting!$3#$b#I'm not eating that!$3\"/pause 500/speak Linus \"Oh, I see.#$b#Forgive me.\"/removeObject 24 24/move Linus 0 -15 0/pause 500/faceDirection Si_MR_Morris 0/move farmer -7 0 3/move farmer 0 1 3/question fork0 \"#That wasn't very nice.#That was extremely rude.#How dare you talk to Linus like that!\"/jump Si_MR_Morris/faceDirection Si_MR_Morris 1/speak Si_MR_Morris \"What? I couldn't eat it! Would you?$3\"/emote farmer 12/speak Si_MR_Morris \"Fine, fine!$3#$b#I'll go apologize to him.$3#$b#But I'm still not eating it!$3\"/end/fade"
+		}
+	},
+
+	{
+	// Event 03, 2 Hearts, Part 2; Event ID 26220103
+	"LogName": "Morris Redeemed 2 Hearts P2",
+	"Action": "EditData",
+	"Target": "Data/Events/Railroad",
+	"Entries": {
+		"26220103/e 26220102/w sunny/f Si_MR_Morris 500": "continue/24 50/farmer -100 100 0 Linus 20 57 3 Si_MR_Morris 29 61 0/skippable/fade/move Si_MR_Morris 0 -3 3/move Si_MR_Morris -7 0 3/move Si_MR_Morris 0 -1 3/faceDirection Linus 1/emote Linus 8/pause 500/speak Si_MR_Morris \"Ugh, look.$3#$b#I'm sorry, alright?$3#$b#I shouldn't have called your food disgusting.$3#$b#It was a... generous... offer.$3\"/pause 500/speak Linus \"That's alright.#$b#I know folks like you are used to a different way of living.\"/pause 500/speak Linus \"Would you still like some?\"/pause 500/speak Si_MR_Morris \"Um...$3#$b#Uhh...$3#$b#Eurgh, fine. I'll try a bit.$3\"/addObject 21 57 280/pause 500/removeObject 21 57/pause 500/shake Si_MR_Morris 200/emote Si_MR_Morris 12/speak Si_MR_Morris \"Ugh!$2#$b#Um, I mean...$3#$b#It was...$3\"/pause 800/speak Si_MR_Morris \"Okay, nope. I didn't like it.$3\"/speak Linus \"It's okay.#$b#I'm glad you tried it.$1\"/end/fade"
+		}
+	},
+
+	{
+	// Event 04, 4 Hearts; Event ID 26220104
+	"LogName": "Morris Redeemed 4 Hearts",
+	"Action": "EditData",
+	"Target": "Data/Events/CommunityCenter",
+	"Entries": {
+		"26220104/w rainy/d Wed/e 26220103/p Si_MR_Morris/f Si_MR_Morris 1000": "continue/33 13/farmer 33 19 0 Si_MR_Morris 24 9 2 Lewis -100 100 2/skippable/fade/addConversationTopic SiMorrisCC 4/pause 400/emote Si_MR_Morris 40/move farmer 0 -6 3/pause 300/emote farmer 8/pause 200/faceDirection Si_MR_Morris 1/pause 200/speak Si_MR_Morris \"What do you want?$3\"/pause 200/playSound doorClose/warp Lewis 32 23/move Lewis 0 -9 0 true/pause 200/emote farmer 40/pause 200/speak Lewis \"Ah, Mr. Morris. How are things going?\"/pause 200/faceDirection Si_MR_Morris 2/pause 200/speak Si_MR_Morris \"Terrible!$3#$b#I've been trying to get a job, but no one in this town in hiring!$3\"/speak Lewis \"I'm sure you'll find something.\"/pause 200/emote Si_MR_Morris 40/faceDirection Si_MR_Morris 1/pause 400/move Si_MR_Morris 8 0 0 true/speak Si_MR_Morris \"This place is a mess.$3\"/pause 200/speak Si_MR_Morris \"There are footprints all over the floor!$3\"/pause 600/speak Si_MR_Morris \"Look at this fireplace, it's covered in soot.$3\"/move Si_MR_Morris -4 0 3/move Si_MR_Morris 0 3 2/move Si_MR_Morris -6 0 0/move Si_MR_Morris -15 0 0 true/move farmer -13 0 3 true/move Lewis -6 0 3 true/viewport move -7 0 3000 true/speak Si_MR_Morris \"I can't believe you ran Joja Mart out of town for this dump.$3\"/speak Lewis \"Have you tried asking Pierre for work?\"/pause 200/speak Si_MR_Morris \"He laughed at me when I did.$3\"/pause 400/speak Si_MR_Morris \"Why hasn't anyone put away their dishes?$3\"/pause 200/move Si_MR_Morris 0 2 2/move Si_MR_Morris 5 0 2 true/speak Lewis \"How about the museum?\"/pause 200/speak Si_MR_Morris \"They don't have the funds to hire anyone right now.$3\"/pause 600/speak Si_MR_Morris \"And someone's left the supplies all over the floor in here.$3\"/pause 200/move Si_MR_Morris 16 0 1/move Si_MR_Morris 15 0 1 true/move farmer 16 0 1 true/viewport move 7 0 5000 true/pause 800/move Lewis 10 0 1 true/pause 500/question fork0 \"#Maybe Willy could use a hand in his shop.#Maybe Marnie could use a hand on her farm.\"/pause 300/speak Si_MR_Morris \"And deal with smelly creatures all day?\"/pause 500/move Si_MR_Morris 1 0 1/faceDirection Si_MR_Morris 0/pause 400/question fork0 \"#Any other ideas?\"/pause 500/emote Lewis 40/textAboveHead Lewis \"Just one.\"/move Si_MR_Morris -5 0 3/speak Lewis \"Morris, what if I hired you to keep this place clean and tidy?\"/speak Si_MR_Morris \"Me?$3#$b#A janitor?$3#$b#You've got to be joking.$3\"/question fork0 \"#It's a good opportunity. You should take it.#Beggars can't be choosers.#Stop whining, it's not like you have many other options.\"/emote Si_MR_Morris 40/pause 200/faceDirection Si_MR_Morris 0/pause 200/faceDirection Si_MR_Morris 1/pause 200/faceDirection Si_MR_Morris 2/pause 200/faceDirection Si_MR_Morris 3/pause 200/speak Si_MR_Morris \"Ugh, fine.$3#$b#But there better be a benefits package included!$3\"/emote Lewis 40/end/fade"
+
+		}
+	},
+
+	{
+	// Event 05, 6 Hearts; Event ID 26220105
+	"LogName": "Morris Redeemed 6 Hearts",
+	"Action": "EditData",
+	"Target": "Data/Events/CommunityCenter",
+	"Entries": {
+		"26220105/e 26220104/w sunny/p Si_MR_Morris/f Si_MR_Morris 1500": "continue/33 13/farmer -100 100 2 Si_MR_Morris 27 9 0 Penny -100 100 0/skippable/fade/pause 800/speak Si_MR_Morris \"I can't believe I'm stuck doing such lowly work...$3\"/warp Penny 33 23/playSound doorClose/move Penny 0 -8 0/speak Penny \"Excuse me, I - Oh!#$b#Mr. Morris!\"/faceDirection Si_MR_Morris 2/emote Si_MR_Morris 12/speak Si_MR_Morris \"What?$3\"/speak Penny \"Is it you who's been keeping the community center so clean lately?\"/speak Si_MR_Morris \"Yes. What about it?$3\"/emote Penny 20/speak Penny \"You've done a wonderful job.#$b#I'm so grateful!\"/emote Si_MR_Morris 16/speak Si_MR_Morris \"Oh, uh...$3#$b#Thanks I guess.$3\"/emote Penny 32/speak Penny \"It's nice to see you around town again!\"/move Penny 0 8 0/playSound doorClose/warp Penny -100 100/pause 500/emote Si_MR_Morris 40/end/fade"
+		}
+	},
+
+	{
+	// Event 06, 8 Hearts; Event ID 26220106
+	"LogName": "Morris Redeemed 8 Hearts",
+	"Action": "EditData",
+	"Target": "Data/Events/CommunityCenter",
+	"Entries": {
+		"26220106/e 26220105/w rainy/p Si_MR_Morris/f Si_MR_Morris 2000": "continue/33 13/farmer -100 100 2 Pierre -100 100 2 Jodi -100 100 2 Si_MR_Morris 35 8 3/skippable/fade/pause 500/emote Si_MR_Morris 56/pause 200/playSound doorClose/warp farmer 32 23/move farmer 0 -7 0 true/faceDirection Si_MR_Morris 2/pause 500/speak Si_MR_Morris \"Hello farmer @!#$b#What brings you here today?\"/pause 300/emote farmer 56/playSound doorClose/warp Pierre 33 23/move Pierre 0 -7 0/pause 500/jump Pierre/faceDirection farmer 1/pause 500/speak Pierre \"Ha! So it is true!$1#$b#You really are working in here now.$1\"/pause 500/speak Si_MR_Morris \"Yes, what about it?$3\"/pause 500/speak Pierre \"How does it feel to be a lowly janitor in a community center after your big shot job went bust?\"/pause 500/emote Si_MR_Morris 12/pause 500/question fork0 \"#That wasn't very nice Pierre. You should apologize.#That was extremely rude Pierre. Show some respect.\"/pause 500/emote Pierre 12/speak Pierre \"Ugh, fine.$3#$b#I'm sorry I laughed at you.$2#$b#I think you're doing a pretty good job in here.$2\"/emote Si_MR_Morris 32/speak Si_MR_Morris \"Why thank you Pierre.\"/move Pierre 0 7 2/warp Pierre -100 100/playSound doorClose/pause 300/faceDirection farmer 0/pause 300/faceDirection Si_MR_Morris 3/emote Si_MR_Morris 40/pause 500/emote farmer 28/pause 1000/playSound doorClose/warp Jodi 33 23 0/faceDirection Jodi 0/pause 300/emote Jodi 16/move Jodi 0 -7 0/speak Jodi \"Morris!\"/jump Si_MR_Morris/pause 500/speak Jodi \"I'm glad I caught you before you left.\"/faceDirection Si_MR_Morris 2/emote Si_MR_Morris 8/pause 500/addObject 33 15 224/speak Jodi \"I cooked you some dinner to thank you for keeping this place so clean!\"/pause 500/emote Si_MR_Morris 16/speak Si_MR_Morris \"Oh! I, uh...$3#$b#Thank you very much.#$b#Jodi, was it?\"/speak Jodi \"That's right!$1#$b#Let me know if there's anything you need.\"/move Jodi 0 4 2/removeObject 33 15/move Jodi 0 3 2/warp Jodi -100 100/playSound doorClose/pause 1000/emote Si_MR_Morris 40/pause 500/playSound eat/pause 500/emote Si_MR_Morris 32/speak Si_MR_Morris \"That was delicious.\"/end/fade"
+		}
+
+	},
+
+	{
+	// Event 07, 10 Hearts; Event ID 26220107
+	"LogName": "Morris Redeemed 10 Hearts",
+	"Action": "EditData",
+	"Target": "Data/Events/CommunityCenter",
+	"Entries": {
+		"26220107/e 26220106/p Si_MR_Morris/w sunny/f Si_MR_Morris 2500/d Wed": "continue/16 9/farmer -100 100 2 Si_MR_Morris 6 5 0 Lewis 8 9 3 Jodi 2 7 1 Pam 4 7 3 Gus 4 10 0 Pierre 7 10 3/skippable/fade/addConversationTopic SiMorrisFriendly 4/pause 400/emote Si_MR_Morris 56/emote Gus 16/faceDirection Jodi 2/emote Jodi 16/emote Pam 56/emote Si_MR_Morris 56/emote Pierre 40/emote Lewis 32/emote Gus 16/emote Si_MR_Morris 56/emote Si_MR_Morris 40/pause 400/emote Si_MR_Morris 16/faceDirection Jodi 0/faceDirection Lewis 0/faceDirection Pierre 0/faceDirection Pam 0/faceDirection Si_MR_Morris 2/speak Si_MR_Morris \"And done!\"/move Si_MR_Morris 0 2 2/pause 400/faceDirection Jodi 1/faceDirection Pam 1/addObject 6 7 611 1/speak Si_MR_Morris \"I hope you all like it.\"/pause 200/removeObject 6 7/playSound eat/pause 200/playSound eat/pause 100/playSound eat/textAboveHead Pam \"Mmm!\"/pause 500/textAboveHead Pierre \"Not bad!\"/pause 500/textAboveHead Jodi \"It's delicious!\"/pause 500/textAboveHead Gus \"Well done!\"/pause 500/speak Lewis \"This is great Morris!\"/emote Si_MR_Morris 32/speak Si_MR_Morris \"Well, I'm sure it's decent at least.\"/pause 400/emote Si_MR_Morris 40/speak Si_MR_Morris \"To be honest with you...$3\"/emote Si_MR_Morris 60/speak Si_MR_Morris \"It feels nice... To share a meal rather than taking it in the office.\"/faceDirection Si_MR_Morris 1/faceDirection Si_MR_Morris 3/faceDirection Si_MR_Morris 2/speak Si_MR_Morris \"I suppose I am...$3#$b#Glad, that I returned to the valley.\"/pause 600/speak Si_MR_Morris \"Thank you all, for welcoming me back.$1\"/pause 200/emote Jodi 20/emote Gus 20/emote Pam 20/emote Pierre 20/emote Lewis 20/pause 500/emote Si_MR_Morris 32/end/fade"
+		}
+	},
+
+	// Morris Redeemed Morris' Bonus Events
+
+	{
+	// Event 8, Bonus 01; Event ID 26220108
+	"LogName": "Morris Redeemed Bonus Scene 01",
+	"Action": "EditData",
+	"Target": "Data/Events/Hospital",
+	"Entries": {
+		"26220108/f Si_MR_Morris 2000/p Si_MR_Morris/z spring/z summer/z winter/e 26220106": "continue/11 10/farmer -100 100 0 Si_MR_Morris 10 14 3 Harvey 9 14 1/skippable/fade/pause 500/speak Harvey \"Your labor in the community center is certainly helping!#$b#You look much healthier since your first appointment.\"/speak Si_MR_Morris \"I've never felt better doctor!#$b#I thought I'd hate being on my feet all day.#$b#But now all I want to do is walk around and enjoy the weather!\"/pause 400/playSound doorClose/warp farmer 10 19/move farmer 0 -2 0 true/faceDirection Si_MR_Morris 2/faceDirection Harvey 2/jump Si_MR_Morris/speak Si_MR_Morris \"Farmer @! It's good to see you!\"/speak Harvey \"Hello @.\"/speak Si_MR_Morris \"Dr. Harvey here has been giving me tips on how to lead a healthier lifestyle.#$b#I haven't felt so young in years!\"/emote farmer 56/end/fade"
+		}
+	},
+
+	{
+	// Event 9, Bonus 02; Event ID 26220109
+	"LogName": "Morris Redeemed Bonus Scene 02",
+	"Action": "EditData",
+	"Target": "Data/Events/CommunityCenter",
+	"Entries": {
+		"26220109/f Si_MR_Morris 2000/p Si_MR_Morris/p Clint/e 26220106": "continue/50 13/farmer -100 100 2 Si_MR_Morris 64 14 3 Clint 63 14 0/skippable/fade/pause 500/emote Clint 40/pause 500/speak Si_MR_Morris \"Well? How does it look?$3\"/emote Clint 40/pause 500/speak Si_MR_Morris \"Is it bad?$3\"/pause 500/emote Clint 40/pause 500/emote Clint 16/speak Clint \"And... Got it!\"/playSound stoneCrack/speak Clint \"There we go.\"/jump Si_MR_Morris/speak Si_MR_Morris \"Did you fix it?$3#$b#Is it working now?$3\"/faceDirection Clint 1/speak Clint \"Yeah.#$b#That leak shouldn't bother you anymore.\"/speak Si_MR_Morris \"Wonderful!#$b#Thank you for your help.\"/speak Clint \"Anytime.\"/pause 500/end/fade"
+		}
+	},
+
+	{
+	// Event 11, Bonus 04; Event ID 26220111
+	"LogName": "Morris Redeemed Bonus 04",
+	"Action": "EditData",
+	"Target": "Data/Events/ArchaeologyHouse",
+	"Entries": {
+		"26220111/p Si_MR_Morris/f Si_MR_Morris 2000/e 26220106": "continue/10 11/farmer 7 14 1 Si_MR_Morris 10 11 3/skippable/fade/pause 200/emote Si_MR_Morris 56/move farmer 3 0 0/emote Si_MR_Morris 16/pause 200/faceDirection Si_MR_Morris 2/pause 200/speak Si_MR_Morris \"Farmer @! I'm sure you're wondering what I'm doing here.\"/emote farmer 8/speak Si_MR_Morris \"I've decided to ease back on things a bit.#$b#I've spent so many years putting in my all, working overtime, rising to the top...$3#$b#I always thought that was the cost of success.$3\"/pause 300/speak Si_MR_Morris \"But because of you I've realized that true happiness isn't about success. It's about meaningful experiences, spending time with friends...#$b#And a good book!$1\"/pause 300/speak Si_MR_Morris \"Lewis let me change my schedule to only cleaning the Community Center a few days a week, so from now on, I'm spending the rest of my time enjoying life.#$b#It's funny. In a way, this is the most successful I've ever been.#$b#I never could have gotten to this point without you.#$b#So thank you, @.#$b#Thank you for everything.\"/pause 200/emote farmer 32/end/fade"
+		}
+	},
+
+	{
+	// Event 10, Bonus 03; Event ID 26220110
+	"LogName": "Morris Redeemed Bonus Scene 03",
+	"Action": "EditData",
+	"Target": "Data/Events/Mountain",
+	"Entries": {
+		"26220110/f Si_MR_Morris 2500/e 26220107/e 26220108/e 26220109/e 26220111/t 2000 2300/w sunny": "continue/24 12/Si_MR_Morris 28 9 1 Linus 30 9 3 farmer -100 100 2/skippable/fade/playSound cracklingFire/pause 400/speak Si_MR_Morris \"These maki rolls are absolutely delicious!\"/speak Si_MR_Morris \"What's your secret, Linus?\"/pause 400/speak Linus \"It's all what the valley provides, Mr. Morris.\"/playSound cracklingFire/pause 400/speak Linus \"You know, you've come a long way since you returned here.\"/speak Si_MR_Morris \"It was pretty tough, I admit.$3\"/speak Si_MR_Morris \"But I guess this is a pretty good place for starting over.\"/playSound cracklingFire/pause 500/speak Linus \"For what it's worth, I'm proud of you.\"/pause 400/playSound cracklingFire/pause 100/playSound cracklingFire/end/fade"
+		}
+	},
+
+	]
+}

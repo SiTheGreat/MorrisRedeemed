@@ -1,0 +1,25 @@
+{
+	"Changes": [
+
+	{
+		// Event 12, Mail ID Si_MR_Morris_Mail_01
+		"LogName": "Morris Redeemed Moving In Letter",
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries": {
+			"Si_MR_Morris_Mail_01": "Dear @,^^I'm writing to inform you that I've elected to take your referral, and have moved into the Boarding House down the road. My room is very small, but I suppose I'll make do. I'll begin looking for a new position soon. Any idea what the job market is like around here?^^Regards, Morris[#]Morris Moves In",
+		},
+	},
+
+	{
+		// Event 14, Mail ID Si_MR_Morris_Mail_02
+		"LogName": "Morris Redeemed Moving In Letter",
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries": {
+			"Si_MR_Morris_Mail_02": "Dear @,^^I'm writing to inform you that, thanks to your referral, Mayor Lewis has decided to let me stay in the community center's attic. An attic! Can you imagine? My room is very small, and it's incredibly dusty in here, but I suppose I'll make do. I'll begin looking for a new position soon. Any idea what the job market is like around here?^^Regards, Morris[#]Morris Moves In",
+		},
+	},
+
+	]
+}

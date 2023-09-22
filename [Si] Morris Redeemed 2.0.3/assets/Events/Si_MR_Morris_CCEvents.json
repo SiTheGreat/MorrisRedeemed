@@ -1,0 +1,17 @@
+{
+	"Changes": [
+
+	// Non-BH version of moving in letter event
+
+	{
+	// Event 14; Mail ID Si_MR_Morris_Mail_01; Event ID 26220114
+	"LogName": "Morris Redeemed Moving In Letter",
+	"Action": "EditData",
+	"Target": "Data/Events/Farm",
+	"Entries": {
+		"26220114/e 26220101/x Si_MR_Morris_Mail_02": "null",
+		},
+	},
+
+	]
+}

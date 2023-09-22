@@ -1,0 +1,93 @@
+{
+	"Changes": [
+
+	// Egg Festival
+
+		{
+			"LogName": "MR Egg Festival Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": {
+				"Si_MR_Morris": "Ew... Eggs. Why does it have to be eggs?"
+			},
+		},
+
+	// Flower Dance
+
+		{
+			"LogName": "MR Flower Dance Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": {
+				"Si_MR_Morris": "I see some sharp dressers here today!"
+			},
+		},
+
+	// Luau
+
+		{
+			"LogName": "MR Luau Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": {
+				"Si_MR_Morris": "It smells so good. What did you add?"
+			},
+		},
+
+	// Moonlight Jellies
+
+		{
+			"LogName": "MR Moonlight Jellies Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": {
+				"Si_MR_Morris": "I can't believe I skipped out on this for so many years!"
+			},
+		},
+
+	// Valley Fair
+
+		{
+			"LogName": "MR Valley Fair Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": {
+				"Si_MR_Morris": "Gus' burgers don't disappoint!"
+			},
+		},
+
+	// Spirit's Eve
+
+		{
+			"LogName": "MR Spirit's Eve Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": {
+				"Si_MR_Morris": "Any idea what's at the end of the maze? I'm trying to figure out if it's worth it."
+			},
+		},
+
+	// Ice Festival
+
+		{
+			"LogName": "MR Ice Festival Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": {
+				"Si_MR_Morris": "Do you have any idea what this thing is?"
+			},
+		},
+
+	// Winter Star
+
+		{
+			"LogName": "MR Winter Star Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Si_MR_Morris": "It's freezing out here! Why can't we hold this inside the community center?"
+			},
+		},
+
+	]
+}

@@ -1,0 +1,55 @@
+{
+
+	// Conversation Topic Entries
+
+	"Changes": [
+
+
+	{
+		"LogName": "MR Pierre Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Pierre",
+		"Entries": {
+
+	"SiMorrisReturns": "Ugh, I can't believe Morris dragged himself back here.$3#$e#He's like a roach, we just can't get rid of him.$3",
+	"SiMorrisCC": "Wait, wait, wait.#$e#You're telling me, that -#$e#That MORRIS -#$e#is WORKING in the community center?!#$e#Oh man!$1#$e#This is great!$1#$e#Hang on, I need to go see this for myself.",
+	"SiMorrisFriendly": "Hmph, I guess Morris isn't TOO bad.$2#$e#I still don't like him though!$3",
+	"SiMorrisTod": "I thought I saw two Morrises today.$2#$e#Which would be horrible.#$e#One is enough!",
+
+		},
+	},
+
+
+	{
+		"LogName": "MR Pam Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Pam",
+		"Entries": {
+
+	"SiMorrisReturns": "Did you hear?#$e#Morris is back in town!",
+	"SiMorrisCC": "Can you believe it?#$e#Morris is working at the community center now!#$e#I thought I'd had too much to drink when I found out.",
+	"SiMorrisFriendly": "Morris is a surprisingly good cook.#$e#And he's always got a little extra wine for me!",
+	"SiMorrisTod": "I think I need to lighten up on the drinks.#$e#I swear I saw Morris twice earlier!",
+
+		},
+	},
+
+
+	{
+		"LogName": "MR Lewis Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Lewis",
+		"Entries": {
+
+	"SiMorrisReturns": "It'll be interesting, having Morris around again.#$e#We'll see if he can integrate into the town, but I won't get my hopes up.",
+	"SiMorrisCC": "I hope having Morris work in the community center is a good idea...",
+	"SiMorrisFriendly": "Morris seems to be settling in well.",
+	"SiMorrisTod": "I thought I saw Morris at the library just now, but he's supposed to be on duty in the community center and he's never missed a shift.#$e#Maybe he took a break?",
+
+		},
+	},
+
+
+	]
+
+}
