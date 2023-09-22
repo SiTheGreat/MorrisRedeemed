@@ -1,0 +1,237 @@
+{
+	"Changes": [
+
+		// Movie Tastes
+		{
+			"LogName": "MR Morris Movie Tastes",
+			"Action": "EditData",
+			"Target": "Data/MoviesReactions",
+			"Entries": {
+				"Si_MR_Morris": {
+					"NPCName": "Morris",
+					"Reactions": [
+
+					// Brave Little Sapling dislike
+					{
+						"Tag": "spring_movie_0",
+						"ID": "reaction_0",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "TEXT HERE",
+								"Text": "TEXT HERE"
+							},
+							"DuringMovie": {
+								"ResponsePoint": "null",
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							}
+						},
+					},
+
+					// Natural Wonders: Exploring Our Vibrant World love
+					{
+						"Tag": "spring_movie_1",
+						"ID": "reaction_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"DuringMovie": {
+								"ResponsePoint": "null",
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							}
+						},
+					},
+
+					// Journey Of The Prairie King: The Motion Picture like
+					{
+						"Tag": "summer_movie_0",
+						"ID": "reaction_2",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"DuringMovie": {
+								"ResponsePoint": "null",
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							}
+						},
+					},
+
+					// Wumbus dislike
+					{
+						"Tag": "summer_movie_1",
+						"ID": "reaction_3",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"DuringMovie": {
+								"ResponsePoint": "null",
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							}
+						},
+					},
+
+					// Mysterium dislike
+					{
+						"Tag": "fall_movie_0",
+						"ID": "reaction_4",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"DuringMovie": {
+								"ResponsePoint": "null",
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							}
+						},
+					},
+
+					// It Howls In The Rain like
+					{
+						"Tag": "fall_movie_1",
+						"ID": "reaction_5",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"DuringMovie": {
+								"ResponsePoint": "null",
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							}
+						},
+					},
+
+					// The Miracle At Coldstar Ranch like
+					{
+						"Tag": "winter_movie_0",
+						"ID": "reaction_6",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"DuringMovie": {
+								"ResponsePoint": "null",
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							}
+						},
+					},
+
+					// The Zuzu City Express love
+					{
+						"Tag": "spring_movie_0",
+						"ID": "reaction_7",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"DuringMovie": {
+								"ResponsePoint": "null",
+								"Script": "",
+								"Text": "TEXT HERE"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "TEXT HERE"
+							}
+						},
+					},
+					],
+
+				},
+			},
+
+		},
+
+		// Concession Tastes
+		{
+			"LogName": "MR Morris Concession Tastes",
+			"Action": "EditData",
+			"Target": "Data/ConcessionTastes",
+			"Entries": {
+				"Si_MR_Morris": {
+					"Name": "Morris",
+					"LovedTags": ["Salted Peanuts", "Hummus Snack Pack", "Panzanella Salad", "Truffle Popcorn"],
+					"LikedTags": ["Cappuccino Mousse Cake", "Joja Cola", "Popcorn"],
+					"DislikedTags": ["JojaCorn", "Hummus Snack Pack", "Kale Smoothie"]
+				}
+			}
+		}
+
+	]
+}
+
