@@ -1,0 +1,112 @@
+{
+
+	// Crossover Schedules
+	"Changes": [
+
+	// Ridgeside Village ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si MR RSV Schedule", // Custom_Ridgeside_RidgesideVillage 90 40 0, 90 48 2
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasMod |contains=Rafseazz.RSVCP": true,
+				"Season |contains=Spring, Summer": true,
+			},
+			"Entries": {
+
+				"": "",
+
+			},
+		},
+
+		{
+			"LogName": "Si MR RSV Schedule", // Custom_Ridgeside_LogCabinHotelLobby 40 15 0, 24 14 2 (maybe while June is around)
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasMod |contains=Rafseazz.RSVCP": true,
+				"Season |contains=Fall, Winter": true,
+			},
+			"Entries": {
+
+				"": "",
+
+			},
+		},
+
+	// Saloon Breakfast ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si MR Saloon Breakfast Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasMod |contains=agentlyoko.stardropbreakfast": true,
+			},
+			"Entries": {
+
+				"": "",
+
+			},
+		},
+
+	// Stray Catfe ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si MR Stray Catfe Schedule", // (7-2 tue-sun) 14 15 0, 12 15 0, 15 21 2 leave
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasMod |contains=ch20youk.TSCCP": true,
+			},
+			"Entries": {
+
+				"": "",
+
+			},
+		},
+
+	// Museum Expansion ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si MR Ancient History Museum Expansion Schedule", // Custom_MuseumCafe_ME 8 11 0, 15 11 0, 10 8 3, 14 7 0, 18 7 0, leave
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasMod |contains=andril11.charlie": true,
+			},
+			"Entries": {
+
+				"": "",
+
+			},
+		},
+
+	// East Scarp ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si MR East Scarp Schedule", // Custom_EastScarpe 21 102 0, 25 101 2
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasMod |contains=LemurKat.EastScarpe.CP": true,
+			},
+			"Entries": {
+
+				"": "",
+
+			},
+		},
+	
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}
