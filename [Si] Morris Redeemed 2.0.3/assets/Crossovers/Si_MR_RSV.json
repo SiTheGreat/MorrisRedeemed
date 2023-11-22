@@ -5,6 +5,19 @@
 
 	// Item Preferences ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	{
+		"LogName": "Si MR RSV Gift Tastes",
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Si_MR_Morris", 1],
+			"Value": "{{spacechase0.JsonAssets/ObjectId:Honey Ginger Whitefish}} {{spacechase0.JsonAssets/ObjectId:Zesty Tuna}} {{spacechase0.JsonAssets/ObjectId:Highland Blueberry Pie}} {{spacechase0.JsonAssets/ObjectId:Sweet Cranberry Cheesecake}} {{spacechase0.JsonAssets/ObjectId:Clementine Juice}}",
+			"Delimiter": " "
+			},
+	},
+
 	// Festivals ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
