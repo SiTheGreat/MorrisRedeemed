@@ -1,0 +1,39 @@
+{
+
+	// Tricks and Treats Content Pack
+	"Changes": [
+
+	// Ticks and Treats ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"LogName": "Si MR Morris Tricks & Treats",
+		"Action": "EditData",
+		"Target": "Mods/TricksAndTreats.NPCs",
+		"Entries": {
+			"Si_MR_Morris": {
+				"Roles": [ "candygiver", "candytaker"],
+				"LovedTreats": [ "gourmet", "sweet", "TaT.luxurious-truffles", "TaT.twisty-taffy", "TaT.ghost-meringue" ],
+				"NeutralTreats": [ "joja", "TaT.ablaze-orbs" ],
+				"HatedTreats": [ "fatty", "TaT.braincell-gum" ],
+				"TreatsToGive": [ "TaT.luxurious-truffles", "TaT.twisty-taffy", "TaT.ghost-meringue" ],
+			},
+		},
+	},
+
+	{
+		"LogName": "Si Mr Morris Treat Dialogue",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Si_MR_Morris",
+		"Entries": {
+			"fall_27": "Looking sharp!#$e#I'm dressed as a shareholder myself.#$e#Frightening things, shareholders.",
+			"loved_treat": "Well that looks scrumptious!",
+			"neutral_treat": "Hmm... Do you have anything else?",
+			"hated_treat": "Scraping the bottom of the candy barrel, I see.",
+		},
+	},
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}
