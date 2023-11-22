@@ -1,0 +1,47 @@
+{
+
+	// Ridgeside Village Crossover Content
+	"Changes": [
+
+	// Item Preferences ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Festivals ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si MR RSV Schedule", // Custom_Ridgeside_RidgesideVillage 90 40 0, 90 48 2 (non-rainy 1000-2300)
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"When": {
+				"Season |contains=Spring, Summer": true,
+				"Weather|contains= Rain, Storm": false,
+			},
+			"Entries": {
+
+				"": "",
+
+			},
+		},
+
+		{
+			"LogName": "Si MR RSV Schedule", // Custom_Ridgeside_LogCabinHotelLobby 40 15 0, 24 14 2 (maybe while June is around) (Malaya saturday 1600-2030; else 0800-1300) (June thursday/friday 1700-2100 saturday 1200-1500, 1700-1900)
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"When": {
+				"Season |contains=Fall, Winter": true,
+			},
+			"Entries": {
+
+				"": "",
+
+			},
+		},
+	
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

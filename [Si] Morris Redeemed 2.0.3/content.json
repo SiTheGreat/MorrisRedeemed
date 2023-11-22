@@ -337,6 +337,56 @@
 			},
 		},
 
+	// Crossovers //////////////////////////////////////////////////////////
+
+		// Marry Morris: see Events
+		// Boarding House: see Events, Schedules, Maps
+
+
+		// Ridgeside Village
+		{
+			"LogName": "MR RSV Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_RSV.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasMod |contains=Rafseazz.RSVCP": true,
+			},
+		},
+
+		// East Scarp
+		{
+			"LogName": "MR ES Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_ES.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasMod |contains=LemurKat.EastScarpe.CP": true,
+			},
+		},
+
+		// Stray Catfe - Update
+		{
+			"LogName": "MR SC Update Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_SC.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasMod |contains=ch20youk.TSCCP": true,
+			},
+		},
+
+		// Part of a Saloon Breakfast
+		{
+			"LogName": "MR PoaSB Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_PoaSB.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasMod |contains=agentlyoko.stardropbreakfast": true,
+			},
+		},
+
 	// Maps //////////////////////////////////////////////////////////
 
 		{

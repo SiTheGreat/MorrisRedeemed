@@ -1,0 +1,26 @@
+{
+
+	// East Scarp Crossover Content
+	"Changes": [
+
+	// Schedule ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si MR East Scarp Schedule", // Custom_EastScarpe 21 102 0, 25 101 2; saturdays 0930-1700
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"When": {
+				"Weather|contains= Rain, Storm": false,
+			},
+			"Entries": {
+
+				"": "",
+
+			},
+		},
+	
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}
