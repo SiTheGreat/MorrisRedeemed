@@ -3,6 +3,21 @@
 	// East Scarp Crossover Content
 	"Changes": [
 
+	// Gift Tastes ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"LogName": "Si MR ES Gift Tastes",
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Si_MR_Morris", 1],
+			"Value": "{{spacechase0.JsonAssets/ObjectId:Rosa's Baklava}}",
+			"Delimiter": " "
+			},
+	},
+
 	// Schedule ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
