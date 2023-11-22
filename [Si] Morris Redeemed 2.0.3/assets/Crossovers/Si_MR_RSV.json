@@ -5,37 +5,74 @@
 
 	// Item Preferences ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 	// Festivals ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
-			"LogName": "Si MR RSV Schedule", // Custom_Ridgeside_RidgesideVillage 90 40 0, 90 48 2 (non-rainy 1000-2300)
+			"LogName": "Si MR BH RSV Schedule", // Custom_Ridgeside_RidgesideVillage 90 40 0, 90 48 2 (non-rainy 1000-2300)
 			"Action": "Load",
 			"Target": "Characters/schedules/Si_MR_Morris",
 			"When": {
+				"HasMod |contains=CPBoardingHouse": "true",
 				"Season |contains=Spring, Summer": true,
 				"Weather|contains= Rain, Storm": false,
 			},
 			"Entries": {
 
-				"": "",
+				"20": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/1010 Custom_Ridgeside_RidgesideVillage 90 40 0/1220 Custom_Ridgeside_RidgesideVillage 90 48 2/1840 Custom_BoardingHouse_BoardingHouse2 28 20 0",
 
 			},
 		},
 
 		{
-			"LogName": "Si MR RSV Schedule", // Custom_Ridgeside_LogCabinHotelLobby 40 15 0, 24 14 2 (maybe while June is around) (Malaya saturday 1600-2030; else 0800-1300) (June thursday/friday 1700-2100 saturday 1200-1500, 1700-1900)
+			"LogName": "Si MR BH RSV Schedule", // Custom_Ridgeside_LogCabinHotelLobby 40 15 0, 24 14 2 (cafe saturday 1600-2030; else 0800-1300) (piano thursday/friday 1700-2100 saturday 1200-1500, 1700-1900)
 			"Action": "Load",
 			"Target": "Characters/schedules/Si_MR_Morris",
 			"When": {
+				"HasMod |contains=CPBoardingHouse": "true",
 				"Season |contains=Fall, Winter": true,
+				"HasSeenEvent:hostPlayer |contains=75160249": true,
 			},
 			"Entries": {
 
-				"": "",
+				"20": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/720 Custom_BoardingHouse_BoardingHouse 19 5 0/810 Custom_BoardingHouse_BoardingHouse 16 5 0/920 Custom_BoardingHouse_BoardingHouse 18 5 0/1040 Custom_BoardingHouse_BoardingHouse 16 5 0/1150 Custom_BoardingHouse_BoardingHouse 17 5 0/1220 Custom_BoardingHouse_BoardingHouse 16 5 0/1340 Custom_BoardingHouse_BoardingHouse 19 9 3/1420 Custom_BoardingHouse_BoardingHouse 18 5 0/1510 Custom_BoardingHouse_BoardingHouse 19 5 0/1540 Custom_Ridgeside_LogCabinHotelLobby 40 15 0/1720 Custom_Ridgeside_LogCabinHotelLobby 24 14 2/2110 Custom_BoardingHouse_BoardingHouse2 28 20 0",
+
+			},
+		},
+
+
+
+		{
+			"LogName": "Si MR Non-BH RSV Schedule", // Custom_Ridgeside_RidgesideVillage 90 40 0, 90 48 2 (non-rainy 1000-2300)
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": "false",
+				"Season |contains=Spring, Summer": true,
+				"Weather|contains= Rain, Storm": false,
+			},
+			"Entries": {
+
+				"20": "0 Custom_Si_MR_Morris_CCRoom 4 6 0/1010 Custom_Ridgeside_RidgesideVillage 90 40 0/1220 Custom_Ridgeside_RidgesideVillage 90 48 2/1840 Custom_Si_MR_Morris_CCRoom 4 6 0",
+
+			},
+		},
+
+		{
+			"LogName": "Si MR Non-BH RSV Schedule", // Custom_Ridgeside_LogCabinHotelLobby 40 15 0, 24 14 2 (cafe saturday 1600-2030; else 0800-1300) (piano thursday/friday 1700-2100 saturday 1200-1500, 1700-1900)
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": "false",
+				"Season |contains=Fall, Winter": true,
+				"HasSeenEvent:hostPlayer |contains=75160249": true,
+			},
+			"Entries": {
+
+				"20": "0 Custom_Si_MR_Morris_CCRoom 4 6 0/1110 CommunityCenter 7 5 0/1250 CommunityCenter 4 5 0/1420 CommunityCenter 6 5 0/1510 CommunityCenter 4 5 0/1540 Custom_Ridgeside_LogCabinHotelLobby 40 15 0/1720 Custom_Ridgeside_LogCabinHotelLobby 24 14 2/2110 Custom_Si_MR_Morris_CCRoom 4 6 0",
 
 			},
 		},
