@@ -20,7 +20,101 @@
 
 	// Festivals ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	// Ridgeside Gathering
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall20",
+		"Entries": {
+			"Si_MR_Morris": "It's wonderful to see the next generation taking an interest in entrepreneurship. I just hope it doesn't go to their heads..."
+		},
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall20",
+		"TextOperations": [
+			{
+			"Operation": "Append",
+			"Target": ["Entries", "Set-Up_additionalCharacters"],
+			"Value": "Si_MR_Morris 71 46 2",
+			"Delimiter": "/"
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Entries", "MainEvent_additionalCharacters"],
+			"Value": "Si_MR_Morris 70 45 0",
+			"Delimiter": "/"
+			},
+		]
+	},
+
+	// Ember of Resolutions
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter28",
+		"Entries": {
+			"Si_MR_Morris": "It's freezing up here! I might stay at the inn for the night rather than going all the way back down the mountain..."
+		},
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter28",
+		"TextOperations": [
+			{
+			"Operation": "Append",
+			"Target": ["Entries", "Set-Up_additionalCharacters"],
+			"Value": "Si_MR_Morris 43 28 2",
+			"Delimiter": "/"
+			},
+		]
+	},
+
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Si_MR_Morris",
+		"Entries": {
+			"Custom_Ridgeside_RidgesideVillage": "I've been craving a Zesty Tuna all day!",
+		},
+		"When": {
+			"Season |contains=Spring": true,
+		},
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Si_MR_Morris",
+		"Entries": {
+			"Custom_Ridgeside_RidgesideVillage": "Have you tried the Honey Ginger Whitefish? Pika's is the best!",
+		},
+		"When": {
+			"Season |contains=Summer": true,
+		},
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Si_MR_Morris",
+		"Entries": {
+			"Custom_Ridgeside_RidgesideVillage": "Malaya makes some great Cranberry Cheesecake!",
+			"Custom_Ridgeside_LogCabinHotelLobby": "Sipping Clementine Juice and listening to June play is worth the long trek up the mountain.",
+		},
+		"When": {
+			"Season |contains=Fall": true,
+		},
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Si_MR_Morris",
+		"Entries": {
+			"Custom_Ridgeside_RidgesideVillage": "Try the Highland Blueberry Pie at the pastry shop, it's amazing!",
+			"Custom_Ridgeside_LogCabinHotelLobby": "It's a shame June is only here half the year, he plays beautifully.",
+		},
+		"When": {
+			"Season |contains=Winter": true,
+		},
+	},
 
 	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -55,8 +149,6 @@
 
 			},
 		},
-
-
 
 		{
 			"LogName": "Si MR Non-BH RSV Schedule", // Custom_Ridgeside_RidgesideVillage 90 40 0, 90 48 2 (non-rainy 1000-2300)
