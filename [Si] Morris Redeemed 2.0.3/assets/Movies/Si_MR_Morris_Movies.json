@@ -20,18 +20,14 @@
 						"SpecialResponses": {
 							"BeforeMovie": {
 								"ResponsePoint": null,
-								"Script": "TEXT HERE",
-								"Text": "TEXT HERE"
-							},
-							"DuringMovie": {
-								"ResponsePoint": "null",
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "Where will we be sitting?"
 							},
+							"DuringMovie": null
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "Hmm, a bit too juvenile for my tastes..."
 							}
 						},
 					},
@@ -46,42 +42,34 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "I hope we get good seats!"
 							},
-							"DuringMovie": {
-								"ResponsePoint": "null",
-								"Script": "",
-								"Text": "TEXT HERE"
-							},
+							"DuringMovie": null
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "Such beautiful images of nature!"
 							}
 						},
 					},
 
-					// Journey Of The Prairie King: The Motion Picture like
+					// Journey Of The Prairie King: The Motion Picture dislike
 					{
 						"Tag": "summer_movie_0",
 						"ID": "reaction_2",
-						"Response": "like",
+						"Response": "dislike",
 						"Whitelist": [],
 						"SpecialResponses": {
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "I'll let you pick the concessions."
 							},
-							"DuringMovie": {
-								"ResponsePoint": "null",
-								"Script": "",
-								"Text": "TEXT HERE"
-							},
+							"DuringMovie": null
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "Not very realistic, in my opinion."
 							}
 						},
 					},
@@ -96,17 +84,13 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "Where will we be sitting?"
 							},
-							"DuringMovie": {
-								"ResponsePoint": "null",
-								"Script": "",
-								"Text": "TEXT HERE"
-							},
+							"DuringMovie": null
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "Hmm, a bit too juvenile for my tastes..."
 							}
 						},
 					},
@@ -121,17 +105,13 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "Do you know who directed this one?"
 							},
-							"DuringMovie": {
-								"ResponsePoint": "null",
-								"Script": "",
-								"Text": "TEXT HERE"
-							},
+							"DuringMovie": null
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "Not particularly memorable, was it?"
 							}
 						},
 					},
@@ -140,23 +120,19 @@
 					{
 						"Tag": "fall_movie_1",
 						"ID": "reaction_5",
-						"Response": "like",
+						"Response": "dislike",
 						"Whitelist": [],
 						"SpecialResponses": {
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "Are you sure this is what we should watch?"
 							},
-							"DuringMovie": {
-								"ResponsePoint": "null",
-								"Script": "",
-								"Text": "TEXT HERE"
-							},
+							"DuringMovie": null
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "I'm not going to be able to sleep tonight..."
 							}
 						},
 					},
@@ -165,30 +141,26 @@
 					{
 						"Tag": "winter_movie_0",
 						"ID": "reaction_6",
-						"Response": "dislike",
+						"Response": "like",
 						"Whitelist": [],
 						"SpecialResponses": {
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "I'll let you pick the concessions."
 							},
-							"DuringMovie": {
-								"ResponsePoint": "null",
-								"Script": "",
-								"Text": "TEXT HERE"
-							},
+							"DuringMovie": null
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "Well that was enjoyable, don't you think?"
 							}
 						},
 					},
 
 					// The Zuzu City Express love
 					{
-						"Tag": "spring_movie_0",
+						"Tag": "winter_movie_1",
 						"ID": "reaction_7",
 						"Response": "love",
 						"Whitelist": [],
@@ -196,17 +168,13 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "I'm very excited for this one!"
 							},
-							"DuringMovie": {
-								"ResponsePoint": "null",
-								"Script": "",
-								"Text": "TEXT HERE"
-							},
+							"DuringMovie":null
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "TEXT HERE"
+								"Text": "What moving cinematography! A classic for the ages."
 							}
 						},
 					},
@@ -225,9 +193,9 @@
 			"Entries": {
 				"Si_MR_Morris": {
 					"Name": "Morris",
-					"LovedTags": ["Salted Peanuts", "Hummus Snack Pack", "Panzanella Salad", "Truffle Popcorn"],
+					"LovedTags": ["Salted Peanuts", "Stardrop Sorbet", "Panzanella Salad", "Truffle Popcorn", "Salmon Burger"],
 					"LikedTags": ["Cappuccino Mousse Cake", "Joja Cola", "Popcorn"],
-					"DislikedTags": ["JojaCorn", "Hummus Snack Pack", "Kale Smoothie"]
+					"DislikedTags": ["JojaCorn", "Kale Smoothie", "Jawbreaker"]
 				}
 			}
 		}
