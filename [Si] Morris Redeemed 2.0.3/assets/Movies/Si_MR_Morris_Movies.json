@@ -23,7 +23,7 @@
 								"Script": "",
 								"Text": "Where will we be sitting?"
 							},
-							"DuringMovie": null
+							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
@@ -44,7 +44,7 @@
 								"Script": "",
 								"Text": "I hope we get good seats!"
 							},
-							"DuringMovie": null
+							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
@@ -65,7 +65,7 @@
 								"Script": "",
 								"Text": "I'll let you pick the concessions."
 							},
-							"DuringMovie": null
+							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
@@ -86,7 +86,7 @@
 								"Script": "",
 								"Text": "Where will we be sitting?"
 							},
-							"DuringMovie": null
+							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
@@ -107,7 +107,7 @@
 								"Script": "",
 								"Text": "Do you know who directed this one?"
 							},
-							"DuringMovie": null
+							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
@@ -128,7 +128,7 @@
 								"Script": "",
 								"Text": "Are you sure this is what we should watch?"
 							},
-							"DuringMovie": null
+							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
@@ -149,7 +149,7 @@
 								"Script": "",
 								"Text": "I'll let you pick the concessions."
 							},
-							"DuringMovie": null
+							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
@@ -170,7 +170,7 @@
 								"Script": "",
 								"Text": "I'm very excited for this one!"
 							},
-							"DuringMovie":null
+							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
