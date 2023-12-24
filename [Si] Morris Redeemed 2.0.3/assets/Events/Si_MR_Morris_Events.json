@@ -130,8 +130,10 @@
 	},
 
 	// Event 19, movie event 1
+	// m & lewis in town; f enters, m & l standing in front of theater, L 'I'm proud of how well the theater is doing, it's become part of our community building efforts', m 'I'm glad you decided to make use of the old joja buildibg, but was this really the most practical application for it? You could have made a proper school, or a bigger hospital, or expanded the museum. A movie theater won't generate much revenue in such a small town', L 'i thought you'd moved past focusing on profit', m 'i have. But you have a town to run lewis! Building a community requires resources, you can't expect everything to fall in your lap by way of luck or philanthropy. I've seen pelican town's financial reports, and there are plenty of ways the funds could be used much more effectively', L 'I don't know... f what do you think?', f 'i think we should give him a chance' (m 'i won't let you down,you'll see!') 'I'm not sure we should give him any financial responsibilities' (m 'I'll show you! I'm going to help you whether you like it or not!')
 
 	// Event 20, movie event 2
+	// 2 weeks later: m & lewis in cc; m behind desk, lots of emotes ... ! ... :), L standing in front of office, f joins him, m emotes continue, L 'he's actually done a pretty good job with the town funds. He's improved our economic flow and earmarked funds for other improvements and events. And he does seem happy to be putting that mba to use for us... I guess it all worked out' '...' 'He's still pretty smug about it though.'
 
 	]
 }
