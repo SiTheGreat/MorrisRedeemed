@@ -1,0 +1,19 @@
+{
+	"Changes": [
+
+	// Crossover Events With Jean and Jorts the Helper Cats by Tiakall
+
+	{
+	// Event 21, Crossover 05; Event ID 26220121
+	"LogName": "Morris Redeemed/Jean and Jorts Scene",
+	"Action": "EditData",
+	"Target": "Data/Events/Town",
+	"Entries": {
+		""
+		}
+	},
+
+
+	]
+},
+
