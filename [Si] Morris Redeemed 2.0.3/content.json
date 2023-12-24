@@ -1,6 +1,21 @@
 {
 
 	"Format": "1.26.0",
+
+	// Config //////////////////////////////////////////////////////////
+
+	"ConfigSchema":{
+
+		"CrossoverContent": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When enabled, Morris will have crossover events and follow crossover schedules for certain mods (see Nexus description for details)."
+		},
+
+	},
+
+	// Content //////////////////////////////////////////////////////////
+
 	"Changes": [
 
 	// Images //////////////////////////////////////////////////////////
