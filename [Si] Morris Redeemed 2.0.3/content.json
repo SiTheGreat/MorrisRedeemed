@@ -307,6 +307,7 @@
 				"Relationship:MorrisTod": "Friendly",
 				"IsCommunityCenterComplete": true,
 				"Year |contains=1": false
+				"CrossoverContent": true,
 			},
     		},
 
@@ -366,6 +367,7 @@
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220107": true,
 				"HasMod |contains=Rafseazz.RSVCP": true,
+				"CrossoverContent": true,
 			},
 		},
 
@@ -377,6 +379,7 @@
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220107": true,
 				"HasMod |contains=LemurKat.EastScarpe.CP": true,
+				"CrossoverContent": true,
 			},
 		},
 
@@ -388,6 +391,7 @@
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220107": true,
 				"HasMod |contains=ch20youk.TSCCP": true,
+				"CrossoverContent": true,
 			},
 		},
 
@@ -399,6 +403,7 @@
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220107": true,
 				"HasMod |contains=agentlyoko.stardropbreakfast": true,
+				"CrossoverContent": true,
 			},
 		},
 
@@ -410,6 +415,7 @@
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220107": true,
 				"HasMod |contains=ch20youk.TricksAndTreats": true,
+				"CrossoverContent": true,
 			},
 		},
 
