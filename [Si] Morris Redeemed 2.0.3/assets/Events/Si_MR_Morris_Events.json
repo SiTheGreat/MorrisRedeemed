@@ -119,5 +119,19 @@
 		}
 	},
 
+	{
+	// Event 18, Bonus 04; Event ID 26220118
+	"LogName": "Morris Redeemed Bonus Scene 04",
+	"Action": "EditData",
+	"Target": "Data/Events/MovieTheater",
+	"Entries": {
+		"26220118/f Si_MR_Morris 2000/e 26220106/p Si_MR_Morris": "none/-1000 -1000/farmer -100 -100 2/addConversationTopic SiMorrisTheater 7/end"
+		}
+	},
+
+	// Event 19, movie event 1
+
+	// Event 20, movie event 2
+
 	]
 }
