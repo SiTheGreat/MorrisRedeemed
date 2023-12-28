@@ -9,28 +9,9 @@
 	"Action": "EditData",
 	"Target": "Data/Events/Town",
 	"Entries": {
-		""
+		"26220121/e 26220106/e 963070001/w sunny/p JortsCat/p JeanCat/p Si_MR_Morris/t 900 1800": "continue/44 26/farmer 45 26 3 Si_MR_Morris 43 26 1 JortsCat 31 20 1 JeanCat 32 20 1/skippable/fade/pause 200/move Si_MR_Morris 3 0 0/emote Si_MR_Morris 16/faceDirection Si_MR_Morris 1/move Si_MR_Morris 3 true/faceDirection farmer 0/emote Farmer 8/pause 300/move farmer 0 3 0 true/emote Si_MR_Morris 12/pause 300/emote farmer 8/pause 200/speak Si_MR_Morris \"You see those two cats over there?$3#$b#They used to terrorize me when I worked for Joja.$3#$b#They'd step all over the produce, knock items off the shelves, and yowl at customers.$3#$b#I swear they were mocking me!$3#$b#Why are there so many cats in this town anyway?$3\"/pause 200/emote farmer 28/pause 200/quickQuestion #Are you seriously holding a grudge against cats?#I take it you're a dog person.(break)speak Si_MR_Morris \"They started it!$3\"(break)speak Si_MR_Morris \"They're loyal and can be trained!$3#$b#Cats are neither of those things.$3\"/pause 300/emote JortsCat 8/emote JeanCat 8/pause 100/move JeanCat 3 0 0 true/move JortsCat 3 0 0/pause 400/speak JortsCat \"Hi @!\"/pause 100/speak JeanCat \"Is that Morris?\"/pause 200/emote Si_MR_Morris 16/pause 100/move Si_MR_Morris 1 0 0/speak Si_MR_Morris \"Stay back!$3#$b#I know what you cretins are capable of!$3/pause 200/speak JortsCat \"He remembers us!\"/pause 200/emote farmer 28/pause 200/quickQuestion #This is Jean and that is Jorts.#This is Jorts and that is Jean.(break)speak Si_MR_Morris \"You KNOW them?!$3\"(break)speak Si_MR_Morris \"I don't care what their names are, keep them away from  me!\"/pause 200/speak JeanCat "Oh he definitely remembers us.\"/pause 200/quickQuestion #Relax, they're not going to hurt you, they're friendly.#They're very sweet once you get used to them.(break)\"speak JortsCat \"Yeah, we're super friendly!\"(break)speak JeanCat \"Indeed, we have no wish to be enemies.\"/pause 200/emote Si_MR_Morris 40/pause 200/speak Si_MR_Morris \"It's true they haven't bothered me since I returned...$3\"/pause 200/emote JeanCat 56/emote JortsCat 32/pause 200/speak Si_MR_Morris \"But I'm keeping my eye on you two!$3\"/pause 200/emote farmer 28/end/fade",
 		}
 	},
-
-
-
-
-//jj hanging out, f standing around, m walks up, !, turns around and hides behind a corner, disgruntled, f ?, f walks over, f ?, m disgruntled, m 'you see those two cats? They used to terrorize me when I worked at joja. They'd step all over the produce, knock items off the shelves, and yowl at customers. I swear they were mocking me! Why are there so many cats in this town anyway?!', f sweatdrop, f 'i take it you're a dog person' (m 'they can be trained and they're loyal! Cats are neither of those things') 'are you seriously holding a grudge against cats?' (m 'they started it!'), jj turn ??, walk over, j 'hi f!', j 'is that morris?', m !, m moves back, m 'stay back! I know what you cretins are capable of!', j 'he remembers us!', f sweatdrops, f 'm, this is jean and that is jorts' (m 'you KNOW them?!'), 'm, this is jorts and that is jean' (m 'i don't care what their names are, keep them away from me!'), j 'oh he definitely remembers us', f 'relax, they're not going to hurt you, they're friendly' (j 'yeah, we're super friendly!'), 'they're sweet once you get to know them' (j 'indeed, we have no wish to be enemies'), m ..., m 'it's true they haven't bothered me since i returned...', jj <3 :), m 'but I'm keeping my eye on you two!'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	]
 },
