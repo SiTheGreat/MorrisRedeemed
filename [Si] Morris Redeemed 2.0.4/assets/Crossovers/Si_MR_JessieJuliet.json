@@ -35,7 +35,7 @@
 
 
 
-// L good evening mr morris; m evening linus and um ... you look fmiliar; j yes, from Joja; m oh! right. um... good to see you again?; j you do seem to be in good spirits; m wll i suppse getting away from joj has been good for me; j indeed; m ...has it for you too?; j yes; j it seems much as changed for your outlook on the world; m yeah exactly! i wish she'd understand that!; j juliet?; m ...; j much has changed for her too. both of you have grown beyond joja, in different ways. it may be hard to see on your own, but perhaps together you can come to understand that.
+// L good evening mr morris; m evening linus and um ... you look fmiliar; j yes, from Joja; m oh! right. um... good to see you again?; j you do seem to be in good spirits; m wll i suppse getting away from joj has been good for me; j indeed; m ...has it for you too?; j yes; m good good ...; j it seems much as changed for your outlook on the world; m yeah exactly! i wish she'd understand that!; j juliet?; m ...; j much has changed for her too. both of you have grown beyond joja, in different ways. it may be hard to see on your own, but perhaps together you can come to understand that.
 
 
 
@@ -46,20 +46,28 @@
 	"Action": "EditData",
 	"Target": "Data/Events/Town",
 	"Entries": {
-		"26220116/w sunny": "continue/44 26/farmer 45 26 3 Si_MR_Morris 43 26 1 Juliet 32 20 1/skippable/fade/pause 200/
-
-/end/fade",
+		"26220116/w sunny": "continue/96 55/farmer 88 61 0 Si_MR_Morris 89 61 0 Juliet 97 55 0/skippable/fade/pause 100/move farmer 0 -3 0 true/move Si_MR_Morris 0 -3 0 true/pause 300/emote Si_MR_Morris 16/pause 100/speak Si_MR_Morris\"Wait here.$3\"/pause 200/faceDirection farmer 1/move Si_MR_Morris 7 0 0/move Si_MR_Morris 0 -3 0/pause 200/emote Si_MR_Morris 40/pause 200/speak Si_MR_Morris \"Listen, I-$3\"/speak Juliet \"Save it.$5\"/pause 300/speak Juliet \"You hurt me.$5#$b#I need you to understand and accept that.$5\"/pause 200/emote Si_MR_Morris 40/pause 200/speak Si_MR_Morris \"You are right.$3#$b#Joja was my excuse, but ultimately it was my words and actions that caused you pain, and I need to take responsibility for that.$3#$b#I am sorry.$3\"/pause 100/emote Juliet 40/pause 200/speak Juliet \"I shouldn't have acted out while I was working for you.$3#$b#It wasn't your fault I was there.$3#$b#We were both just cogs stuck in a big, greasy, corporate machine.$3\"/pause 200/speak Si_MR_Morris \"I'm sorry I tried to use your past against you.$3#$b#I had no right.$3#$b#I promise I will do better.\"/pause 200/speak Juliet \"It's a start.$3\"/pause 300/speak Juliet \"I'll forgive you.#$b#But that doesn't mean we're all buddy buddy now!$5#$b#I'm just tolerating you so I don't have to awkwardly avoid @!$3\"/ause 200/emote Si_MR_Morris 28/pause 200/globalFade/viewport -1000 -1000/pause 400/message \"'Perhaps this is a good place for redemption for both of us.'\"/end/fade",
 		}
 	},
 
 
-
-// m i'll be right back; ...; m listen, i...; j you hurt me, and I need you to understand and accept that;  you are right. joja was my excuse, but ultimately it was all me/my actions.; j i'm sorry for acting out while wotking for joja, it wasn't your fault i was sent there. you were just a victim of a corporate shill too.; j I'm sorry i tried to use your past aginst you. i had no right.; j i forgive you. but that doesn't mean we're all buddy buddy now! im just tolerating you so i don't have to awkwardly avoid the farmer!; m sweat laugh; fade to black; box 'perhaps this is a good place for redemption for both of us'
-
-
-
-
-
 	]
 },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
