@@ -9,7 +9,7 @@
 		"CrossoverContent": {
 			"AllowValues": "true, false",
 			"Default": "true",
-			"Description": "When enabled, Morris will have crossover events and follow crossover schedules for certain mods (see Nexus description for details)."
+			"Description": "When enabled, Morris will have crossover content when certain mods are installed (see Nexus description for details)."
 		},
 
 	},
@@ -110,17 +110,17 @@
 			},
 		},
 
-		{
-			"LogName": "MR End Custom NPC Exclusions",
-			"Action": "EditData",
-			"Target": "Data/CustomNPCExclusions",
-			"Entries": {
-				"Si_MR_Morris": "MovieInvite"
-			},
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220106": true
-			},
-		},
+		//{
+			//"LogName": "MR End Custom NPC Exclusions",
+			//"Action": "EditData",
+			//"Target": "Data/CustomNPCExclusions",
+			//"Entries": {
+				//"Si_MR_Morris": "MovieInvite"
+			//},
+			//"When": {
+				//"HasSeenEvent:hostPlayer |contains=26220106": true
+			//},
+		//},
 
 	// Schedules //////////////////////////////////////////////////////////
 
@@ -297,20 +297,6 @@
 			},
     		},
 
-		{
-			// Crossover Events for Marry Morris
-			"LogName": "MR MM Crossover Events",
-			"Action": "Include",
-			"FromFile": "assets/Events/Si_MR_Morris_MMEvents.json",
-			"When": {
-				"HasMod |contains=Yoshimax.MarryMorris": true,
-				"Relationship:MorrisTod": "Friendly",
-				"IsCommunityCenterComplete": true,
-				"Year |contains=1": false
-				"CrossoverContent": true,
-			},
-    		},
-
 	// Mail //////////////////////////////////////////////////////////
 
 		{
@@ -319,6 +305,17 @@
 			"FromFile": "assets/Mail/Si_MR_Morris_Mail.json",
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220101": true
+			},
+    		},
+
+	// Movies //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "MR Movie Preferences",
+			"Action": "Include",
+			"FromFile": "assets/Movies/Si_MR_Morris_Movies.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true
 			},
     		},
 
@@ -355,9 +352,21 @@
 
 	// Crossovers //////////////////////////////////////////////////////////
 
-		// Marry Morris: see Events
 		// Boarding House: see Events, Schedules, Maps
 
+		// Marry Morris
+		{
+			"LogName": "MR MM Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Events/Si_MR_Morris_MMEvents.json",
+			"When": {
+				"HasMod |contains=Yoshimax.MarryMorris": true,
+				"Relationship:MorrisTod": "Friendly",
+				"IsCommunityCenterComplete": true,
+				"Year |contains=1": false
+				"CrossoverContent": true,
+			},
+    		},
 
 		// Ridgeside Village
 		{
@@ -365,7 +374,7 @@
 			"Action": "Include",
 			"FromFile": "assets/Crossovers/Si_MR_RSV.json",
 			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
 				"HasMod |contains=Rafseazz.RSVCP": true,
 				"CrossoverContent": true,
 			},
@@ -377,7 +386,7 @@
 			"Action": "Include",
 			"FromFile": "assets/Crossovers/Si_MR_ES.json",
 			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
 				"HasMod |contains=LemurKat.EastScarpe.CP": true,
 				"CrossoverContent": true,
 			},
@@ -389,7 +398,7 @@
 			"Action": "Include",
 			"FromFile": "assets/Crossovers/Si_MR_SC.json",
 			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
 				"HasMod |contains=ch20youk.TSCCP": true,
 				"CrossoverContent": true,
 			},
@@ -401,7 +410,7 @@
 			"Action": "Include",
 			"FromFile": "assets/Crossovers/Si_MR_PoaSB.json",
 			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
 				"HasMod |contains=agentlyoko.stardropbreakfast": true,
 				"CrossoverContent": true,
 			},
@@ -413,8 +422,32 @@
 			"Action": "Include",
 			"FromFile": "assets/Crossovers/Si_MR_TaT.json",
 			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220107": true,
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
 				"HasMod |contains=ch20youk.TricksAndTreats": true,
+				"CrossoverContent": true,
+			},
+		},
+
+		// Juliet and Jessie
+		{
+			"LogName": "MR Juliet and Jessie Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_JessieJuliet.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=LemurKat.JulietHouse.NPC": true,
+				"CrossoverContent": true,
+			},
+		},
+
+		// Jean and Jorts
+		{
+			"LogName": "MR Jean and Jorts Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_JeanJorts.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=tiakall.jortsandjean": true,
 				"CrossoverContent": true,
 			},
 		},
