@@ -119,5 +119,45 @@
 		}
 	},
 
+	{
+	// Event 18, Bonus 04; Event ID 26220118
+	"LogName": "Morris Redeemed Bonus Scene 04",
+	"Action": "EditData",
+	"Target": "Data/Events/MovieTheater",
+	"Entries": {
+		"26220118/f Si_MR_Morris 2000/e 26220106/p Si_MR_Morris": "none/-1000 -1000/farmer -100 -100 2/addConversationTopic SiMorrisTheater 7/end"
+		}
+	},
+
+	// Event 19, movie event 1; all three standing in front of theater
+	// "26220119/p Si_MR_Morris/p Lewis/e 26220118/w sunny/t 900 1800/A SiMorrisTheater": "continue/10 11/farmer 7 14 1 Si_MR_Morris 10 11 3 Lewis 10 12 3/addConversationTopic SiMorrisEcon 14/skippable/fade/pause 300/speak Lewis \"I'm proud of how well the movie theater is doing.#$b#It's become a significant part of our community building efforts.\"/pause 200/speak Si_MR_Morris \"I'm glad you've found a use for the old Joja building.#$b#But was this really the most practical application for it?$3#$b#You could have built a proper school, or a larger hospital, or expanded the museum.$3#$b#A movie theater won't generate much revenue in such a small town.$3\"/pause 200/speak Lewis \"I thought you'd moved past focusing on profit, Morris.\"/pause 200/speak Si_MR_Morris \"I have.$3#$b#But you have a town to run Lewis!$3#$b#Building a community requires resources, you can't just expect everything to fall in your lap by way of luck or philanthropy.$3#$b#I've seen Pelican Town's financial reports, and there are plenty of ways the funds could be used much more effectively.$3\"/pause 200/emote Lewis 40/pause 200/speak Lewis \"I don't know...#$b#@, what do you think?\"/pause 200/quickQuestion #I think we should give him a chance.#I'm not sure if we should give him any financial responsibilities.(break)speak Si_MR_Morris \"I won't let you down, you'll see!$1\"(break)speak Si_MR_Morris \"I'll show you!$3#$b#I'm going to help you whether you like it or not!\"/pause 200/end/fade",
+
+	// Event 20, movie event 2; in comm center, m behind desk, f and L in front of doorway
+	// "26220120/p Si_MR_Morris/p Lewis/e 26220119/w sunny/A SiMorrisEcon": "continue/10 11/farmer 7 14 1 Si_MR_Morris 10 11 3 Lewis 10 12 3/skippable/fade/pause 300/emote Si_MR_Morris 56/pause 200/speak Lewis \"You know, he's actually doing a good job handling the town accounts.#$b#He's improved our economic flow and earmarked funds for various events and improvements.#$b#And he does seem happy to be putting that MBA to good use for our community.\"/pause 100/move Si_MR_Morris 3 0 0/emote Lewis 40/pause 200/emote Si_MR_Morris 56/speak Lewis \"I guess it all worked out.$1\"/pause 200/emote farmer 32/pause 100/move Si_MR_Morris -3 0 0/emote Si_MR_Morris 56/speak Lewis \"He's still pretty smug about it though...$5\"/pause 200/emote farmer 28/pause 300/end/fade",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	]
 }

@@ -1,0 +1,205 @@
+{
+	"Changes": [
+
+		// Movie Tastes
+		{
+			"LogName": "MR Morris Movie Tastes",
+			"Action": "EditData",
+			"Target": "Data/MoviesReactions",
+			"Entries": {
+				"Si_MR_Morris": {
+					"NPCName": "Morris",
+					"Reactions": [
+
+					// Brave Little Sapling dislike
+					{
+						"Tag": "spring_movie_0",
+						"ID": "reaction_0",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Where will we be sitting?"
+							},
+							"DuringMovie": null,
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Hmm, a bit too juvenile for my tastes..."
+							}
+						},
+					},
+
+					// Natural Wonders: Exploring Our Vibrant World love
+					{
+						"Tag": "spring_movie_1",
+						"ID": "reaction_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "I hope we get good seats!"
+							},
+							"DuringMovie": null,
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Such beautiful images of nature!"
+							}
+						},
+					},
+
+					// Journey Of The Prairie King: The Motion Picture dislike
+					{
+						"Tag": "summer_movie_0",
+						"ID": "reaction_2",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "I'll let you pick the concessions."
+							},
+							"DuringMovie": null,
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Not very realistic, in my opinion."
+							}
+						},
+					},
+
+					// Wumbus dislike
+					{
+						"Tag": "summer_movie_1",
+						"ID": "reaction_3",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Where will we be sitting?"
+							},
+							"DuringMovie": null,
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Hmm, a bit too juvenile for my tastes..."
+							}
+						},
+					},
+
+					// Mysterium dislike
+					{
+						"Tag": "fall_movie_0",
+						"ID": "reaction_4",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Do you know who directed this one?"
+							},
+							"DuringMovie": null,
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Not particularly memorable, was it?"
+							}
+						},
+					},
+
+					// It Howls In The Rain like
+					{
+						"Tag": "fall_movie_1",
+						"ID": "reaction_5",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Are you sure this is what we should watch?"
+							},
+							"DuringMovie": null,
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "I'm not going to be able to sleep tonight..."
+							}
+						},
+					},
+
+					// The Miracle At Coldstar Ranch like
+					{
+						"Tag": "winter_movie_0",
+						"ID": "reaction_6",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "I'll let you pick the concessions."
+							},
+							"DuringMovie": null,
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Well that was enjoyable, don't you think?"
+							}
+						},
+					},
+
+					// The Zuzu City Express love
+					{
+						"Tag": "winter_movie_1",
+						"ID": "reaction_7",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "I'm very excited for this one!"
+							},
+							"DuringMovie": null,
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "What moving cinematography! A classic for the ages."
+							}
+						},
+					},
+					],
+
+				},
+			},
+
+		},
+
+		// Concession Tastes
+		{
+			"LogName": "MR Morris Concession Tastes",
+			"Action": "EditData",
+			"Target": "Data/ConcessionTastes",
+			"Entries": {
+				"Si_MR_Morris": {
+					"Name": "Morris",
+					"LovedTags": ["Salted Peanuts", "Stardrop Sorbet", "Panzanella Salad", "Truffle Popcorn", "Salmon Burger"],
+					"LikedTags": ["Cappuccino Mousse Cake", "Joja Cola", "Popcorn"],
+					"DislikedTags": ["JojaCorn", "Kale Smoothie", "Jawbreaker"]
+				}
+			}
+		}
+
+	]
+}
+

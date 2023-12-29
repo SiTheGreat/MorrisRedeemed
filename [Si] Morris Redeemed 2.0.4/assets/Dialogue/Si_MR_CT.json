@@ -2,6 +2,9 @@
 
 	// Conversation Topic Entries
 
+	// Currently includes: Pierre, Pam, Lewis, Shane, Sam, Linus
+
+
 	"Changes": [
 
 
@@ -45,6 +48,50 @@
 	"SiMorrisCC": "I hope having Morris work in the community center is a good idea...",
 	"SiMorrisFriendly": "Morris seems to be settling in well.",
 	"SiMorrisTod": "I thought I saw Morris at the library just now, but he's supposed to be on duty in the community center and he's never missed a shift.#$e#Maybe he took a break?",
+
+		},
+	},
+
+
+	{
+		"LogName": "MR Shane Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Shane",
+		"Entries": {
+
+	"SiMorrisReturns": "Not gonna lie, I was kind of hoping I'd never see Morris around here again...$2",
+	"SiMorrisCC": "Morris working at the community center?#$b#That'll never last.",
+	"SiMorrisFriendly": "I still don't like how Morris stuck around, but I guess I can deal with it.$2",
+	"SiMorrisTod": "I thought I saw two Morrises at once today.#$b#That would be a nightmare...",
+
+		},
+	},
+
+
+	{
+		"LogName": "MR Sam Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Sam",
+		"Entries": {
+
+	"SiMorrisReturns": "Morris wasn't a bad boss, but he wasn't a good one either.#$b#He paid on time and didn't make us stay past hours, but that's the best I can say about him.",
+	"SiMorrisCC": "For better or worse, Morris always took his job seriously.#$b#So I'm not worried about whether he'll take care of the community center.#$b#I'm more worried about how the community will deal with him.",
+	"SiMorrisFriendly": "I think leaving Joja helped Morris lighten up a lot.#$b#He says hi whenever I see him in the museum these days.",
+	"SiMorrisTod": "Everyone's talking about two Morrises walking around...#$b#Do you know anything about that?",
+
+		},
+	},
+
+	{
+		"LogName": "MR Linus Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Linus",
+		"Entries": {
+
+	"SiMorrisReturns": "I hear Morris has returned to the valley.#$b#I wish him well.",
+	"SiMorrisCC": "Hmm, so Morris is working at the community center?#$b#That is an interesting turn of events.",
+	"SiMorrisFriendly": "Morris and I have been trying some new fish recipes together.#$b#You should join us.",
+	"SiMorrisTod": "I've seen Morris around much more often lately.#$b#Someimes he is friendly, and others distant.#$b#Perhaps I should ask him about that.",
 
 		},
 	},
