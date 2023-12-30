@@ -319,6 +319,14 @@
 			},
     		},
 
+		{
+			// Locations file for Movie Theater
+			"LogName": "Si MR Theater Events File",
+			"Action": "Load",
+			"Target": "Data/Events/MovieTheater",
+			"FromFile": "assets/Movies/Si_MR_TheaterEvents.json",
+		},
+
 	// Festivals //////////////////////////////////////////////////////////
 
 		{

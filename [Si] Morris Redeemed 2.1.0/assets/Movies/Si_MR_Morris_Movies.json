@@ -8,7 +8,7 @@
 			"Target": "Data/MoviesReactions",
 			"Entries": {
 				"Si_MR_Morris": {
-					"NPCName": "Morris",
+					"NPCName": "Si_MR_Morris",
 					"Reactions": [
 
 					// Brave Little Sapling dislike
@@ -21,13 +21,13 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "Where will we be sitting?"
+								"Text": "Where will we be sitting?",
 							},
 							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "Hmm, a bit too juvenile for my tastes..."
+								"Text": "Hmm, a bit too juvenile for my tastes...",
 							}
 						},
 					},
@@ -42,13 +42,13 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "I hope we get good seats!"
+								"Text": "I hope we get good seats!",
 							},
 							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "Such beautiful images of nature!"
+								"Text": "Such beautiful images of nature!",
 							}
 						},
 					},
@@ -63,13 +63,13 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "I'll let you pick the concessions."
+								"Text": "I'll let you pick the concessions.",
 							},
 							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "Not very realistic, in my opinion."
+								"Text": "Not very realistic, in my opinion.",
 							}
 						},
 					},
@@ -84,13 +84,13 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "Where will we be sitting?"
+								"Text": "Where will we be sitting?",
 							},
 							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "Hmm, a bit too juvenile for my tastes..."
+								"Text": "Hmm, a bit too juvenile for my tastes...",
 							}
 						},
 					},
@@ -105,13 +105,13 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "Do you know who directed this one?"
+								"Text": "Do you know who directed this one?",
 							},
 							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "Not particularly memorable, was it?"
+								"Text": "Not particularly memorable, was it?",
 							}
 						},
 					},
@@ -126,13 +126,13 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "Are you sure this is what we should watch?"
+								"Text": "Are you sure this is what we should watch?",
 							},
 							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "I'm not going to be able to sleep tonight..."
+								"Text": "I'm not going to be able to sleep tonight...",
 							}
 						},
 					},
@@ -147,13 +147,13 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "I'll let you pick the concessions."
+								"Text": "I'll let you pick the concessions.",
 							},
 							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "Well that was enjoyable, don't you think?"
+								"Text": "Well that was enjoyable, don't you think?",
 							}
 						},
 					},
@@ -168,13 +168,13 @@
 							"BeforeMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "I'm very excited for this one!"
+								"Text": "I'm very excited for this one!",
 							},
 							"DuringMovie": null,
 							"AfterMovie": {
 								"ResponsePoint": null,
 								"Script": "",
-								"Text": "What moving cinematography! A classic for the ages."
+								"Text": "What moving cinematography! A classic for the ages.",
 							}
 						},
 					},
@@ -192,10 +192,10 @@
 			"Target": "Data/ConcessionTastes",
 			"Entries": {
 				"Si_MR_Morris": {
-					"Name": "Morris",
+					"Name": "Si_MR_Morris",
 					"LovedTags": ["Salted Peanuts", "Stardrop Sorbet", "Panzanella Salad", "Truffle Popcorn", "Salmon Burger"],
 					"LikedTags": ["Cappuccino Mousse Cake", "Joja Cola", "Popcorn"],
-					"DislikedTags": ["JojaCorn", "Kale Smoothie", "Jawbreaker"]
+					"DislikedTags": ["JojaCorn", "Kale Smoothie", "Jawbreaker", "Fries"]
 				}
 			}
 		}
