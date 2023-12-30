@@ -363,7 +363,7 @@
 				"HasMod |contains=Yoshimax.MarryMorris": true,
 				"Relationship:MorrisTod": "Friendly",
 				"IsCommunityCenterComplete": true,
-				"Year |contains=1": false
+				"Year |contains=1": false,
 				"CrossoverContent": true,
 			},
     		},
