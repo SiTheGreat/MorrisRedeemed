@@ -115,7 +115,7 @@
 	"Action": "EditData",
 	"Target": "Data/Events/Mountain",
 	"Entries": {
-		"26220110/f Si_MR_Morris 2500/e 26220107/e 26220108/e 26220109/e 26220111/t 2000 2300/w sunny": "continue/24 12/Si_MR_Morris 28 9 1 Linus 30 9 3 farmer -100 100 2/skippable/fade/playSound cracklingFire/pause 400/speak Si_MR_Morris \"These maki rolls are absolutely delicious!\"/speak Si_MR_Morris \"What's your secret, Linus?\"/pause 400/speak Linus \"It's all what the valley provides, Mr. Morris.\"/playSound cracklingFire/pause 400/speak Linus \"You know, you've come a long way since you returned here.\"/speak Si_MR_Morris \"It was pretty tough, I admit.$3\"/speak Si_MR_Morris \"But I guess this is a pretty good place for starting over.\"/playSound cracklingFire/pause 500/speak Linus \"For what it's worth, I'm proud of you.\"/pause 400/playSound cracklingFire/pause 100/playSound cracklingFire/end/fade"
+		"26220110/f Si_MR_Morris 2500/e 26220107/e 26220108/e 26220109/e 26220111/e 26220120/t 2000 2300/w sunny": "continue/24 12/Si_MR_Morris 28 9 1 Linus 30 9 3 farmer -100 100 2/skippable/fade/playSound cracklingFire/pause 400/speak Si_MR_Morris \"These maki rolls are absolutely delicious!\"/speak Si_MR_Morris \"What's your secret, Linus?\"/pause 400/speak Linus \"It's all what the valley provides, Mr. Morris.\"/playSound cracklingFire/pause 400/speak Linus \"You know, you've come a long way since you returned here.\"/speak Si_MR_Morris \"It was pretty tough, I admit.$3\"/speak Si_MR_Morris \"But I guess this is a pretty good place for starting over.\"/playSound cracklingFire/pause 500/speak Linus \"For what it's worth, I'm proud of you.\"/pause 400/playSound cracklingFire/pause 100/playSound cracklingFire/end/fade"
 		}
 	},
 
@@ -134,28 +134,6 @@
 
 	// Event 20, movie event 2; in comm center, m behind desk, f and L in front of doorway
 	// "26220120/p Si_MR_Morris/p Lewis/e 26220119/w sunny/A SiMorrisEcon": "continue/10 11/farmer 7 14 1 Si_MR_Morris 10 11 3 Lewis 10 12 3/skippable/fade/pause 300/emote Si_MR_Morris 56/pause 200/speak Lewis \"You know, he's actually doing a good job handling the town accounts.#$b#He's improved our economic flow and earmarked funds for various events and improvements.#$b#And he does seem happy to be putting that MBA to good use for our community.\"/pause 100/move Si_MR_Morris 3 0 0/emote Lewis 40/pause 200/emote Si_MR_Morris 56/speak Lewis \"I guess it all worked out.$1\"/pause 200/emote farmer 32/pause 100/move Si_MR_Morris -3 0 0/emote Si_MR_Morris 56/speak Lewis \"He's still pretty smug about it though...$5\"/pause 200/emote farmer 28/pause 300/end/fade",
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

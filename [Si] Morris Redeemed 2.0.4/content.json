@@ -411,6 +411,7 @@
 			"FromFile": "assets/Crossovers/Si_MR_PoaSB.json",
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasSeenEvent:hostPlayer |contains=177755": true,
 				"HasMod |contains=agentlyoko.stardropbreakfast": true,
 				"CrossoverContent": true,
 			},
