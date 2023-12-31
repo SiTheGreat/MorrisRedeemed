@@ -10,6 +10,9 @@
 		"LogName": "Si MR PoaSB Gift Tastes",
 		"Action": "EditData",
 		"Target": "Data/NPCGiftTastes",
+		"When": {
+			"HasMod |contains=spacechase0.JsonAssets": "true",
+		},
 		"TextOperations": [
 			{
 			"Operation": "Append",

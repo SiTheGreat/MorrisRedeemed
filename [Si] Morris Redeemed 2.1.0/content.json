@@ -325,6 +325,9 @@
 			"Action": "Load",
 			"Target": "Data/Events/MovieTheater",
 			"FromFile": "assets/Movies/Si_MR_TheaterEvents.json",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
 		},
 
 	// Festivals //////////////////////////////////////////////////////////
