@@ -19,7 +19,7 @@
 
 		{
 			"LogName": "Si MR BH Stray Catfe Schedule", // Custom_StrayCatfe_CafeIndoors 14 15 0, 12 15 0, 15 21 2; tue-sun 0700-1400
-			"Action": "Load",
+			"Action": "EditData",
 			"Target": "Characters/schedules/Si_MR_Morris",
 			"When": {
 				"HasMod |contains=CPBoardingHouse": "true",
@@ -33,7 +33,7 @@
 
 		{
 			"LogName": "Si MR Non-BH Stray Catfe Schedule", // Custom_StrayCatfe_CafeIndoors 14 15 0, 12 15 0, 15 21 2; tue-sun 0700-1400
-			"Action": "Load",
+			"Action": "EditData",
 			"Target": "Characters/schedules/Si_MR_Morris",
 			"When": {
 				"HasMod |contains=CPBoardingHouse": "false",

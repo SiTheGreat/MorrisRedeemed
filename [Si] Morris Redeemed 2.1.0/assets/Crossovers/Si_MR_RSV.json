@@ -121,7 +121,7 @@
 
 		{
 			"LogName": "Si MR BH RSV Schedule", // Custom_Ridgeside_RidgesideVillage 90 40 0, 90 48 2 (non-rainy 1000-2300)
-			"Action": "Load",
+			"Action": "EditData",
 			"Target": "Characters/schedules/Si_MR_Morris",
 			"When": {
 				"HasMod |contains=CPBoardingHouse": "true",
@@ -137,7 +137,7 @@
 
 		{
 			"LogName": "Si MR BH RSV Schedule", // Custom_Ridgeside_LogCabinHotelLobby 40 15 0, 24 14 2 (cafe saturday 1600-2030; else 0800-1300) (piano thursday/friday 1700-2100 saturday 1200-1500, 1700-1900)
-			"Action": "Load",
+			"Action": "EditData",
 			"Target": "Characters/schedules/Si_MR_Morris",
 			"When": {
 				"HasMod |contains=CPBoardingHouse": "true",
@@ -153,7 +153,7 @@
 
 		{
 			"LogName": "Si MR Non-BH RSV Schedule", // Custom_Ridgeside_RidgesideVillage 90 40 0, 90 48 2 (non-rainy 1000-2300)
-			"Action": "Load",
+			"Action": "EditData",
 			"Target": "Characters/schedules/Si_MR_Morris",
 			"When": {
 				"HasMod |contains=CPBoardingHouse": "false",
@@ -169,7 +169,7 @@
 
 		{
 			"LogName": "Si MR Non-BH RSV Schedule", // Custom_Ridgeside_LogCabinHotelLobby 40 15 0, 24 14 2 (cafe saturday 1600-2030; else 0800-1300) (piano thursday/friday 1700-2100 saturday 1200-1500, 1700-1900)
-			"Action": "Load",
+			"Action": "EditData",
 			"Target": "Characters/schedules/Si_MR_Morris",
 			"When": {
 				"HasMod |contains=CPBoardingHouse": "false",
