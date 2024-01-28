@@ -4,7 +4,7 @@
 
 	"Changes": [
 
-	// Ticks and Treats ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// TaT Entry ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
 		"LogName": "Si MR Morris Tricks & Treats",
@@ -21,15 +21,47 @@
 		},
 	},
 
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	{
-		"LogName": "Si Mr Morris Treat Dialogue",
+		"LogName": "Si MR Morris Treat Dialogue",
 		"Action": "EditData",
 		"Target": "Characters/Dialogue/Si_MR_Morris",
 		"Entries": {
-			"fall_27": "Looking sharp!#$e#I'm dressed as a shareholder myself.#$e#Frightening things, shareholders.",
+			"fall_27_2": "Looking sharp!#$e#I'm dressed as a shareholder myself.#$e#Frightening things, shareholders.",
 			"loved_treat": "Well that looks scrumptious!",
 			"neutral_treat": "Hmm... Do you have anything else?",
 			"hated_treat": "Scraping the bottom of the candy barrel, I see.",
+		},
+	},
+
+	// Schedule ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"LogName": "Si MR BH TaT Schedule",
+		"Action": "EditData",
+		"Target": "Characters/schedules/Si_MR_Morris",
+		"When": {
+			"HasMod |contains=CPBoardingHouse": "true",
+		},
+		"Entries": {
+
+			"fall_27": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/1100 Town 51 21 2/2200 Custom_BoardingHouse_BoardingHouse2 28 20 0",
+
+		},
+	},
+
+	{
+		"LogName": "Si MR Non-BH TaT Schedule",
+		"Action": "EditData",
+		"Target": "Characters/schedules/Si_MR_Morris",
+		"When": {
+			"HasMod |contains=CPBoardingHouse": "false",
+		},
+		"Entries": {
+
+			"fall_27": "0 Custom_Si_MR_Morris_CCRoom 4 6 0/1130 Town 51 21 2/2200 Custom_Si_MR_Morris_CCRoom 4 6 0",
+
 		},
 	},
 
