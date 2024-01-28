@@ -21,6 +21,17 @@
 	{
 		"LogName": "MR Juliet & Jessie Conversation Topics",
 		"Action": "EditData",
+		"Target": "Characters/Dialogue/Jessie",
+		"Entries": {
+
+			"SiMorrisJJ1": "I hear Morris has returned to the valley.",
+
+		},
+	},
+
+	{
+		"LogName": "MR Juliet & Jessie Conversation Topics",
+		"Action": "EditData",
 		"Target": "Characters/Dialogue/Si_MR_Morris",
 		"Entries": {
 
