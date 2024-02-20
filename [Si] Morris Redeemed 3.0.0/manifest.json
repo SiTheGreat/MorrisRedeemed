@@ -2,7 +2,7 @@
 	"Name": "[Si] Morris Redeemed",
 	"Author": "SiTheGreat",
 	"Description": "Help Morris redeem himself after completing the Community Center.",
-	"Version": "2.1.0",
+	"Version": "3.0.0",
 	"UniqueID": "SiTheGreat.MorrisRedeemed",
 	"UpdateKeys": [ "Nexus:12667" ],
 	"ContentPackFor": {
@@ -11,11 +11,11 @@
 	"Dependencies": [
 		{
         		"UniqueID": "Esca.CustomNPCExclusions",
-        		"IsRequired": true
+        		"IsRequired": false
 		},
 		{
         		"UniqueID": "SuperAardvark.AntiSocial",
-        		"IsRequired": true
+        		"IsRequired": false
 		},
 		{
         		"UniqueID": "CPBoardingHouse",
