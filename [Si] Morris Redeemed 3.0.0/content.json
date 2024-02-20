@@ -1,6 +1,22 @@
 {
 
-	"Format": "1.26.0",
+	"Format": "1.30.0",
+
+
+	// Organization notes
+	// Update dispo and absorb npcexclusions and antisocials
+	// Move xover includes to one json
+	// Do the same for the schedules
+	//	OR treat BH stuff as xovers and dump it all in the xovers folder
+	// Maybe do the same for the dialogue and maps
+
+
+
+
+
+
+
+
 
 	// Config //////////////////////////////////////////////////////////
 
