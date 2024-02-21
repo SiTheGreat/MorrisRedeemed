@@ -4,8 +4,9 @@
 
 
 	// Organization notes
-	// Update dispo and absorb npcexclusions and antisocials
-	// Move xover includes to one json
+	// Update dispo and absorb npcexclusions and antisocials (/)
+	// Rejectitem dialogue movie ticket 809
+	// Move xover includes to one json ?
 	// Do the same for the schedules
 	//	OR treat BH stuff as xovers and dump it all in the xovers folder
 	// Maybe do the same for the dialogue and maps
@@ -52,91 +53,186 @@
 
 	// Disposition & Gifts //////////////////////////////////////////////////////////
 
+		// {
+		// 	"LogName": "MR NPC Manifestation",
+		// 	"Action": "EditData",
+		// 	"Target": "Data/NPCDispositions",
+		// 	"Entries": {
+
+		// 		"Si_MR_Morris": "adult/rude/neutral/positive/male/not-datable/null/Town/winter 7//Custom_Si_MR_Morris_CCRoom 4 6 0/Morris",
+
+		// 	},
+		// },
+
+		// Initial antisocial version; define name SiTheGreat.MorrisRedeemed.Morris (and update else)
 		{
-			"LogName": "MR NPC Manifestation",
 			"Action": "EditData",
-			"Target": "Data/NPCDispositions",
+			"Target": "Data/Characters",
 			"Entries": {
-
-				"Si_MR_Morris": "adult/rude/neutral/positive/male/not-datable/null/Town/winter 7//Custom_Si_MR_Morris_CCRoom 4 6 0/Morris",
-
+				"SiTheGreat.MorrisRedeemed.Morris": {
+					"DisplayName": "Morris",
+					"SocialTab": "HiddenAlways",
+					"CanSocialize": false,
+					"IntroductionsQuest": false,
+					"PerfectionScore": false,
+					"Calendar": false
+				}
 			},
-		},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": false,
+			},
+		}
+
+		// Full version w activities = false
+		// "adult/rude/neutral/positive/male/not-datable/null/Town/winter 7//Custom_Si_MR_Morris_CCRoom 4 6 0/Morris",
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"SiTheGreat.MorrisRedeemed.Morris": {
+					// Char
+					"DisplayName": "Morris",
+					"Gender": "Male",
+					"Age": "Adult",
+					"BirthSeason": "Winter",
+					"BirthDay": 7,
+					// Attitude
+					"Manner": "Rude",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Positive",
+					"CanBeRomanced": false,
+					// Home
+					"HomeRegion": "Town",
+					"Home": [
+						{
+							"Id": "Default",
+							"Location": "Custom_Si_MR_Morris_CCRoom",
+							"Tile": { "X": 4, "Y": 6 },
+							"Direction": "Up"
+						}
+					],
+					// Exclusions
+					"SocialTab": "AlwaysShown",
+					"CanSocialize": true,
+					"IntroductionsQuest": false,
+					"PerfectionScore": true,
+				}
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+			},
+		}
+
+		// data/chars editdata w activities enabled, should't need the rest of the fields
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"SiTheGreat.MorrisRedeemed.Morris": {
+					// Exclusions
+					"CanVisitIsland": false,
+					"WinterStarParticipant": false,
+				}
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+				"HasSeenEvent:hostPlayer |contains=26220106": false,
+			},
+		}
 
 		{
-			"LogName": "MR Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"SiTheGreat.MorrisRedeemed.Morris": {
+					// Exclusions
+					"CanVisitIsland": true,
+					"WinterStarParticipant": true,
+				}
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+			},
+		}
+
+		// Gift Tastes
+
+		{
 			"Action": "EditData",
 			"Target": "Data/NPCGiftTastes",
 			"Entries": {
 
-				"Si_MR_Morris": "This is for me? Wonderful!/197 198 199 202 204 207 209 210 211 212 213 214 215 218 219 222 224 225 226 227 228 231 235 236 237 238 239 241 242 253 348 604 606 649 727 728 730 733/How generous of you./196 200 220 221 223 230 232 233 234 395 426 430 605 607 608 609 610 611 612 618 648 907/What am I supposed to do with this?/107 174 176 180 182 194 195 201 289 442 732 928/Get that thing away from me!/208 250 280 416 729 903 921/Thanks, I think./72 167 205 206 216 229 240 244 303 346 446 458 651 731 789 812 904 905 906/",
+				"SiTheGreat.MorrisRedeemed.Morris": "This is for me? Wonderful!/197 198 199 202 204 207 209 210 211 212 213 214 215 218 219 222 224 225 226 227 228 231 235 236 237 238 239 241 242 253 348 604 606 649 727 728 730 733/How generous of you./196 200 220 221 223 230 232 233 234 395 426 430 605 607 608 609 610 611 612 618 648 907/What am I supposed to do with this?/107 174 176 180 182 194 195 201 289 442 732 928/Get that thing away from me!/208 250 280 416 729 903 921/Thanks, I think./72 167 205 206 216 229 240 244 303 346 446 458 651 731 789 812 904 905 906/",
 
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
 			},
 		},
 
 	// NPC Exclusions and Anti-Social Flag //////////////////////////////////////////////////////////
 
-		{
-			"LogName": "Morris Anti-Social Flag",
-			"Action": "EditData",
-			"Target": "Data/AntiSocialNPCs",
-			"Entries": {
-				"Si_MR_Morris": true
-			},
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": false,
-			},
-},
+		// {
+		// 	"LogName": "Morris Anti-Social Flag",
+		// 	"Action": "EditData",
+		// 	"Target": "Data/AntiSocialNPCs",
+		// 	"Entries": {
+		// 		"Si_MR_Morris": true
+		// 	},
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220101": false,
+		// 	},
+		// },
 
-		{
-			"LogName": "MR Initial Custom NPC Exclusions",
-			"Action": "EditData",
-			"Target": "Data/CustomNPCExclusions",
-			"Entries": {
-				"Si_MR_Morris": "All"
-			},
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": false,
-			},
-		},
+		// {
+		// 	"LogName": "MR Initial Custom NPC Exclusions",
+		// 	"Action": "EditData",
+		// 	"Target": "Data/CustomNPCExclusions",
+		// 	"Entries": {
+		// 		"Si_MR_Morris": "All"
+		// 	},
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220101": false,
+		// 	},
+		// },
 
-		{
-			"LogName": "MR Start Custom NPC Exclusions",
-			"Action": "EditData",
-			"Target": "Data/CustomNPCExclusions",
-			"Entries": {
-				"Si_MR_Morris": "MovieInvite ShopDialog WinterStar IslandVisit Greet"
-			},
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": true,
-				"HasSeenEvent:hostPlayer |contains=26220104": false
-			},
-		},
+		// {
+		// 	"LogName": "MR Start Custom NPC Exclusions",
+		// 	"Action": "EditData",
+		// 	"Target": "Data/CustomNPCExclusions",
+		// 	"Entries": {
+		// 		"Si_MR_Morris": "MovieInvite ShopDialog WinterStar IslandVisit Greet"
+		// 	},
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220101": true,
+		// 		"HasSeenEvent:hostPlayer |contains=26220104": false
+		// 	},
+		// },
 
-		{
-			"LogName": "MR Middle Custom NPC Exclusions",
-			"Action": "EditData",
-			"Target": "Data/CustomNPCExclusions",
-			"Entries": {
-				"Si_MR_Morris": "MovieInvite ShopDialog WinterStar IslandVisit Greet"
-			},
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220104": true,
-				"HasSeenEvent:hostPlayer |contains=26220106": false
-			},
-		},
+		// {
+		// 	"LogName": "MR Middle Custom NPC Exclusions",
+		// 	"Action": "EditData",
+		// 	"Target": "Data/CustomNPCExclusions",
+		// 	"Entries": {
+		// 		"Si_MR_Morris": "MovieInvite ShopDialog WinterStar IslandVisit Greet"
+		// 	},
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220104": true,
+		// 		"HasSeenEvent:hostPlayer |contains=26220106": false
+		// 	},
+		// },
 
-		//{
-			//"LogName": "MR End Custom NPC Exclusions",
-			//"Action": "EditData",
-			//"Target": "Data/CustomNPCExclusions",
-			//"Entries": {
-				//"Si_MR_Morris": "MovieInvite"
-			//},
-			//"When": {
-				//"HasSeenEvent:hostPlayer |contains=26220106": true
-			//},
-		//},
+		// //{
+		// 	//"LogName": "MR End Custom NPC Exclusions",
+		// 	//"Action": "EditData",
+		// 	//"Target": "Data/CustomNPCExclusions",
+		// 	//"Entries": {
+		// 		//"Si_MR_Morris": "MovieInvite"
+		// 	//},
+		// 	//"When": {
+		// 		//"HasSeenEvent:hostPlayer |contains=26220106": true
+		// 	//},
+		// //},
 
 	// Schedules //////////////////////////////////////////////////////////
 
@@ -382,103 +478,103 @@
 		// Boarding House: see Events, Schedules, Maps
 
 		// Marry Morris
-		{
-			"LogName": "MR MM Crossover",
-			"Action": "Include",
-			"FromFile": "assets/Events/Si_MR_Morris_MMEvents.json",
-			"When": {
-				"HasMod |contains=Yoshimax.MarryMorris": true,
-				"Relationship:MorrisTod": "Friendly",
-				"IsCommunityCenterComplete": true,
-				"Year |contains=1": false,
-				"CrossoverContent": true,
-			},
-    		},
+		// {
+		// 	"LogName": "MR MM Crossover",
+		// 	"Action": "Include",
+		// 	"FromFile": "assets/Events/Si_MR_Morris_MMEvents.json",
+		// 	"When": {
+		// 		"HasMod |contains=Yoshimax.MarryMorris": true,
+		// 		"Relationship:MorrisTod": "Friendly",
+		// 		"IsCommunityCenterComplete": true,
+		// 		"Year |contains=1": false,
+		// 		"CrossoverContent": true,
+		// 	},
+    	// },
 
 		// Ridgeside Village
-		{
-			"LogName": "MR RSV Crossover",
-			"Action": "Include",
-			"FromFile": "assets/Crossovers/Si_MR_RSV.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"HasMod |contains=Rafseazz.RSVCP": true,
-				"CrossoverContent": true,
-			},
-		},
+		// {
+		// 	"LogName": "MR RSV Crossover",
+		// 	"Action": "Include",
+		// 	"FromFile": "assets/Crossovers/Si_MR_RSV.json",
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
+		// 		"HasMod |contains=Rafseazz.RSVCP": true,
+		// 		"CrossoverContent": true,
+		// 	},
+		// },
 
 		// East Scarp
-		{
-			"LogName": "MR ES Crossover",
-			"Action": "Include",
-			"FromFile": "assets/Crossovers/Si_MR_ES.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"HasMod |contains=LemurKat.EastScarpe.CP": true,
-				"CrossoverContent": true,
-			},
-		},
+		// {
+		// 	"LogName": "MR ES Crossover",
+		// 	"Action": "Include",
+		// 	"FromFile": "assets/Crossovers/Si_MR_ES.json",
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
+		// 		"HasMod |contains=LemurKat.EastScarpe.CP": true,
+		// 		"CrossoverContent": true,
+		// 	},
+		// },
 
 		// Stray Catfe - Update
-		{
-			"LogName": "MR SC Update Crossover",
-			"Action": "Include",
-			"FromFile": "assets/Crossovers/Si_MR_SC.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"HasMod |contains=ch20youk.TSCCP": true,
-				"CrossoverContent": true,
-			},
-		},
+		// {
+		// 	"LogName": "MR SC Update Crossover",
+		// 	"Action": "Include",
+		// 	"FromFile": "assets/Crossovers/Si_MR_SC.json",
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
+		// 		"HasMod |contains=ch20youk.TSCCP": true,
+		// 		"CrossoverContent": true,
+		// 	},
+		// },
 
 		// Part of a Saloon Breakfast
-		{
-			"LogName": "MR PoaSB Crossover",
-			"Action": "Include",
-			"FromFile": "assets/Crossovers/Si_MR_PoaSB.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"HasSeenEvent:hostPlayer |contains=177755": true,
-				"HasMod |contains=agentlyoko.stardropbreakfast": true,
-				"CrossoverContent": true,
-			},
-		},
+		// {
+		// 	"LogName": "MR PoaSB Crossover",
+		// 	"Action": "Include",
+		// 	"FromFile": "assets/Crossovers/Si_MR_PoaSB.json",
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
+		// 		"HasSeenEvent:hostPlayer |contains=177755": true,
+		// 		"HasMod |contains=agentlyoko.stardropbreakfast": true,
+		// 		"CrossoverContent": true,
+		// 	},
+		// },
 
 		// Tricks and Treats
-		{
-			"LogName": "MR TaT Content Pack",
-			"Action": "Include",
-			"FromFile": "assets/Crossovers/Si_MR_TaT.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"HasMod |contains=ch20youk.TricksAndTreats": true,
-				"CrossoverContent": true,
-			},
-		},
+		// {
+		// 	"LogName": "MR TaT Content Pack",
+		// 	"Action": "Include",
+		// 	"FromFile": "assets/Crossovers/Si_MR_TaT.json",
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
+		// 		"HasMod |contains=ch20youk.TricksAndTreats": true,
+		// 		"CrossoverContent": true,
+		// 	},
+		// },
 
 		// Juliet and Jessie
-		{
-			"LogName": "MR Juliet and Jessie Crossover",
-			"Action": "Include",
-			"FromFile": "assets/Crossovers/Si_MR_JessieJuliet.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"HasMod |contains=LemurKat.JulietHouse.NPC": true,
-				"CrossoverContent": true,
-			},
-		},
+		// {
+		// 	"LogName": "MR Juliet and Jessie Crossover",
+		// 	"Action": "Include",
+		// 	"FromFile": "assets/Crossovers/Si_MR_JessieJuliet.json",
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
+		// 		"HasMod |contains=LemurKat.JulietHouse.NPC": true,
+		// 		"CrossoverContent": true,
+		// 	},
+		// },
 
 		// Jean and Jorts
-		{
-			"LogName": "MR Jean and Jorts Crossover",
-			"Action": "Include",
-			"FromFile": "assets/Crossovers/Si_MR_JeanJorts.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"HasMod |contains=tiakall.jortsandjean": true,
-				"CrossoverContent": true,
-			},
-		},
+		// {
+		// 	"LogName": "MR Jean and Jorts Crossover",
+		// 	"Action": "Include",
+		// 	"FromFile": "assets/Crossovers/Si_MR_JeanJorts.json",
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
+		// 		"HasMod |contains=tiakall.jortsandjean": true,
+		// 		"CrossoverContent": true,
+		// 	},
+		// },
 
 	// Maps //////////////////////////////////////////////////////////
 
