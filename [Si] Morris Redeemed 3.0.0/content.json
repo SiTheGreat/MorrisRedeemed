@@ -6,17 +6,6 @@
 	// Organization notes
 	// Update dispo and absorb npcexclusions and antisocials (/)
 	// Rejectitem dialogue movie ticket 809
-	// Move xover includes to one json ?
-	// Do the same for the schedules
-	//	OR treat BH stuff as xovers and dump it all in the xovers folder
-	// Maybe do the same for the dialogue and maps
-
-
-
-
-
-
-
 
 
 	// Config //////////////////////////////////////////////////////////
@@ -25,8 +14,8 @@
 
 		"CrossoverContent": {
 			"AllowValues": "true, false",
-			"Default": "true",
-			"Description": "When enabled, Morris will have crossover content when certain mods are installed (see Nexus description for details)."
+			"Default": "false",
+			"Description": "When enabled, Morris will have crossover content when certain mods are installed (see Nexus description for details). Crossover content not yet updated for 1.6, so enabling may cause errors for those crossover mods until updates are made."
 		},
 
 	},
@@ -35,41 +24,14 @@
 
 	"Changes": [
 
-	// Images //////////////////////////////////////////////////////////
+	// Dispos //////////////////////////////////////////////////////////
 
-		{
-			"LogName": "MR Sprite",
-			"Action": "Load",
-			"Target": "Characters/Si_MR_Morris",
-			"FromFile": "assets/Images/Si_MR_Morris_Sprite.png",
-		},
-
-		{
-			"LogName": "MR Portrait",
-			"Action": "Load",
-			"Target": "Portraits/Si_MR_Morris",
-			"FromFile": "assets/Images/Si_MR_Morris_Portrait.png",
-		},
-
-	// Disposition & Gifts //////////////////////////////////////////////////////////
-
-		// {
-		// 	"LogName": "MR NPC Manifestation",
-		// 	"Action": "EditData",
-		// 	"Target": "Data/NPCDispositions",
-		// 	"Entries": {
-
-		// 		"Si_MR_Morris": "adult/rude/neutral/positive/male/not-datable/null/Town/winter 7//Custom_Si_MR_Morris_CCRoom 4 6 0/Morris",
-
-		// 	},
-		// },
-
-		// Initial antisocial version; define name SiTheGreat.MorrisRedeemed.Morris (and update else)
+		// Antisocial version until meeting
 		{
 			"Action": "EditData",
 			"Target": "Data/Characters",
 			"Entries": {
-				"SiTheGreat.MorrisRedeemed.Morris": {
+				"Si_MR_Morris": {
 					"DisplayName": "Morris",
 					"SocialTab": "HiddenAlways",
 					"CanSocialize": false,
@@ -83,13 +45,13 @@
 			},
 		}
 
-		// Full version w activities = false
-		// "adult/rude/neutral/positive/male/not-datable/null/Town/winter 7//Custom_Si_MR_Morris_CCRoom 4 6 0/Morris",
+		// Social version after meeting
+		// adult/rude/neutral/positive/male/not-datable/null/Town/winter 7//Custom_Si_MR_Morris_CCRoom 4 6 0/Morris
 		{
 			"Action": "EditData",
 			"Target": "Data/Characters",
 			"Entries": {
-				"SiTheGreat.MorrisRedeemed.Morris": {
+				"Si_MR_Morris": {
 					// Char
 					"DisplayName": "Morris",
 					"Gender": "Male",
@@ -123,12 +85,12 @@
 			},
 		}
 
-		// data/chars editdata w activities enabled, should't need the rest of the fields
+		// Disable social activities till 8 heart event
 		{
 			"Action": "EditData",
 			"Target": "Data/Characters",
 			"Entries": {
-				"SiTheGreat.MorrisRedeemed.Morris": {
+				"Si_MR_Morris": {
 					// Exclusions
 					"CanVisitIsland": false,
 					"WinterStarParticipant": false,
@@ -140,11 +102,12 @@
 			},
 		}
 
+		// Enable social activities after 8 heart event
 		{
 			"Action": "EditData",
 			"Target": "Data/Characters",
 			"Entries": {
-				"SiTheGreat.MorrisRedeemed.Morris": {
+				"Si_MR_Morris": {
 					// Exclusions
 					"CanVisitIsland": true,
 					"WinterStarParticipant": true,
@@ -155,14 +118,14 @@
 			},
 		}
 
-		// Gift Tastes
+		// Gifts //////////////////////////////////////////////////////////
 
 		{
 			"Action": "EditData",
 			"Target": "Data/NPCGiftTastes",
 			"Entries": {
 
-				"SiTheGreat.MorrisRedeemed.Morris": "This is for me? Wonderful!/197 198 199 202 204 207 209 210 211 212 213 214 215 218 219 222 224 225 226 227 228 231 235 236 237 238 239 241 242 253 348 604 606 649 727 728 730 733/How generous of you./196 200 220 221 223 230 232 233 234 395 426 430 605 607 608 609 610 611 612 618 648 907/What am I supposed to do with this?/107 174 176 180 182 194 195 201 289 442 732 928/Get that thing away from me!/208 250 280 416 729 903 921/Thanks, I think./72 167 205 206 216 229 240 244 303 346 446 458 651 731 789 812 904 905 906/",
+				"Si_MR_Morris": "This is for me? Wonderful!/197 198 199 202 204 207 209 210 211 212 213 214 215 218 219 222 224 225 226 227 228 231 235 236 237 238 239 241 242 253 348 604 606 649 727 728 730 733/How generous of you./196 200 220 221 223 230 232 233 234 395 426 430 605 607 608 609 610 611 612 618 648 907/What am I supposed to do with this?/107 174 176 180 182 194 195 201 289 442 732 928/Get that thing away from me!/208 250 280 416 729 903 921/Thanks, I think./72 167 205 206 216 229 240 244 303 346 446 458 651 731 789 812 904 905 906/",
 
 			},
 			"When": {
@@ -170,71 +133,25 @@
 			},
 		},
 
-	// NPC Exclusions and Anti-Social Flag //////////////////////////////////////////////////////////
+		// Images //////////////////////////////////////////////////////////
 
-		// {
-		// 	"LogName": "Morris Anti-Social Flag",
-		// 	"Action": "EditData",
-		// 	"Target": "Data/AntiSocialNPCs",
-		// 	"Entries": {
-		// 		"Si_MR_Morris": true
-		// 	},
-		// 	"When": {
-		// 		"HasSeenEvent:hostPlayer |contains=26220101": false,
-		// 	},
-		// },
-
-		// {
-		// 	"LogName": "MR Initial Custom NPC Exclusions",
-		// 	"Action": "EditData",
-		// 	"Target": "Data/CustomNPCExclusions",
-		// 	"Entries": {
-		// 		"Si_MR_Morris": "All"
-		// 	},
-		// 	"When": {
-		// 		"HasSeenEvent:hostPlayer |contains=26220101": false,
-		// 	},
-		// },
-
-		// {
-		// 	"LogName": "MR Start Custom NPC Exclusions",
-		// 	"Action": "EditData",
-		// 	"Target": "Data/CustomNPCExclusions",
-		// 	"Entries": {
-		// 		"Si_MR_Morris": "MovieInvite ShopDialog WinterStar IslandVisit Greet"
-		// 	},
-		// 	"When": {
-		// 		"HasSeenEvent:hostPlayer |contains=26220101": true,
-		// 		"HasSeenEvent:hostPlayer |contains=26220104": false
-		// 	},
-		// },
-
-		// {
-		// 	"LogName": "MR Middle Custom NPC Exclusions",
-		// 	"Action": "EditData",
-		// 	"Target": "Data/CustomNPCExclusions",
-		// 	"Entries": {
-		// 		"Si_MR_Morris": "MovieInvite ShopDialog WinterStar IslandVisit Greet"
-		// 	},
-		// 	"When": {
-		// 		"HasSeenEvent:hostPlayer |contains=26220104": true,
-		// 		"HasSeenEvent:hostPlayer |contains=26220106": false
-		// 	},
-		// },
-
-		// //{
-		// 	//"LogName": "MR End Custom NPC Exclusions",
-		// 	//"Action": "EditData",
-		// 	//"Target": "Data/CustomNPCExclusions",
-		// 	//"Entries": {
-		// 		//"Si_MR_Morris": "MovieInvite"
-		// 	//},
-		// 	//"When": {
-		// 		//"HasSeenEvent:hostPlayer |contains=26220106": true
-		// 	//},
-		// //},
-
-	// Schedules //////////////////////////////////////////////////////////
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"Si_MR_Morris": {
+					"Appearance": [
+						{
+							"Id": "Default",
+							"Portrait": "assets/Images/Si_MR_Morris_Portrait.png",
+							"Sprite": "assets/Images/Si_MR_Morris_Sprite.png",
+						}
+					]
+				}
+			},
+		}
+	
+		// Schedules //////////////////////////////////////////////////////////
 
 		{
 			"LogName": "MR Initial Schedule",
@@ -433,13 +350,12 @@
 
 		{
 			// Locations file for Movie Theater
+			// Set priority low if other mods load it
 			"LogName": "Si MR Theater Events File",
 			"Action": "Load",
 			"Target": "Data/Events/MovieTheater",
 			"FromFile": "assets/Movies/Si_MR_TheaterEvents.json",
-			"When": {
-				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-			},
+			"Priority": "Low"
 		},
 
 	// Festivals //////////////////////////////////////////////////////////
