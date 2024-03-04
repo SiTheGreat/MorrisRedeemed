@@ -10,14 +10,6 @@
 	},
 	"Dependencies": [
 		{
-        		"UniqueID": "Esca.CustomNPCExclusions",
-        		"IsRequired": false
-		},
-		{
-        		"UniqueID": "SuperAardvark.AntiSocial",
-        		"IsRequired": false
-		},
-		{
         		"UniqueID": "CPBoardingHouse",
         		"IsRequired": false
 		},

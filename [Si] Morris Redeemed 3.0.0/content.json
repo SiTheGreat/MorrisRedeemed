@@ -1,12 +1,6 @@
 {
 
-	"Format": "1.30.0",
-
-
-	// Organization notes
-	// Update dispo and absorb npcexclusions and antisocials (/)
-	// Rejectitem dialogue movie ticket 809
-
+	"Format": "2.0.0",
 
 	// Config //////////////////////////////////////////////////////////
 
@@ -26,25 +20,6 @@
 
 	// Dispos //////////////////////////////////////////////////////////
 
-		// Antisocial version until meeting
-		{
-			"Action": "EditData",
-			"Target": "Data/Characters",
-			"Entries": {
-				"Si_MR_Morris": {
-					"DisplayName": "Morris",
-					"SocialTab": "HiddenAlways",
-					"CanSocialize": false,
-					"IntroductionsQuest": false,
-					"PerfectionScore": false,
-					"Calendar": false
-				}
-			},
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": false,
-			},
-		}
-
 		// Social version after meeting
 		// adult/rude/neutral/positive/male/not-datable/null/Town/winter 7//Custom_Si_MR_Morris_CCRoom 4 6 0/Morris
 		{
@@ -63,6 +38,12 @@
 					"SocialAnxiety": "Neutral",
 					"Optimism": "Positive",
 					"CanBeRomanced": false,
+					// Exclusions
+					"PerfectionScore": true,
+					"IntroductionsQuest": false,
+					"SocialTab": "HiddenUntilMet",
+					"Calendar": "HiddenUntilMet",
+					"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 26220101",
 					// Home
 					"HomeRegion": "Town",
 					"Home": [
@@ -73,17 +54,9 @@
 							"Direction": "Up"
 						}
 					],
-					// Exclusions
-					"SocialTab": "AlwaysShown",
-					"CanSocialize": true,
-					"IntroductionsQuest": false,
-					"PerfectionScore": true,
 				}
 			},
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": true,
-			},
-		}
+		},
 
 		// Disable social activities till 8 heart event
 		{
@@ -94,13 +67,15 @@
 					// Exclusions
 					"CanVisitIsland": false,
 					"WinterStarParticipant": false,
+					"CanCommentOnPurchasedShopItems": false,
+					"CanGreetNearbyCharacters": false,
 				}
 			},
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220101": true,
 				"HasSeenEvent:hostPlayer |contains=26220106": false,
 			},
-		}
+		},
 
 		// Enable social activities after 8 heart event
 		{
@@ -111,12 +86,14 @@
 					// Exclusions
 					"CanVisitIsland": true,
 					"WinterStarParticipant": true,
+					"CanCommentOnPurchasedShopItems": true,
+					"CanGreetNearbyCharacters": true,
 				}
 			},
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220106": true,
 			},
-		}
+		},
 
 		// Gifts //////////////////////////////////////////////////////////
 
@@ -136,32 +113,18 @@
 		// Images //////////////////////////////////////////////////////////
 
 		{
-			"Action": "EditData",
-			"Target": "Data/Characters",
-			"Entries": {
-				"Si_MR_Morris": {
-					"Appearance": [
-						{
-							"Id": "Default",
-							"Portrait": "assets/Images/Si_MR_Morris_Portrait.png",
-							"Sprite": "assets/Images/Si_MR_Morris_Sprite.png",
-						}
-					]
-				}
-			},
-		}
-	
-		// Schedules //////////////////////////////////////////////////////////
+            "Action": "Load",
+            "Target": "Portraits/Si_MR_Morris",
+            "FromFile": "assets/Images/Si_MR_Morris_Portrait.png",
+        },
 
 		{
-			"LogName": "MR Initial Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"FromFile": "assets/Schedules/Si_MR_Morris_InitSched.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": false
-			},
-		},
+            "Action": "Load",
+            "Target": "Characters/Si_MR_Morris",
+            "FromFile": "assets/Images/Si_MR_Morris_Sprite.png",
+        },
+	
+		// Schedules //////////////////////////////////////////////////////////
 
 		// Schedules when Boarding House installed
 
@@ -237,17 +200,7 @@
 			},
 		},
 
-	// Dialogue //////////////////////////////////////////////////////////
-
-		{
-			"LogName": "MR Initial Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_MR_Morris",
-			"FromFile": "assets/Dialogue/Si_MR_Morris_InitDial.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": false,
-			},
-		},
+		// Dialogue //////////////////////////////////////////////////////////
 
 		{
 			"LogName": "MR Starting Dialogue",
@@ -290,7 +243,7 @@
 			},
 		},
 		
-	// Events //////////////////////////////////////////////////////////
+		// Events //////////////////////////////////////////////////////////
 
 		{
 			"LogName": "MR Events",
@@ -300,7 +253,7 @@
 				"IsCommunityCenterComplete": true,
 				"Year |contains=1": false
 			},
-    		},
+		},
 
 		{
 			// Mail refers to CC Attic when BH NOT installed
@@ -312,7 +265,7 @@
 				"IsCommunityCenterComplete": "true",
 				"Year |contains=1": false
 			},
-    		},
+		},
 
 		{
 			// Mail refers to Boarding House when BH installed
@@ -324,9 +277,9 @@
 				"IsCommunityCenterComplete": true,
 				"Year |contains=1": false
 			},
-    		},
+		},
 
-	// Mail //////////////////////////////////////////////////////////
+		// Mail //////////////////////////////////////////////////////////
 
 		{
 			"LogName": "MR Mail",
@@ -335,9 +288,9 @@
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220101": true
 			},
-    		},
+		},
 
-	// Movies //////////////////////////////////////////////////////////
+		// Movies //////////////////////////////////////////////////////////
 
 		{
 			"LogName": "MR Movie Preferences",
@@ -346,7 +299,7 @@
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220106": true
 			},
-    		},
+		},
 
 		{
 			// Locations file for Movie Theater
@@ -358,7 +311,7 @@
 			"Priority": "Low"
 		},
 
-	// Festivals //////////////////////////////////////////////////////////
+		// Festivals //////////////////////////////////////////////////////////
 
 		{
 			"LogName": "MR Festival Locations",
@@ -389,110 +342,110 @@
 			},
 		},
 
-	// Crossovers //////////////////////////////////////////////////////////
+		// Crossovers //////////////////////////////////////////////////////////
 
 		// Boarding House: see Events, Schedules, Maps
 
 		// Marry Morris
-		// {
-		// 	"LogName": "MR MM Crossover",
-		// 	"Action": "Include",
-		// 	"FromFile": "assets/Events/Si_MR_Morris_MMEvents.json",
-		// 	"When": {
-		// 		"HasMod |contains=Yoshimax.MarryMorris": true,
-		// 		"Relationship:MorrisTod": "Friendly",
-		// 		"IsCommunityCenterComplete": true,
-		// 		"Year |contains=1": false,
-		// 		"CrossoverContent": true,
-		// 	},
-    	// },
+		{
+			"LogName": "MR MM Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Events/Si_MR_Morris_MMEvents.json",
+			"When": {
+				"HasMod |contains=Yoshimax.MarryMorris": true,
+				"Relationship:MorrisTod": "Friendly",
+				"IsCommunityCenterComplete": true,
+				"Year |contains=1": false,
+				"CrossoverContent": true,
+			},
+    	},
 
 		// Ridgeside Village
-		// {
-		// 	"LogName": "MR RSV Crossover",
-		// 	"Action": "Include",
-		// 	"FromFile": "assets/Crossovers/Si_MR_RSV.json",
-		// 	"When": {
-		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
-		// 		"HasMod |contains=Rafseazz.RSVCP": true,
-		// 		"CrossoverContent": true,
-		// 	},
-		// },
+		{
+			"LogName": "MR RSV Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_RSV.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=Rafseazz.RSVCP": true,
+				"CrossoverContent": true,
+			},
+		},
 
 		// East Scarp
-		// {
-		// 	"LogName": "MR ES Crossover",
-		// 	"Action": "Include",
-		// 	"FromFile": "assets/Crossovers/Si_MR_ES.json",
-		// 	"When": {
-		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
-		// 		"HasMod |contains=LemurKat.EastScarpe.CP": true,
-		// 		"CrossoverContent": true,
-		// 	},
-		// },
+		{
+			"LogName": "MR ES Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_ES.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=LemurKat.EastScarpe.CP": true,
+				"CrossoverContent": true,
+			},
+		},
 
 		// Stray Catfe - Update
-		// {
-		// 	"LogName": "MR SC Update Crossover",
-		// 	"Action": "Include",
-		// 	"FromFile": "assets/Crossovers/Si_MR_SC.json",
-		// 	"When": {
-		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
-		// 		"HasMod |contains=ch20youk.TSCCP": true,
-		// 		"CrossoverContent": true,
-		// 	},
-		// },
+		{
+			"LogName": "MR SC Update Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_SC.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=ch20youk.TSCCP": true,
+				"CrossoverContent": true,
+			},
+		},
 
 		// Part of a Saloon Breakfast
-		// {
-		// 	"LogName": "MR PoaSB Crossover",
-		// 	"Action": "Include",
-		// 	"FromFile": "assets/Crossovers/Si_MR_PoaSB.json",
-		// 	"When": {
-		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
-		// 		"HasSeenEvent:hostPlayer |contains=177755": true,
-		// 		"HasMod |contains=agentlyoko.stardropbreakfast": true,
-		// 		"CrossoverContent": true,
-		// 	},
-		// },
+		{
+			"LogName": "MR PoaSB Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_PoaSB.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasSeenEvent:hostPlayer |contains=177755": true,
+				"HasMod |contains=agentlyoko.stardropbreakfast": true,
+				"CrossoverContent": true,
+			},
+		},
 
 		// Tricks and Treats
-		// {
-		// 	"LogName": "MR TaT Content Pack",
-		// 	"Action": "Include",
-		// 	"FromFile": "assets/Crossovers/Si_MR_TaT.json",
-		// 	"When": {
-		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
-		// 		"HasMod |contains=ch20youk.TricksAndTreats": true,
-		// 		"CrossoverContent": true,
-		// 	},
-		// },
+		{
+			"LogName": "MR TaT Content Pack",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_TaT.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=ch20youk.TricksAndTreats": true,
+				"CrossoverContent": true,
+			},
+		},
 
 		// Juliet and Jessie
-		// {
-		// 	"LogName": "MR Juliet and Jessie Crossover",
-		// 	"Action": "Include",
-		// 	"FromFile": "assets/Crossovers/Si_MR_JessieJuliet.json",
-		// 	"When": {
-		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
-		// 		"HasMod |contains=LemurKat.JulietHouse.NPC": true,
-		// 		"CrossoverContent": true,
-		// 	},
-		// },
+		{
+			"LogName": "MR Juliet and Jessie Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_JessieJuliet.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=LemurKat.JulietHouse.NPC": true,
+				"CrossoverContent": true,
+			},
+		},
 
 		// Jean and Jorts
-		// {
-		// 	"LogName": "MR Jean and Jorts Crossover",
-		// 	"Action": "Include",
-		// 	"FromFile": "assets/Crossovers/Si_MR_JeanJorts.json",
-		// 	"When": {
-		// 		"HasSeenEvent:hostPlayer |contains=26220106": true,
-		// 		"HasMod |contains=tiakall.jortsandjean": true,
-		// 		"CrossoverContent": true,
-		// 	},
-		// },
+		{
+			"LogName": "MR Jean and Jorts Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_JeanJorts.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=tiakall.jortsandjean": true,
+				"CrossoverContent": true,
+			},
+		},
 
-	// Maps //////////////////////////////////////////////////////////
+		// Maps //////////////////////////////////////////////////////////
 
 		{
 			// Add Boarding House room when BH is installed
@@ -533,16 +486,30 @@
 			},
 		},
 
-	],
-
-	"CustomLocations": [
-
+		// Add Community Center attic
 		{
-			// Add Community Center attic
-			"Name": "Custom_Si_MR_Morris_CCRoom",
-			"FromMapFile": "assets/Maps/Si_MR_Morris_CCRoom.tmx",
-		},
-],
+            "Action": "Load",
+            "Target": "Maps/Custom_Si_MR_Morris_CCRoom",
+            "FromFile": "assets/Maps/Si_MR_Morris_CCRoom.tmx",
+		},		
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Custom_Si_MR_Morris_CCRoom": {
+					"DisplayName": "Community Center Attic",						
+					"CreateOnLoad": { 
+						"MapPath": "Maps/Custom_Si_MR_Morris_CCRoom" 
+					},
+					"DefaultArrivalTile": {
+						"X": 5,
+						"Y": 2
+					}
+				}
+			}
+		}
+
+	]
 
 	// End //////////////////////////////////////////////////////////
 

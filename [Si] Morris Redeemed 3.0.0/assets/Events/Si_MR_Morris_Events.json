@@ -4,12 +4,22 @@
 	// Morris Redeemed Morris' Heart Events
 
 	{
+		// Event 00, 0 Hearts; Event ID 26220100
+		"LogName": "Morris Redeemed Silent Unlock Event",
+		"Action": "EditData",
+		"Target": "Data/Events/BusStop",
+		"Entries": {
+			"26220100": "none/-1000 -1000/farmer -100 -100 2/addConversationTopic SiMorrisGone 13/end",
+			}
+		},
+
+	{
 	// Event 01, 0 Hearts; Event ID 26220101
 	"LogName": "Morris Redeemed Intro",
 	"Action": "EditData",
 	"Target": "Data/Events/BusStop",
 	"Entries": {
-		"26220101/w rainy/r 0.5": "continue/13 15/farmer -100 100 0 Si_MR_Morris 13 12 1/skippable/fade/addConversationTopic SiMorrisReturns 4/pause 200/textAboveHead Si_MR_Morris \"What am I going to do...\"/warp farmer 0 23/pause 100/move farmer 13 0 1/faceDirection Si_MR_Morris 2/emote Si_MR_Morris 16/speak Si_MR_Morris \"Farmer @! I'm so happy to see you!\"/faceDirection farmer 0/move farmer 0 -3 0 true/move Si_MR_Morris 0 2 2/speak Si_MR_Morris \"Please help me!$3#$b#After Joja Mart left town, I lost everything!$3#$b#I was fired from my job, my wife divorced me, and she kicked me out of the house!$3#$b#Please, you've got to help me. I have nowhere else to go...$3\"/pause 300/question fork0 \"#Serves you right after everything you've done.#Fine, I'll help you.\"/fork helpFault/pause 300/friendship Si_MR_Morris 60/jump Si_MR_Morris/speak Si_MR_Morris \"Really? You mean it?#$b#Thank you so much Farmer @! You won't regret it!\"/emote farmer 40/end/fade",
+		"26220101/e 26220100/w rainy/A SiMorrisGone": "continue/13 15/farmer -100 100 0 Si_MR_Morris 13 12 1/skippable/fade/addConversationTopic SiMorrisReturns 4/pause 200/textAboveHead Si_MR_Morris \"What am I going to do...\"/warp farmer 0 23/pause 100/move farmer 13 0 1/faceDirection Si_MR_Morris 2/emote Si_MR_Morris 16/speak Si_MR_Morris \"Farmer @! I'm so happy to see you!\"/faceDirection farmer 0/move farmer 0 -3 0 true/move Si_MR_Morris 0 2 2/speak Si_MR_Morris \"Please help me!$3#$b#After Joja Mart left town, I lost everything!$3#$b#I was fired from my job, my wife divorced me, and she kicked me out of the house!$3#$b#Please, you've got to help me. I have nowhere else to go...$3\"/pause 300/question fork0 \"#Serves you right after everything you've done.#Fine, I'll help you.\"/fork helpFault/pause 300/friendship Si_MR_Morris 60/jump Si_MR_Morris/speak Si_MR_Morris \"Really? You mean it?#$b#Thank you so much Farmer @! You won't regret it!\"/emote farmer 40/end/fade",
 
 		"helpFault": "speak Si_MR_Morris \"It's not my fault!$3#$b#All I did was accept a branch manager position, and they moved me out here!$3#$b#Please, I'm begging you...$3\"/emote farmer 40/end/fade",
 		}

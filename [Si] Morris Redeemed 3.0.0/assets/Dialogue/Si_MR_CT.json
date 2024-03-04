@@ -4,81 +4,70 @@
 
 	// Currently includes: Pierre, Pam, Lewis, Shane, Sam, Linus
 
-
 	"Changes": [
-
 
 	{
 		"LogName": "MR Pierre Conversation Topics",
 		"Action": "EditData",
 		"Target": "Characters/Dialogue/Pierre",
 		"Entries": {
-
-	"SiMorrisReturns": "Ugh, I can't believe Morris dragged himself back here.$3#$e#He's like a roach, we just can't get rid of him.$3",
-	"SiMorrisCC": "Wait, wait, wait.#$e#You're telling me, that -#$e#That MORRIS -#$e#is WORKING in the community center?!#$e#Oh man!$1#$e#This is great!$1#$e#Hang on, I need to go see this for myself.",
-	"SiMorrisFriendly": "Hmph, I guess Morris isn't TOO bad.$2#$e#I still don't like him though!$3",
-	"SiMorrisTod": "I thought I saw two Morrises today.$2#$e#Which would be horrible.#$e#One is enough!",
-
+			"SiMorrisGone": "Oh man, the way we sent Morris running with his tail between his legs!#$e#We won't be seeing him again!",
+			"SiMorrisReturns": "Ugh, I can't believe Morris dragged himself back here.$3#$e#He's like a roach, we just can't get rid of him.$3",
+			"SiMorrisCC": "Wait, wait, wait.#$e#You're telling me, that -#$e#That MORRIS -#$e#is WORKING in the community center?!#$e#Oh man!$1#$e#This is great!$1#$e#Hang on, I need to go see this for myself.",
+			"SiMorrisFriendly": "Hmph, I guess Morris isn't TOO bad.$2#$e#I still don't like him though!$3",
+			"SiMorrisTod": "I thought I saw two Morrises today.$2#$e#Which would be horrible.#$e#One is enough!",
 		},
 	},
-
 
 	{
 		"LogName": "MR Pam Conversation Topics",
 		"Action": "EditData",
 		"Target": "Characters/Dialogue/Pam",
 		"Entries": {
-
-	"SiMorrisReturns": "Did you hear?#$e#Morris is back in town!",
-	"SiMorrisCC": "Can you believe it?#$e#Morris is working at the community center now!#$e#I thought I'd had too much to drink when I found out.",
-	"SiMorrisFriendly": "Morris is a surprisingly good cook.#$e#And he's always got a little extra wine for me!",
-	"SiMorrisTod": "I think I need to lighten up on the drinks.#$e#I swear I saw Morris twice earlier!",
-
+			"SiMorrisGone": "Gotta admit, I like seeing the other townies at Pierre's place nowadays. Joja was so big I could get all the way to the checkout without bumping into another soul.",
+			"SiMorrisReturns": "Did you hear?#$e#Morris is back in town!",
+			"SiMorrisCC": "Can you believe it?#$e#Morris is working at the community center now!#$e#I thought I'd had too much to drink when I found out.",
+			"SiMorrisFriendly": "Morris is a surprisingly good cook.#$e#And he's always got a little extra wine for me!",
+			"SiMorrisTod": "I think I need to lighten up on the drinks.#$e#I swear I saw Morris twice earlier!",
 		},
 	},
-
 
 	{
 		"LogName": "MR Lewis Conversation Topics",
 		"Action": "EditData",
 		"Target": "Characters/Dialogue/Lewis",
 		"Entries": {
-
-	"SiMorrisReturns": "It'll be interesting, having Morris around again.#$e#We'll see if he can integrate into the town, but I won't get my hopes up.",
-	"SiMorrisCC": "I hope having Morris work in the community center is a good idea...",
-	"SiMorrisFriendly": "Morris seems to be settling in well.",
-	"SiMorrisTod": "I thought I saw Morris at the library just now, but he's supposed to be on duty in the community center and he's never missed a shift.#$e#Maybe he took a break?",
-
+			"SiMorrisGone": "I'm glad Joja's closing gave us back our small-town charm, but I hope it doesn't affect our economy too badly...",
+			"SiMorrisReturns": "It'll be interesting, having Morris around again.#$e#We'll see if he can integrate into the town, but I won't get my hopes up.",
+			"SiMorrisCC": "I hope having Morris work in the community center is a good idea...",
+			"SiMorrisFriendly": "Morris seems to be settling in well.",
+			"SiMorrisTod": "I thought I saw Morris at the library just now, but he's supposed to be on duty in the community center and he's never missed a shift.#$e#Maybe he took a break?",
 		},
 	},
-
 
 	{
 		"LogName": "MR Shane Conversation Topics",
 		"Action": "EditData",
 		"Target": "Characters/Dialogue/Shane",
 		"Entries": {
-
-	"SiMorrisReturns": "Not gonna lie, I was kind of hoping I'd never see Morris around here again...$2",
-	"SiMorrisCC": "Morris working at the community center?#$b#That'll never last.",
-	"SiMorrisFriendly": "I still don't like how Morris stuck around, but I guess I can deal with it.$2",
-	"SiMorrisTod": "I thought I saw two Morrises at once today.#$b#That would be a nightmare...",
-
+			"SiMorrisGone": "Guess what?#$e#I got a severance package because the Joja closed down after Morris left.#$e#Win-win for me!",
+			"SiMorrisReturns": "Not gonna lie, I was kind of hoping I'd never see Morris around here again...$2",
+			"SiMorrisCC": "Morris working at the community center?#$b#That'll never last.",
+			"SiMorrisFriendly": "I still don't like how Morris stuck around, but I guess I can deal with it.$2",
+			"SiMorrisTod": "I thought I saw two Morrises at once today.#$b#That would be a nightmare...",
 		},
 	},
-
 
 	{
 		"LogName": "MR Sam Conversation Topics",
 		"Action": "EditData",
 		"Target": "Characters/Dialogue/Sam",
 		"Entries": {
-
-	"SiMorrisReturns": "Morris wasn't a bad boss, but he wasn't a good one either.#$b#He paid on time and didn't make us stay past hours, but that's the best I can say about him.",
-	"SiMorrisCC": "For better or worse, Morris always took his job seriously.#$b#So I'm not worried about whether he'll take care of the community center.#$b#I'm more worried about how the community will deal with him.",
-	"SiMorrisFriendly": "I think leaving Joja helped Morris lighten up a lot.#$b#He says hi whenever I see him in the museum these days.",
-	"SiMorrisTod": "Everyone's talking about two Morrises walking around...#$b#Do you know anything about that?",
-
+			"SiMorrisGone": "Now that Joja's closed down, I guess I gotta find a new job.",
+			"SiMorrisReturns": "Morris wasn't a bad boss, but he wasn't a good one either.#$b#He paid on time and didn't make us stay past hours, but that's the best I can say about him.",
+			"SiMorrisCC": "For better or worse, Morris always took his job seriously.#$b#So I'm not worried about whether he'll take care of the community center.#$b#I'm more worried about how the community will deal with him.",
+			"SiMorrisFriendly": "I think leaving Joja helped Morris lighten up a lot.#$b#He says hi whenever I see him in the museum these days.",
+			"SiMorrisTod": "Everyone's talking about two Morrises walking around...#$b#Do you know anything about that?",
 		},
 	},
 
@@ -87,12 +76,11 @@
 		"Action": "EditData",
 		"Target": "Characters/Dialogue/Linus",
 		"Entries": {
-
-	"SiMorrisReturns": "I hear Morris has returned to the valley.#$b#I wish him well.",
-	"SiMorrisCC": "Hmm, so Morris is working at the community center?#$b#That is an interesting turn of events.",
-	"SiMorrisFriendly": "Morris and I have been trying some new fish recipes together.#$b#You should join us.",
-	"SiMorrisTod": "I've seen Morris around much more often lately.#$b#Someimes he is friendly, and others distant.#$b#Perhaps I should ask him about that.",
-
+			"SiMorrisGone": "I hope that abandoned Joja building doesn't stay broken down for long.#$e#I'm worried about its effect on the river nearby.",
+			"SiMorrisReturns": "I hear Morris has returned to the valley.#$b#I wish him well.",
+			"SiMorrisCC": "Hmm, so Morris is working at the community center?#$b#That is an interesting turn of events.",
+			"SiMorrisFriendly": "Morris and I have been trying some new fish recipes together.#$b#You should join us.",
+			"SiMorrisTod": "I've seen Morris around much more often lately.#$b#Someimes he is friendly, and others distant.#$b#Perhaps I should ask him about that.",
 		},
 	},
 
