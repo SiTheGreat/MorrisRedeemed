@@ -53,16 +53,16 @@
 							"Tile": { "X": 4, "Y": 6 },
 							"Direction": "Up"
 						}
-					],
+					]
 				}
-			},
+			}
 		},
 
 		// Disable social activities till 8 heart event
 		{
 			"Action": "EditData",
 			"Target": "Data/Characters",
-			"Entries": {
+			"Fields": {
 				"Si_MR_Morris": {
 					// Exclusions
 					"CanVisitIsland": false,
@@ -81,7 +81,7 @@
 		{
 			"Action": "EditData",
 			"Target": "Data/Characters",
-			"Entries": {
+			"Fields": {
 				"Si_MR_Morris": {
 					// Exclusions
 					"CanVisitIsland": true,
