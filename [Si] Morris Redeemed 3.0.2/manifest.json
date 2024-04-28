@@ -2,7 +2,7 @@
 	"Name": "[Si] Morris Redeemed",
 	"Author": "SiTheGreat",
 	"Description": "Help Morris redeem himself after completing the Community Center.",
-	"Version": "3.0.1",
+	"Version": "3.0.2",
 	"UniqueID": "SiTheGreat.MorrisRedeemed",
 	"UpdateKeys": [ "Nexus:12667" ],
 	"ContentPackFor": {

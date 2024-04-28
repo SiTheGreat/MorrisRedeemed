@@ -136,7 +136,8 @@
 			"When": {
 				"HasMod |contains=CPBoardingHouse": "true",
 				"HasSeenEvent:hostPlayer |contains=26220101": true,
-				"HasSeenEvent:hostPlayer |contains=26220104": false
+				"HasSeenEvent:hostPlayer |contains=26220104": false,
+				"CrossoverContent": true,
 			},
 		},
 
@@ -148,7 +149,8 @@
 			"When": {
 				"HasMod |contains=CPBoardingHouse": "true",
 				"HasSeenEvent:hostPlayer |contains=26220104": true,
-				"HasSeenEvent:hostPlayer |contains=26220106": false
+				"HasSeenEvent:hostPlayer |contains=26220106": false,
+				"CrossoverContent": true,
 			},
 		},
 
@@ -159,7 +161,8 @@
 			"FromFile": "assets/Schedules/Si_MR_Morris_BHEndSched.json",
 			"When": {
 				"HasMod |contains=CPBoardingHouse": "true",
-				"HasSeenEvent:hostPlayer |contains=26220106": true
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"CrossoverContent": true,
 			},
 		},
 
@@ -197,6 +200,46 @@
 			"When": {
 				"HasMod |contains=CPBoardingHouse": "false",
 				"HasSeenEvent:hostPlayer |contains=26220106": true
+			},
+		},
+
+		// Schedules when Boarding House IS installed AND CrossoverContent = false
+
+		{
+			"LogName": "MR Non-BH Starting Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_CCStartSched.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": "true",
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+				"HasSeenEvent:hostPlayer |contains=26220104": false,
+				"CrossoverContent": false,
+			},
+		},
+
+		{
+			"LogName": "MR Non-BH Middle Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_CCMidSched.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": "true",
+				"HasSeenEvent:hostPlayer |contains=26220104": true,
+				"HasSeenEvent:hostPlayer |contains=26220106": false,
+				"CrossoverContent": false,
+			},
+		},
+
+		{
+			"LogName": "MR Non-BH End Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_CCEndSched.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": "true",
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"CrossoverContent": false,
 			},
 		},
 
@@ -268,6 +311,19 @@
 		},
 
 		{
+			// Mail refers to CC Attic when BH IS installed AND CrossoverContent = false
+			"LogName": "MR Non-BH Events",
+			"Action": "Include",
+			"FromFile": "assets/Events/Si_MR_Morris_CCEvents.json",
+			"When": {
+				"HasMod |contains=CPBoardingHouse": true,
+				"IsCommunityCenterComplete": "true",
+				"Year |contains=1": false,
+				"CrossoverContent": false,
+			},
+		},
+
+		{
 			// Mail refers to Boarding House when BH installed
 			"LogName": "MR BH Crossover Events",
 			"Action": "Include",
@@ -275,7 +331,8 @@
 			"When": {
 				"HasMod |contains=CPBoardingHouse": true,
 				"IsCommunityCenterComplete": true,
-				"Year |contains=1": false
+				"Year |contains=1": false,
+				"CrossoverContent": true,
 			},
 		},
 
@@ -457,6 +514,7 @@
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220101": true,
 				"HasMod |contains=CPBoardingHouse": true,
+				"CrossoverContent": true,
 			},
 		},
 
@@ -486,7 +544,35 @@
 			},
 		},
 
-		// Add Community Center attic
+		{
+			// Add Community Center attic entrance when BH IS installed AND CrossoverContent = false
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"AddWarps": [
+				"58 18 Custom_Si_MR_Morris_CCRoom 5 2"
+			],
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+				"HasMod |contains=CPBoardingHouse": true,
+				"CrossoverContent": false,
+			},
+		},
+
+		{
+			// Add Community Center attic warp when BH IS installed AND CrossoverContent = false
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_MR_Morris_CCRoom",
+			"AddWarps": [
+				"5 1 Town 59 18"
+			],
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": true,
+				"HasMod |contains=CPBoardingHouse": true,
+				"CrossoverContent": false,
+			},
+		},
+
+		// Add Community Center attic map
 		{
             "Action": "Load",
             "Target": "Maps/Custom_Si_MR_Morris_CCRoom",
