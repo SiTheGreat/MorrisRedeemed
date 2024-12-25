@@ -2,6 +2,7 @@
 
 	// Dialogue for 8+ hearts
 
+	// Specific days (mostly pre-festivals)
 	"spring_12_2": "So this Egg Festival... People just go around collecting eggs off the ground?$3#$e#Eurgh, that sounds horrible.$3",
 	"spring_23_2": "I hear the Flower Dance is all about dancing.$3#$e#I had some pretty good moves back in my day.",
 	"summer_10_2": "I'm considering putting coffee into the Luau pot. What do you think?#$e#I mean, it could be worse.#$e#At least it's not kale.",
@@ -10,7 +11,7 @@
 	"fall_26_2": "What should I dress up as for Spirit's Eve?#$e#I'm thinking tax collector.#$e#Or maybe shareholder?",
 	"winter_7_2": "I've never tried ice fishing before. Is it - nICE?#$e#Hahaha, oh that was a good one wasn't it?$1#$e#...What do you mean 'no'?$3",
 	"winter_16_2": "I used to have a few Lupini originals in my house. They're very valuable works, you know.",
-	"winter_24_2": "The Feast of the Winter Star is coming up.#$e#Know who you're getting a gift for yet?#$e#I like hot meals, just saying.$1",
+	"winter_24_2": "The Feast of the Winter Star is coming up.#$e#Know who you're getting a gift for yet?#$e#I like freshly cooked dishes, just saying.$1",
 	"summer_20_2": "I'd love a nice bottle of wine. Won't you bring me some?",
 	"winter_6_2": "I'd love a nice bottle of wine. Won't you bring me some?",
 	"summer_3_2": "I've been in a baking mood lately. Here, you can have this. [234]",
@@ -18,13 +19,28 @@
 	"fall_3_2": "Fall is such a warm season, isn't it? Here, take this. [236]",
 	"winter_3_2": "It's so hard to find fresh ingredients in the winter. Stay warm out there @! [224]",
 
-	"resort": "Ahh, this place is just what I needed.$1",
+	// Conditional dialogue
+	"Resort": "Ahh, this place is just what I needed.$1",
 	"rainy": "Have you ever noticed that rain has a distinct scent?#$e#It's actually quite pleasant.",
-	"SiMorrisTod": "Thanks again for keeping my other's secret.$3#$e#What? I said 'brother'.$3#$e#What did you think I said?",
-	"Custom_BoardingHouse_BoardingHouse": "I think I'll spend today socializing with my fellow boarders. They're an interesting bunch you know!",
 	"Forest": "Wonderful day for a walk, isn't it?",
+	"Desert": "It's sweltering out here!#$b#I might need a break in the medical tent.",
 	"MovieInvitation": "A movie sounds delightful! I shall meet you at the theater.",
+	"DumpsterDiveComment": "Eurgh! I could probably cook you something better than you'd find in there.",
+	"GreenRain_2": "Say, is this color of rain... normal?$3#$e#I must have missed it when I used to work long hours.",
+	"AcceptBirthdayGift_Positive": "What a fantastic way to celebrate my birthday!$1#$b#Thank you @.",
+	"AcceptBirthdayGift_Negative": "What a horrible way to celebrate my birthday!",
 
+	// Conversation topics
+	"SiMorrisCC": "I can't believe I've been reduced to tidying up a community center to make a living.$3#$e#I have an MBA you know!$3",
+	"SiMorrisFriendly": "I can't believe there was ever a time I dreaded coming to this town.#$b#Now I feel right at home!$1",
+	"SiMorrisTheater": "Thank you for the cinema outing the other day @.#$e#Though I am rather surprised a town this size can support a movie theater...$3",
+	"SiMorrisEcon": "Lewis gave me Pelican Town's economic paperwork to examine.$3#$b#Unfortunately it's not very well documented...$3#$e#I'm surprised we haven't been audited! The tax records alone are going to take me ages to clean up.$3",
+	"SiMorrisTod": "Thanks again for keeping my and my other's secret.#$e#What? I said 'brother'.$3#$e#What did you think I said?$3",
+
+	// Modded locations
+	"Custom_BoardingHouse_BoardingHouse": "I think I'll spend today socializing with my fellow boarders. They're an interesting bunch you know!",
+
+	// General dialogue
 	"1_2": "I've been using the Community Center's kitchen to cook hot meals.",
 	"2_2": "Is it just me or does Shane look healthier these days?$3#$e#It's like he's glowing or something.$3#$e#Is that... normal?$3",
 	"3_2": "You're not going to believe this, but I met a wizard!#$e#He did magic in front of me, and there were these little talking fruits with him.#$e#And then he vanished!#$e#You believe me, right?",
