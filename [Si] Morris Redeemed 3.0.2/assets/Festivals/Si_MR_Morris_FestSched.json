@@ -14,6 +14,12 @@
 				"Value": "Si_MR_Morris 30 62 0",
 				"Delimiter": "/"
 			},
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+				"Value": "Si_MR_Morris 30 62 0",
+				"Delimiter": "/"
+			},
 		]
 	},
 
@@ -26,6 +32,12 @@
 			{
 				"Operation": "Append",
 				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 19 20 2",
+				"Delimiter": "/"
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
 				"Value": "Si_MR_Morris 19 20 2",
 				"Delimiter": "/"
 			},
@@ -44,6 +56,12 @@
 				"Value": "Si_MR_Morris 33 13 1",
 				"Delimiter": "/"
 			},
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+				"Value": "Si_MR_Morris 33 13 1",
+				"Delimiter": "/"
+			},
 		]
 	},
 
@@ -56,6 +74,12 @@
 			{
 				"Operation": "Append",
 				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 88 32 1",
+				"Delimiter": "/"
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
 				"Value": "Si_MR_Morris 88 32 1",
 				"Delimiter": "/"
 			},
@@ -74,6 +98,12 @@
 				"Value": "Si_MR_Morris 39 33 3",
 				"Delimiter": "/"
 			},
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+				"Value": "Si_MR_Morris 39 33 3",
+				"Delimiter": "/"
+			},
 		]
 	},
 
@@ -86,6 +116,12 @@
 			{
 				"Operation": "Append",
 				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 34 73 0",
+				"Delimiter": "/"
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
 				"Value": "Si_MR_Morris 34 73 0",
 				"Delimiter": "/"
 			},
@@ -104,6 +140,12 @@
 				"Value": "Si_MR_Morris 73 18 0",
 				"Delimiter": "/"
 			},
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+				"Value": "Si_MR_Morris 73 18 0",
+				"Delimiter": "/"
+			},
 		]
 	},
 
@@ -116,6 +158,12 @@
 			{
 				"Operation": "Append",
 				"Target": ["Entries", "Set-Up_additionalCharacters"],
+				"Value": "Si_MR_Morris 30 60 2",
+				"Delimiter": "/"
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
 				"Value": "Si_MR_Morris 30 60 2",
 				"Delimiter": "/"
 			},

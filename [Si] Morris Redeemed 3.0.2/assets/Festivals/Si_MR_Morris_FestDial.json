@@ -63,7 +63,7 @@
 			"Action": "EditData",
 			"Target": "Data/Festivals/fall27",
 			"Entries": {
-				"Si_MR_Morris": "Any idea what's at the end of the maze? I'm trying to figure out if it's worth it."
+				"Si_MR_Morris": "Any idea what's at the end of the maze? I'm trying to figure out if it's worth it.#$action AddItem (O)612 1"
 			},
 		},
 
