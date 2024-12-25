@@ -12,6 +12,8 @@
 
 		"rain2": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/1020 ArchaeologyHouse 18 6 2/1410 ArchaeologyHouse 9 5 0/1440 ArchaeologyHouse 4 10 0/1510 ArchaeologyHouse 10 11 3/1600 Custom_BoardingHouse_BoardingHouse2 28 20 0",
 
+		"DesertFestival_2": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/920 Desert 10 24 0/2120 Custom_BoardingHouse_BoardingHouse2 28 20 0",
+
 	// Weekly
 
 		"Mon": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/650 CommunityCenter 32 13 0/940 CommunityCenter 23 15 2/1000 CommunityCenter 23 17 3/1030 CommunityCenter 42 18 1/1120 CommunityCenter 46 13 0/1140 CommunityCenter 64 14 0/1200 CommunityCenter 63 14 0/1210 CommunityCenter 60 16 3/1240 CommunityCenter 48 6 0/1300 CommunityCenter 49 4 0/1320 CommunityCenter 50 4 0/1330 CommunityCenter 41 10 0/1350 CommunityCenter 39 10 0/1400 CommunityCenter 37 9 1/1420 CommunityCenter 35 8 3/1440 CommunityCenter 31 9 0/1450 CommunityCenter 20 12 0/1510 CommunityCenter 15 5 0/1530 CommunityCenter 13 5 0/1540 CommunityCenter 13 6 3/1610 CommunityCenter 7 5 0/1620 CommunityCenter 4 5 0/1640 CommunityCenter 14 19 0/1650 CommunityCenter 9 23 3/1710 CommunityCenter 24 8 2/1800 Custom_BoardingHouse_BoardingHouse2 28 20 0",
