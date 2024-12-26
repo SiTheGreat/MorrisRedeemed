@@ -4,7 +4,7 @@
 
 	// Config //////////////////////////////////////////////////////////
 
-	"ConfigSchema":{
+	"ConfigSchema": {
 
 		// "Residence": {
 		// 	"AllowValues": "auto, CCAttic, Loft",
@@ -25,6 +25,50 @@
 		},
 
 	},
+
+	// Dynamic Tokens
+	// IN PROGRESS
+
+	// "DynamicTokens": [
+		
+	// 	{
+	// 		"Name": "Res",
+	// 		"Value": "CCAttic",
+	// 		"When": {
+	// 			"Residence": "auto",
+	// 			"HasMod |contains=CPBoardingHouse": "false",
+	// 			"UntestedCrossoverContent": "false",
+	// 		},
+	// 	},
+		
+	// 	{
+	// 		"Name": "HouseSched",
+	// 		"Value": "Custom_Si_MR_Morris_CCRoom 4 6 0",
+	// 		"When": {
+	// 			"HasMod |contains=CPBoardingHouse": "false",
+	// 			"UntestedCrossoverContent": "false",
+	// 		},
+	// 	},
+
+	// 	{
+	// 		"Name": "HouseSched",
+	// 		"Value": "Custom_Si_MR_Morris_CCRoom 4 6 0",
+	// 		"When": {
+	// 			"HasMod |contains=CPBoardingHouse": "true",
+	// 			"UntestedCrossoverContent": "false",
+	// 		},
+	// 	},
+
+	// 	{
+	// 		"Name": "HouseSched",
+	// 		"Value": "Custom_BoardingHouse_BoardingHouse2 28 20 0",
+	// 		"When": {
+	// 			"HasMod |contains=CPBoardingHouse": "true",
+	// 			"UntestedCrossoverContent": "true",
+	// 		},
+	// 	},
+
+	// ],
 
 	// Content //////////////////////////////////////////////////////////
 
@@ -149,7 +193,7 @@
 				"HasMod |contains=CPBoardingHouse": "true",
 				"HasSeenEvent:hostPlayer |contains=26220101": true,
 				"HasSeenEvent:hostPlayer |contains=26220104": false,
-				"CrossoverContent": true,
+				"UntestedCrossoverContent": true,
 			},
 		},
 
@@ -162,7 +206,7 @@
 				"HasMod |contains=CPBoardingHouse": "true",
 				"HasSeenEvent:hostPlayer |contains=26220104": true,
 				"HasSeenEvent:hostPlayer |contains=26220106": false,
-				"CrossoverContent": true,
+				"UntestedCrossoverContent": true,
 			},
 		},
 
@@ -174,7 +218,7 @@
 			"When": {
 				"HasMod |contains=CPBoardingHouse": "true",
 				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"CrossoverContent": true,
+				"UntestedCrossoverContent": true,
 			},
 		},
 
