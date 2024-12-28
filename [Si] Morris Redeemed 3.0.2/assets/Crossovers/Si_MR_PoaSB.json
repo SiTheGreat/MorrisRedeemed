@@ -10,14 +10,11 @@
 		"LogName": "Si MR PoaSB Gift Tastes",
 		"Action": "EditData",
 		"Target": "Data/NPCGiftTastes",
-		"When": {
-			"HasMod |contains=spacechase0.JsonAssets": "true",
-		},
 		"TextOperations": [
 			{
 			"Operation": "Append",
 			"Target": ["Fields", "Si_MR_Morris", 1],
-			"Value": "{{spacechase0.JsonAssets/ObjectId:Fresh Orange Juice}}",
+			"Value": "AgentLyoko.SaloonBreakfast_FreshOrangeJuice",
 			"Delimiter": " "
 			},
 		],

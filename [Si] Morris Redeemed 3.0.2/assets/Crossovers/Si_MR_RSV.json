@@ -9,14 +9,11 @@
 		"LogName": "Si MR RSV Gift Tastes",
 		"Action": "EditData",
 		"Target": "Data/NPCGiftTastes",
-		"When": {
-			"HasMod |contains=spacechase0.JsonAssets": "true",
-		},
 		"TextOperations": [
 			{
 			"Operation": "Append",
 			"Target": ["Fields", "Si_MR_Morris", 1],
-			"Value": "{{spacechase0.JsonAssets/ObjectId:Honey Ginger Whitefish}} {{spacechase0.JsonAssets/ObjectId:Zesty Tuna}} {{spacechase0.JsonAssets/ObjectId:Highland Blueberry Pie}} {{spacechase0.JsonAssets/ObjectId:Sweet Cranberry Cheesecake}} {{spacechase0.JsonAssets/ObjectId:Clementine Juice}} {{spacechase0.JsonAssets/ObjectId:Crunchy Bagel}}",
+			"Value": "Rafseazz.RSVCP_Honey_Ginger_Whitefish Rafseazz.RSVCP_Zesty_Tuna Rafseazz.RSVCP_Highland_Blueberry_Pie Rafseazz.RSVCP_Sweet_Cranberry_Cheesecake Rafseazz.RSVCP_Clementine_Juice Rafseazz.RSVCP_Clementine_Cake Rafseazz.RSVCP_Crunchy_Bagel",
 			"Delimiter": " "
 			},
 		],
@@ -44,7 +41,19 @@
 			},
 			{
 			"Operation": "Append",
+			"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+			"Value": "Si_MR_Morris 71 46 2",
+			"Delimiter": "/"
+			},
+			{
+			"Operation": "Append",
 			"Target": ["Entries", "MainEvent_additionalCharacters"],
+			"Value": "Si_MR_Morris 70 45 0",
+			"Delimiter": "/"
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Entries", "MainEvent_additionalCharacters_y2"],
 			"Value": "Si_MR_Morris 70 45 0",
 			"Delimiter": "/"
 			},
@@ -66,6 +75,12 @@
 			{
 			"Operation": "Append",
 			"Target": ["Entries", "Set-Up_additionalCharacters"],
+			"Value": "Si_MR_Morris 43 28 2",
+			"Delimiter": "/"
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
 			"Value": "Si_MR_Morris 43 28 2",
 			"Delimiter": "/"
 			},
@@ -133,7 +148,7 @@
 			},
 			"Entries": {
 
-				"20": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/1010 Custom_Ridgeside_RidgesideVillage 90 40 0/1220 Custom_Ridgeside_RidgesideVillage 90 48 2/1840 Custom_BoardingHouse_BoardingHouse2 28 20 0",
+				"20": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/1010 Custom_Ridgeside_RidgesideVillage 90 40 0/1420 Custom_Ridgeside_RidgesideVillage 88 44 2/1840 Custom_BoardingHouse_BoardingHouse2 28 20 0",
 
 			},
 		},
@@ -149,7 +164,7 @@
 			},
 			"Entries": {
 
-				"13": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/720 Custom_BoardingHouse_BoardingHouse 19 5 0/810 Custom_BoardingHouse_BoardingHouse 16 5 0/920 Custom_BoardingHouse_BoardingHouse 18 5 0/1040 Custom_BoardingHouse_BoardingHouse 16 5 0/1150 Custom_BoardingHouse_BoardingHouse 17 5 0/1220 Custom_BoardingHouse_BoardingHouse 16 5 0/1340 Custom_BoardingHouse_BoardingHouse 19 9 3/1420 Custom_BoardingHouse_BoardingHouse 18 5 0/1510 Custom_BoardingHouse_BoardingHouse 19 5 0/1540 Custom_Ridgeside_LogCabinHotelLobby 40 15 0/1720 Custom_Ridgeside_LogCabinHotelLobby 24 14 2/2110 Custom_BoardingHouse_BoardingHouse2 28 20 0",
+				"13": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/1110 Custom_Ridgeside_LogCabinHotelLobby 40 15 0/1520 Custom_Ridgeside_LogCabinHotelLobby 24 14 2/2110 Custom_BoardingHouse_BoardingHouse2 28 20 0",
 
 			},
 		},
@@ -165,7 +180,7 @@
 			},
 			"Entries": {
 
-				"20": "0 Custom_Si_MR_Morris_CCRoom 4 6 0/1010 Custom_Ridgeside_RidgesideVillage 90 40 0/1220 Custom_Ridgeside_RidgesideVillage 90 48 2/1840 Custom_Si_MR_Morris_CCRoom 4 6 0",
+				"20": "0 Custom_Si_MR_Morris_CCRoom 4 6 0/1010 Custom_Ridgeside_RidgesideVillage 90 40 0/1420 Custom_Ridgeside_RidgesideVillage 88 44 2/1840 Custom_Si_MR_Morris_CCRoom 4 6 0",
 
 			},
 		},
@@ -181,7 +196,7 @@
 			},
 			"Entries": {
 
-				"13": "0 Custom_Si_MR_Morris_CCRoom 4 6 0/1110 CommunityCenter 7 5 0/1250 CommunityCenter 4 5 0/1420 CommunityCenter 6 5 0/1510 CommunityCenter 4 5 0/1540 Custom_Ridgeside_LogCabinHotelLobby 40 15 0/1720 Custom_Ridgeside_LogCabinHotelLobby 24 14 2/2110 Custom_Si_MR_Morris_CCRoom 4 6 0",
+				"13": "0 Custom_Si_MR_Morris_CCRoom 4 6 0/1110 Custom_Ridgeside_LogCabinHotelLobby 40 15 0/1520 Custom_Ridgeside_LogCabinHotelLobby 24 14 2/2110 Custom_Si_MR_Morris_CCRoom 4 6 0",
 
 			},
 		},

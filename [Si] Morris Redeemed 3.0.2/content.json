@@ -7,7 +7,7 @@
 	"ConfigSchema": {
 
 		// "Residence": {
-		// 	"AllowValues": "auto, CCAttic, Loft",
+		// 	"AllowValues": "auto, CCAttic, Loft", // BoardingHouse
 		// 	"Default": "auto",
 		// 	"Description": "Where Morris lives, depending on what mods are installed. See Nexus description for details."
 		// },
@@ -29,46 +29,77 @@
 	// Dynamic Tokens
 	// IN PROGRESS
 
-	// "DynamicTokens": [
+	"DynamicTokens": [
 		
-	// 	{
-	// 		"Name": "Res",
-	// 		"Value": "CCAttic",
-	// 		"When": {
-	// 			"Residence": "auto",
-	// 			"HasMod |contains=CPBoardingHouse": "false",
-	// 			"UntestedCrossoverContent": "false",
-	// 		},
-	// 	},
+		{
+			"Name": "Res",
+			"Value": "CC",
+			"When": {
+				"Residence": "auto",
+				"HasMod |contains=FireRedLily.NPCApartments": "false",
+			},
+		},
 		
-	// 	{
-	// 		"Name": "HouseSched",
-	// 		"Value": "Custom_Si_MR_Morris_CCRoom 4 6 0",
-	// 		"When": {
-	// 			"HasMod |contains=CPBoardingHouse": "false",
-	// 			"UntestedCrossoverContent": "false",
-	// 		},
-	// 	},
+		{
+			"Name": "Res",
+			"Value": "Apt",
+			"When": {
+				"Residence": "auto",
+				"HasMod |contains=FireRedLily.NPCApartments": "true",
+			},
+		},
 
-	// 	{
-	// 		"Name": "HouseSched",
-	// 		"Value": "Custom_Si_MR_Morris_CCRoom 4 6 0",
-	// 		"When": {
-	// 			"HasMod |contains=CPBoardingHouse": "true",
-	// 			"UntestedCrossoverContent": "false",
-	// 		},
-	// 	},
+		{
+			"Name": "Res",
+			"Value": "CC",
+			"When": {
+				"Residence": "CCAttic",
+			},
+		},
 
-	// 	{
-	// 		"Name": "HouseSched",
-	// 		"Value": "Custom_BoardingHouse_BoardingHouse2 28 20 0",
-	// 		"When": {
-	// 			"HasMod |contains=CPBoardingHouse": "true",
-	// 			"UntestedCrossoverContent": "true",
-	// 		},
-	// 	},
+		{
+			"Name": "Res",
+			"Value": "Apt",
+			"When": {
+				"Residence": "Loft",
+				"HasMod |contains=FireRedLily.NPCApartments": "true",
+			},
+		},
 
-	// ],
+		{
+			"Name": "Res",
+			"Value": "CC",
+			"When": {
+				"Residence": "Loft",
+				"HasMod |contains=FireRedLily.NPCApartments": "false",
+			},
+		},
+
+		{
+			"Name": "House",
+			"Value": "Custom_Si_MR_Morris_CCRoom 4 6 0",
+			"When": {
+				"Res": "CC",
+			},
+		},
+
+		{
+			"Name": "House",
+			"Value": "Custom_Si_MR_Morris_CCRoom 4 6 0", // UPDATE
+			"When": {
+				"Res": "Apt",
+			},
+		},
+
+		// {
+		// 	"Name": "House",
+		// 	"Value": "Custom_BoardingHouse_BoardingHouse2 28 20 0",
+		// 	"When": {
+		// 		"Res": "BH",
+		// 	},
+		// },
+
+	],
 
 	// Content //////////////////////////////////////////////////////////
 
