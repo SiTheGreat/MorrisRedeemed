@@ -9,14 +9,11 @@
 		"LogName": "Si MR ES Gift Tastes",
 		"Action": "EditData",
 		"Target": "Data/NPCGiftTastes",
-		"When": {
-			"HasMod |contains=spacechase0.JsonAssets": "true",
-		},
 		"TextOperations": [
 			{
 			"Operation": "Append",
 			"Target": ["Fields", "Si_MR_Morris", 1],
-			"Value": "{{spacechase0.JsonAssets/ObjectId:Rosa's Baklava}}",
+			"Value": "EastScarp_Rosas_Baklava",
 			"Delimiter": " "
 			},
 		],
@@ -28,7 +25,7 @@
 		"Action": "EditData",
 		"Target": "Characters/Dialogue/Si_MR_Morris",
 		"Entries": {
-			"Custom_EastScarpe": "Rosa makes some amazing Baklava!",
+			"EastScarp_Village": "Rosa makes some amazing Baklava!",
 		},
 	},
 
@@ -44,7 +41,7 @@
 			},
 			"Entries": {
 
-				"6": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/610 Custom_EastScarpe 21 102 0/1110 Custom_EastScarpe 25 101 2/1220 ArchaeologyHouse 18 6 2/1420 ArchaeologyHouse 9 5 0/1450 ArchaeologyHouse 4 10 0/1510 ArchaeologyHouse 10 11 3/1550 Custom_BoardingHouse_BoardingHouse2 28 20 0",
+				"6": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/610 EastScarp_Village 21 102 0/1110 EastScarp_Village 25 101 2/1220 ArchaeologyHouse 18 6 2/1420 ArchaeologyHouse 9 5 0/1450 ArchaeologyHouse 4 10 0/1510 ArchaeologyHouse 10 11 3/1550 Custom_BoardingHouse_BoardingHouse2 28 20 0",
 
 			},
 		},
@@ -59,7 +56,7 @@
 			},
 			"Entries": {
 
-				"6": "0 Custom_Si_MR_Morris_CCRoom 4 6 0/640 Custom_EastScarpe 21 102 0/1110 Custom_EastScarpe 25 101 2/1220 ArchaeologyHouse 18 6 2/1420 ArchaeologyHouse 9 5 0/1450 ArchaeologyHouse 4 10 0/1510 ArchaeologyHouse 10 11 3/1550 Custom_Si_MR_Morris_CCRoom 4 6 0",
+				"6": "0 Custom_Si_MR_Morris_CCRoom 4 6 0/640 EastScarp_Village 21 102 0/1110 EastScarp_Village 25 101 2/1220 ArchaeologyHouse 18 6 2/1420 ArchaeologyHouse 9 5 0/1450 ArchaeologyHouse 4 10 0/1510 ArchaeologyHouse 10 11 3/1550 Custom_Si_MR_Morris_CCRoom 4 6 0",
 
 			},
 		},
