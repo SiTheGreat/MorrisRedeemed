@@ -6,22 +6,22 @@
 
 	"ConfigSchema": {
 
-		// "Residence": {
-		// 	"AllowValues": "auto, CCAttic, Loft", // BoardingHouse
-		// 	"Default": "auto",
-		// 	"Description": "Where Morris lives, depending on what mods are installed. See Nexus description for details."
-		// },
+		"Residence": {
+			"AllowValues": "auto, CCAttic, Loft", // BoardingHouse
+			"Default": "auto",
+			"Description": "Where Morris lives, depending on what mods are installed. See Nexus description for details."
+		},
 		
 		"CrossoverContent": {
 			"AllowValues": "true, false",
 			"Default": "true",
-			"Description": "When enabled, Morris will have crossover content when certain mods are installed (see Nexus description for details)."
+			"Description": "When enabled, Morris will have crossover content when certain mods are installed. See Nexus description for details."
 		},
 
 		"UntestedCrossoverContent": {
 			"AllowValues": "true, false",
 			"Default": "false",
-			"Description": "This option is for enabling crossover content with mods that have not yet been updated for 1.6 (see Nexus description for details). I'll make updates for those mods when/if they get updated, but in the meantime this option is here in case anyone wants to try those mods as is or test unreleased versions of them."
+			"Description": "This option is for enabling crossover content with mods that have not yet been updated for 1.6; see Nexus description for details. I'll make updates for those mods when/if they get updated, but in the meantime this option is here in case anyone wants to test them out."
 		},
 
 	},
