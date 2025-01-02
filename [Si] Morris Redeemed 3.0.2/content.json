@@ -99,6 +99,25 @@
 		// 	},
 		// },
 
+		// Luau to Feast Of The Sun compat
+
+		{
+			"Name": "LuauName",
+			"Value": "Luau", // UPDATE
+			"When": {
+				"HasMod |contains=KaileyStardew.FeastOfTheSun": "false",
+			},
+		},
+
+		{
+			"Name": "LuauName",
+			"Value": "Feast of the Sun", // UPDATE
+			"When": {
+				"HasMod |contains=KaileyStardew.FeastOfTheSun": "true",
+			},
+		},
+
+
 	],
 
 	// Content //////////////////////////////////////////////////////////

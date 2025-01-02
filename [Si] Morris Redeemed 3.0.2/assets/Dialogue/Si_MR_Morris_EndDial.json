@@ -5,7 +5,7 @@
 	// Specific days (mostly pre-festivals)
 	"spring_12_2": "So this Egg Festival... People just go around collecting eggs off the ground?$3#$e#Eurgh, that sounds horrible.$3",
 	"spring_23_2": "I hear the Flower Dance is all about dancing.$3#$e#I had some pretty good moves back in my day.",
-	"summer_10_2": "I'm considering putting coffee into the Luau pot. What do you think?#$e#I mean, it could be worse.#$e#At least it's not kale.",
+	"summer_10_2": "I'm considering putting coffee into the {{LuauName}} pot. What do you think?#$e#I mean, it could be worse.#$e#At least it's not kale.",
 	"summer_27_2": "The moonlight jellies are so surreal.#$e#I can't believe I've been missing out on them for all these years.#$e#I honestly thought it was just some local myth.",
 	"fall_15_2": "I heard Gus gives out free burgers during the Fair.$3#$e#Guess I have no choice but to attend!",
 	"fall_26_2": "What should I dress up as for Spirit's Eve?#$e#I'm thinking tax collector.#$e#Or maybe shareholder?",
@@ -29,13 +29,6 @@
 	"GreenRain_2": "Say, is this color of rain... normal?$3#$e#I must have missed it when I used to work long hours.",
 	"AcceptBirthdayGift_Positive": "What a fantastic way to celebrate my birthday!$1#$b#Thank you @.",
 	"AcceptBirthdayGift_Negative": "What a horrible way to celebrate my birthday!",
-
-	// Conversation topics
-	"SiMorrisCC": "I can't believe I've been reduced to tidying up a community center to make a living.$3#$e#I have an MBA you know!$3",
-	"SiMorrisFriendly": "I can't believe there was ever a time I dreaded coming to this town.#$b#Now I feel right at home!$1",
-	"SiMorrisTheater": "Thank you for the cinema outing the other day @.#$e#Though I am rather surprised a town this size can support a movie theater...$3",
-	"SiMorrisEcon": "Lewis gave me Pelican Town's economic paperwork to examine.$3#$b#Unfortunately it's not very well documented...$3#$e#I'm surprised we haven't been audited! The tax records alone are going to take me ages to clean up.$3",
-	"SiMorrisTod": "Thanks again for keeping my and my other's secret.#$e#What? I said 'brother'.$3#$e#What did you think I said?$3",
 
 	// Modded locations
 	"Custom_BoardingHouse_BoardingHouse": "I think I'll spend today socializing with my fellow boarders. They're an interesting bunch you know!",

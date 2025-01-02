@@ -7,6 +7,19 @@
 	"Changes": [
 
 	{
+		"LogName": "MR Morris Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Si_MR_Morris",
+		"Entries": {
+			"SiMorrisCC": "I can't believe I've been reduced to tidying up a community center to make a living.$3#$e#I have an MBA you know!$3",
+			"SiMorrisFriendly": "I can't believe there was ever a time I dreaded coming to this town.#$b#Now I feel right at home!$1",
+			"SiMorrisTheater": "Thank you for the cinema outing the other day @.#$e#Though I am rather surprised a town this size can support a movie theater...$3",
+			"SiMorrisEcon": "Lewis gave me Pelican Town's economic paperwork to examine.$3#$b#Unfortunately it's not very well documented...$3#$e#I'm surprised we haven't been audited! The tax records alone are going to take me ages to clean up.$3",
+			"SiMorrisTod": "Thanks again for keeping my and my other's secret.#$e#What? I said 'brother'.$3#$e#What did you think I said?$3",
+		},
+	},
+
+	{
 		"LogName": "MR Pierre Conversation Topics",
 		"Action": "EditData",
 		"Target": "Characters/Dialogue/Pierre",
