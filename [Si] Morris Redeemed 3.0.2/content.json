@@ -27,9 +27,10 @@
 	},
 
 	// Dynamic Tokens
-	// IN PROGRESS
 
 	"DynamicTokens": [
+
+		// Housing options
 		
 		{
 			"Name": "Res",
@@ -59,6 +60,15 @@
 
 		{
 			"Name": "Res",
+			"Value": "CC",
+			"When": {
+				"Residence": "Loft",
+				"HasMod |contains=FireRedLily.NPCApartments": "false",
+			},
+		},
+
+		{
+			"Name": "Res",
 			"Value": "Apt",
 			"When": {
 				"Residence": "Loft",
@@ -66,14 +76,7 @@
 			},
 		},
 
-		{
-			"Name": "Res",
-			"Value": "CC",
-			"When": {
-				"Residence": "Loft",
-				"HasMod |contains=FireRedLily.NPCApartments": "false",
-			},
-		},
+		// Housing coordinates
 
 		{
 			"Name": "House",
@@ -85,7 +88,7 @@
 
 		{
 			"Name": "House",
-			"Value": "Custom_Si_MR_Morris_CCRoom 4 6 0", // UPDATE
+			"Value": "FRL_NPCApt_Floor3 7 32 3", // Room 3F
 			"When": {
 				"Res": "Apt",
 			},
@@ -93,7 +96,7 @@
 
 		// {
 		// 	"Name": "House",
-		// 	"Value": "Custom_BoardingHouse_BoardingHouse2 28 20 0",
+		// 	"Value": "Custom_BoardingHouse_BoardingHouse2 28 20 0", // For when BH gets updated to 1.6
 		// 	"When": {
 		// 		"Res": "BH",
 		// 	},
@@ -438,42 +441,34 @@
 		},
 
 		{
-			// Mail refers to CC Attic when BH NOT installed
-			"LogName": "MR Non-BH Events",
+			// Mail refers to CC Attic
+			"LogName": "MR CC Mail",
 			"Action": "Include",
 			"FromFile": "assets/Events/Si_MR_Morris_CCEvents.json",
 			"When": {
-				"HasMod |contains=CPBoardingHouse": false,
-				"IsCommunityCenterComplete": "true",
-				"Year |contains=1": false
+				"Res": "CC",
 			},
 		},
 
 		{
-			// Mail refers to CC Attic when BH IS installed AND CrossoverContent = false
-			"LogName": "MR Non-BH Events",
+			// Mail refers to Lofts
+			"LogName": "MR Loft Mail",
 			"Action": "Include",
-			"FromFile": "assets/Events/Si_MR_Morris_CCEvents.json",
+			"FromFile": "assets/Events/Si_MR_Morris_LoftEvents.json",
 			"When": {
-				"HasMod |contains=CPBoardingHouse": true,
-				"IsCommunityCenterComplete": "true",
-				"Year |contains=1": false,
-				"CrossoverContent": false,
+				"Res": "Apt",
 			},
 		},
 
-		{
-			// Mail refers to Boarding House when BH installed
-			"LogName": "MR BH Crossover Events",
-			"Action": "Include",
-			"FromFile": "assets/Events/Si_MR_Morris_BHEvents.json",
-			"When": {
-				"HasMod |contains=CPBoardingHouse": true,
-				"IsCommunityCenterComplete": true,
-				"Year |contains=1": false,
-				"CrossoverContent": true,
-			},
-		},
+		// {
+		// 	// Mail refers to Boarding House when BH installed
+		// 	"LogName": "MR BH Mail",
+		// 	"Action": "Include",
+		// 	"FromFile": "assets/Events/Si_MR_Morris_BHEvents.json",
+		// 	"When": {
+		// 		"Res": "BH",
+		// 	},
+		// },
 
 		// Mail //////////////////////////////////////////////////////////
 
@@ -580,18 +575,6 @@
 			},
 		},
 
-		// Stray Catfe - Update
-		{
-			"LogName": "MR SC Update Crossover",
-			"Action": "Include",
-			"FromFile": "assets/Crossovers/Si_MR_SC.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"HasMod |contains=ch20youk.TSCCP": true,
-				"UntestedCrossoverContent": true,
-			},
-		},
-
 		// Part of a Saloon Breakfast
 		{
 			"LogName": "MR PoaSB Crossover",
@@ -602,18 +585,6 @@
 				"HasSeenEvent:hostPlayer |contains=177755": true,
 				"HasMod |contains=agentlyoko.stardropbreakfast": true,
 				"CrossoverContent": true,
-			},
-		},
-
-		// Tricks and Treats
-		{
-			"LogName": "MR TaT Content Pack",
-			"Action": "Include",
-			"FromFile": "assets/Crossovers/Si_MR_TaT.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"HasMod |contains=ch20youk.TricksAndTreats": true,
-				"UntestedCrossoverContent": true,
 			},
 		},
 
@@ -641,77 +612,36 @@
 			},
 		},
 
+		// Mods not updated for 1.6
+
+		// Stray Catfe - Update
+		{
+			"LogName": "MR SC Update Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_SC.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=ch20youk.TSCCP": true,
+				"UntestedCrossoverContent": true,
+			},
+		},
+
+		// Tricks and Treats
+		{
+			"LogName": "MR TaT Content Pack",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_TaT.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220106": true,
+				"HasMod |contains=ch20youk.TricksAndTreats": true,
+				"UntestedCrossoverContent": true,
+			},
+		},
+
 		// Maps //////////////////////////////////////////////////////////
 
-		{
-			// Add Boarding House room when BH is installed
-			"LogName": "MR Boarding House Room",
-			"Action": "EditMap",
-			"Target": "Maps/Custom_BoardingHouse_BoardingHouse2",
-			"FromFile": "assets/Maps/Si_MR_Morris_BHRoom.tmx",
-			"ToArea": { "X": 24, "Y": 14, "Width": 11, "Height": 10 },
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": true,
-				"HasMod |contains=CPBoardingHouse": true,
-				"CrossoverContent": true,
-			},
-		},
-
-		{
-			// Add Community Center attic entrance when BH is NOT installed
-			"Action": "EditMap",
-			"Target": "Maps/Town",
-			"AddWarps": [
-				"58 18 Custom_Si_MR_Morris_CCRoom 5 2"
-			],
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": true,
-				"HasMod |contains=CPBoardingHouse": false,
-			},
-		},
-
-		{
-			// Add Community Center attic warp when BH is NOT installed
-			"Action": "EditMap",
-			"Target": "Maps/Custom_Si_MR_Morris_CCRoom",
-			"AddWarps": [
-				"5 1 Town 59 18"
-			],
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": true,
-				"HasMod |contains=CPBoardingHouse": false,
-			},
-		},
-
-		{
-			// Add Community Center attic entrance when BH IS installed AND CrossoverContent = false
-			"Action": "EditMap",
-			"Target": "Maps/Town",
-			"AddWarps": [
-				"58 18 Custom_Si_MR_Morris_CCRoom 5 2"
-			],
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": true,
-				"HasMod |contains=CPBoardingHouse": true,
-				"CrossoverContent": false,
-			},
-		},
-
-		{
-			// Add Community Center attic warp when BH IS installed AND CrossoverContent = false
-			"Action": "EditMap",
-			"Target": "Maps/Custom_Si_MR_Morris_CCRoom",
-			"AddWarps": [
-				"5 1 Town 59 18"
-			],
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=26220101": true,
-				"HasMod |contains=CPBoardingHouse": true,
-				"CrossoverContent": false,
-			},
-		},
-
 		// Add Community Center attic map
+		// This gets loaded regardless of which housing option is enabled
 		{
             "Action": "Load",
             "Target": "Maps/Custom_Si_MR_Morris_CCRoom",
@@ -732,7 +662,48 @@
 					}
 				}
 			}
-		}
+		},
+		{
+			// Add Community Center attic warp to Town
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_MR_Morris_CCRoom",
+			"AddWarps": [
+				"5 1 Town 59 18"
+			],
+		},
+
+		// Add CC attic warp from Town when Res==CC
+		{
+			// Add Community Center attic warp
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"AddWarps": [
+				"58 18 Custom_Si_MR_Morris_CCRoom 5 2"
+			],
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=26220101": "true",
+				"Res": "CC",
+			},
+		},
+
+		// Add Loft room when Res==Apt
+		// tbh I'm just going to use the default room for now
+		// Might make this later
+
+		// Add Boarding House room when Res==BH
+		// Disabled till BH gets updated for 1.6
+		// {
+		// 	// Add Boarding House room when BH is installed
+		// 	"LogName": "MR Boarding House Room",
+		// 	"Action": "EditMap",
+		// 	"Target": "Maps/Custom_BoardingHouse_BoardingHouse2",
+		// 	"FromFile": "assets/Maps/Si_MR_Morris_BHRoom.tmx",
+		// 	"ToArea": { "X": 24, "Y": 14, "Width": 11, "Height": 10 },
+		// 	"When": {
+		// 		"HasSeenEvent:hostPlayer |contains=26220101": true,
+		// 		"Res": "BH",
+		// 	},
+		// },
 
 	]
 

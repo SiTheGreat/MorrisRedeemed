@@ -38,29 +38,12 @@
 	// Not Winter
 
 		{
-			"LogName": "Si MR BH PoaSB Schedule", // Saloon 9th tuesday 9 22 1
+			"LogName": "Si MR PoaSB Non-Winter Schedule", // Saloon 9th tuesday 9 22 1
 			"Action": "EditData",
 			"Target": "Characters/schedules/Si_MR_Morris",
-			"When": {
-				"HasMod |contains=CPBoardingHouse": "true",
-			},
 			"Entries": {
 
-				"9": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/710 Saloon 9 22 1/1040 Forest 87 60 2/1420 Forest 37 89 2/1540 Forest 47 56 1/1740 Custom_BoardingHouse_BoardingHouse2 28 20 0",
-
-			},
-		},
-
-		{
-			"LogName": "Si MR Non-BH PoaSB Schedule", // Saloon 9th tuesday 9 22 1
-			"Action": "EditData",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"When": {
-				"HasMod |contains=CPBoardingHouse": "false",
-			},
-			"Entries": {
-
-				"9": "0 Custom_Si_MR_Morris_CCRoom 4 6 0/740 Saloon 9 22 1/1040 Forest 87 60 2/1420 Forest 37 89 2/1540 Forest 47 56 1/1740 Custom_Si_MR_Morris_CCRoom 4 6 0",
+				"9": "0 {{House}}/740 Saloon 9 22 1/1140 Forest 87 60 2/1620 Forest 37 89 2/1840 Forest 47 56 1/2040 {{House}}",
 
 			},
 		},
@@ -68,29 +51,12 @@
 	// Winter
 
 		{
-			"LogName": "Si MR BH PoaSB Schedule", // Saloon 9th tuesday 9 22 1
+			"LogName": "Si MR PoaSB Winter Schedule", // Saloon 9th tuesday 9 22 1
 			"Action": "EditData",
 			"Target": "Characters/schedules/Si_MR_Morris",
-			"When": {
-				"HasMod |contains=CPBoardingHouse": "true",
-			},
 			"Entries": {
 
-				"winter_9": "0 Custom_BoardingHouse_BoardingHouse2 28 20 0/710 Saloon 9 22 1/1040 ArchaeologyHouse 18 6 2/1420 ArchaeologyHouse 9 5 0/1450 ArchaeologyHouse 4 10 0/1510 ArchaeologyHouse 10 11 3/1550 Custom_BoardingHouse_BoardingHouse2 28 20 0",
-
-			},
-		},
-
-		{
-			"LogName": "Si MR Non-BH PoaSB Schedule", // Saloon 9th tuesday 9 22 1
-			"Action": "EditData",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"When": {
-				"HasMod |contains=CPBoardingHouse": "false",
-			},
-			"Entries": {
-
-				"winter_9": "0 Custom_Si_MR_Morris_CCRoom 4 6 0/740 Saloon 9 22 1/1040 ArchaeologyHouse 18 6 2/1220 ArchaeologyHouse 9 5 0/1450 ArchaeologyHouse 4 10 0/1510 ArchaeologyHouse 10 11 3/1550 Custom_Si_MR_Morris_CCRoom 4 6 0",
+				"winter_9": "0 {{House}}/740 Saloon 9 22 1/1140 ArchaeologyHouse 18 6 2/1420 ArchaeologyHouse 9 5 0/1550 ArchaeologyHouse 4 10 0/1710 ArchaeologyHouse 10 11 3/1810 {{House}}",
 
 			},
 		},

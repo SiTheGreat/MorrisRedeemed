@@ -1,0 +1,17 @@
+{
+	"Changes": [
+
+	// Crossover Events With Lofts by FireRedLily
+
+	{
+	// Event ??; Mail ID Si_MR_Morris_Mail_03; Event ID 26220122
+	"LogName": "Morris Redeemed Moving In Letter",
+	"Action": "EditData",
+	"Target": "Data/Events/Farm",
+	"Entries": {
+		"26220122/e 26220101/x Si_MR_Morris_Mail_03": "null",
+		},
+	},
+
+	]
+}
