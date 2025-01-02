@@ -37,7 +37,7 @@
 		"Action": "EditData",
 		"Target": "Characters/Dialogue/Pam",
 		"Entries": {
-			"SiMorrisGone": "Gotta admit, I like seeing the other townies at Pierre's place nowadays. Joja was so big I could get all the way to the checkout without bumping into another soul.",
+			"SiMorrisGone": "Gotta admit, I like seeing the other townies at {{PierreName}}'s nowadays. Joja was so big I could get all the way to the checkout without bumping into another soul.",
 			"SiMorrisReturns": "Did you hear?#$e#Morris is back in town!",
 			"SiMorrisCC": "Can you believe it?#$e#Morris is working at the community center now!#$e#I thought I'd had too much to drink when I found out.",
 			"SiMorrisFriendly": "Morris is a surprisingly good cook.#$e#And he's always got a little extra wine for me!",

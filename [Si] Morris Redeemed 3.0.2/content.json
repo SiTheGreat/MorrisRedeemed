@@ -117,6 +117,39 @@
 			},
 		},
 
+		// Pierre to Piper compat
+
+		{
+			"Name": "PierreName",
+			"Value": "Pierre", // UPDATE
+			"When": {
+				"HasMod |contains=Heliax.PiperAPierreRewrite": "false",
+			},
+		},
+
+		{
+			"Name": "PierreName",
+			"Value": "Piper", // UPDATE
+			"When": {
+				"HasMod |contains=Heliax.PiperAPierreRewrite": "true",
+			},
+		},
+
+		{
+			"Name": "PierreGen",
+			"Value": "He", // UPDATE
+			"When": {
+				"HasMod |contains=Heliax.PiperAPierreRewrite": "false",
+			},
+		},
+
+		{
+			"Name": "PierreGen",
+			"Value": "She", // UPDATE
+			"When": {
+				"HasMod |contains=Heliax.PiperAPierreRewrite": "true",
+			},
+		},
 
 	],
 

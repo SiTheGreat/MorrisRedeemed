@@ -9,7 +9,7 @@
 	"RejectItem_(O)809": "I'm too busy for a movie, I'm afraid.",
 	"Custom_BoardingHouse_BoardingHouse": "I can't believe I'm having to live in a boarding house now! With other people!$3",
 
-	"1_2": "I asked Pierre if he needed an assistant. He laughed in my face.$3",
+	"1_2": "I asked {{PierreName}} if the shop needed an assistant. {{PierreGen}} laughed in my face.$3",
 	"2_2": "How much do you think Pam would pay for a life coach?$3",
 	"3_2": "That homeless guy said I could help him forage.$3#$e#I asked how much he paid.$3#$e#You should've seen his face!$3",
 	"4_2": "I asked the blacksmith if he needed a bookkeeper.$3#$e#He said he doesn't know what that is.$3#$e#That's why he needs a bookkeeper!$3",
@@ -25,7 +25,7 @@
 	"14_2": "Robin asked if I'd like to chop wood for her.$3#$e#I asked if she was joking.$3#$e#I haven't seen her since.$3",
 	"15_2": "I think I saw a spider in my room earlier.$3#$e#I can't wait to get out of this place.$3",
 	"16_2": "That homeless guy said I could help him forage.$3#$e#I asked how much he paid.$3#$e#You should've seen his face!$3",
-	"17_2": "I asked Pierre if he needed an assistant. He laughed in my face.$3",
+	"17_2": "I asked {{PierreName}} if the shop needed an assistant. {{PierreGen}} laughed in my face.$3",
 	"18_2": "I tried taking research samples with that Demetrius fellow.$3#$e#It was So. Boring.$3#$e#I have no idea what he's talking about half the time, and now my hands are caked in mud.$3",
 	"19_2": "What I'd do for some nice, fresh sushi right about now.$3",
 	"20_2": "I asked the blacksmith if he needed a bookkeeper.$3#$e#He said he doesn't know what that is.$3#$e#That's why he needs a bookkeeper!$3",
