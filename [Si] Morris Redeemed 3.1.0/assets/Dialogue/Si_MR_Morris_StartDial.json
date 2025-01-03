@@ -1,41 +1,52 @@
 {
 
 	// Dialogue for 0-3 hearts
+	"Changes": [
 
-	"summer_21_2": "Ugh, this must be the hottest day of the year.$3#$e#No, of course I'm not going to take my suit off!$3#$e#It adds class.$3",
-	"winter_21_2": "It's freezing out here!$3#$e#I'm wearing four layers under my suit, and I think my hair's frozen in place.$3",
+	{
+		"LogName": "MR Starting Dialogue",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Si_MR_Morris",
+		"Entries": {
 
-	"rainy": "Do you have a spare raincoat? My suit is getting soaked.$3",
-	"RejectItem_(O)809": "I'm too busy for a movie, I'm afraid.",
-	"Custom_BoardingHouse_BoardingHouse": "I can't believe I'm having to live in a boarding house now! With other people!$3",
+			"summer_21_2": "Ugh, this must be the hottest day of the year.$3#$e#No, of course I'm not going to take my suit off!$3#$e#It adds class.$3",
+			"winter_21_2": "It's freezing out here!$3#$e#I'm wearing four layers under my suit, and I think my hair's frozen in place.$3",
 
-	"1_2": "I asked {{PierreName}} if the shop needed an assistant. {{PierreGen}} laughed in my face.$3",
-	"2_2": "How much do you think Pam would pay for a life coach?$3",
-	"3_2": "That homeless guy said I could help him forage.$3#$e#I asked how much he paid.$3#$e#You should've seen his face!$3",
-	"4_2": "I asked the blacksmith if he needed a bookkeeper.$3#$e#He said he doesn't know what that is.$3#$e#That's why he needs a bookkeeper!$3",
-	"5_2": "Robin asked if I'd like to chop wood for her.$3#$e#I asked if she was joking.$3#$e#I haven't seen her since.$3",
-	"6_2": "What I'd do for some nice, fresh sushi right about now.$3",
-	"7_2": "One of the children asked if I had any snails.#$e#Is that code for something?$3",
-	"8_2": "I tried taking research samples with that Demetrius fellow.$3#$e#It was So. Boring.$3#$e#I have no idea what he's talking about half the time, and now my hands are caked in mud.$3",
-	"9_2": "I think I saw a spider in my room earlier.$3#$e#I can't wait to get out of this place.$3",
-	"10_2": "I'm going to be honest with you.$3#$e#I came back here because this place was familiar to me.$3#$e#But now I'm wondering if I should just take the bus back to Zuzu City.$3",
-	"11_2": "How much do you think Pam would pay for a life coach?$3",
-	"12_2": "One of the children asked if I had any snails.#$e#Is that code for something?$3",
-	"13_2": "Watch where you're going!$3",
-	"14_2": "Robin asked if I'd like to chop wood for her.$3#$e#I asked if she was joking.$3#$e#I haven't seen her since.$3",
-	"15_2": "I think I saw a spider in my room earlier.$3#$e#I can't wait to get out of this place.$3",
-	"16_2": "That homeless guy said I could help him forage.$3#$e#I asked how much he paid.$3#$e#You should've seen his face!$3",
-	"17_2": "I asked {{PierreName}} if the shop needed an assistant. {{PierreGen}} laughed in my face.$3",
-	"18_2": "I tried taking research samples with that Demetrius fellow.$3#$e#It was So. Boring.$3#$e#I have no idea what he's talking about half the time, and now my hands are caked in mud.$3",
-	"19_2": "What I'd do for some nice, fresh sushi right about now.$3",
-	"20_2": "I asked the blacksmith if he needed a bookkeeper.$3#$e#He said he doesn't know what that is.$3#$e#That's why he needs a bookkeeper!$3",
-	"21_2": "That homeless guy said I could help him forage.$3#$e#I asked how much he paid.$3#$e#You should've seen his face!$3",
-	"22_2": "One of the children asked if I had any snails.#$e#Is that code for something?$3",
-	"23_2": "How much do you think Pam would pay for a life coach?$3",
-	"24_2": "I asked the blacksmith if he needed a bookkeeper.$3#$e#He said he doesn't know what that is.$3#$e#That's why he needs a bookkeeper!$3",
-	"25_2": "What I'd do for some nice, fresh sushi right about now.$3",
-	"26_2": "I think I saw a spider in my room earlier.$3#$e#I can't wait to get out of this place.$3",
-	"27_2": "Robin asked if I'd like to chop wood for her.$3#$e#I asked if she was joking.$3#$e#I haven't seen her since.$3",
-	"28_2": "I'm going to be honest with you.$3#$e#I came back here because this place was familiar to me.$3#$e#But now I'm wondering if I should just take the bus back to Zuzu City.$3",
+			"rainy": "Do you have a spare raincoat? My suit is getting soaked.$3",
+			"RejectItem_(O)809": "I'm too busy for a movie, I'm afraid.",
+			"Custom_BoardingHouse_BoardingHouse": "I can't believe I'm having to live in a boarding house now! With other people!$3",
+
+			"1_2": "I asked {{PierreName}} if the shop needed an assistant. {{PierreGen}} laughed in my face.$3",
+			"2_2": "How much do you think Pam would pay for a life coach?$3",
+			"3_2": "That homeless guy said I could help him forage.$3#$e#I asked how much he paid.$3#$e#You should've seen his face!$3",
+			"4_2": "I asked the blacksmith if he needed a bookkeeper.$3#$e#He said he doesn't know what that is.$3#$e#That's why he needs a bookkeeper!$3",
+			"5_2": "Robin asked if I'd like to chop wood for her.$3#$e#I asked if she was joking.$3#$e#I haven't seen her since.$3",
+			"6_2": "What I'd do for some nice, fresh sushi right about now.$3",
+			"7_2": "One of the children asked if I had any snails.#$e#Is that code for something?$3",
+			"8_2": "I tried taking research samples with that Demetrius fellow.$3#$e#It was So. Boring.$3#$e#I have no idea what he's talking about half the time, and now my hands are caked in mud.$3",
+			"9_2": "I think I saw a spider in my room earlier.$3#$e#I can't wait to get out of this place.$3",
+			"10_2": "I'm going to be honest with you.$3#$e#I came back here because this place was familiar to me.$3#$e#But now I'm wondering if I should just take the bus back to Zuzu City.$3",
+			"11_2": "How much do you think Pam would pay for a life coach?$3",
+			"12_2": "One of the children asked if I had any snails.#$e#Is that code for something?$3",
+			"13_2": "Watch where you're going!$3",
+			"14_2": "Robin asked if I'd like to chop wood for her.$3#$e#I asked if she was joking.$3#$e#I haven't seen her since.$3",
+			"15_2": "I think I saw a spider in my room earlier.$3#$e#I can't wait to get out of this place.$3",
+			"16_2": "That homeless guy said I could help him forage.$3#$e#I asked how much he paid.$3#$e#You should've seen his face!$3",
+			"17_2": "I asked {{PierreName}} if the shop needed an assistant. {{PierreGen}} laughed in my face.$3",
+			"18_2": "I tried taking research samples with that Demetrius fellow.$3#$e#It was So. Boring.$3#$e#I have no idea what he's talking about half the time, and now my hands are caked in mud.$3",
+			"19_2": "What I'd do for some nice, fresh sushi right about now.$3",
+			"20_2": "I asked the blacksmith if he needed a bookkeeper.$3#$e#He said he doesn't know what that is.$3#$e#That's why he needs a bookkeeper!$3",
+			"21_2": "That homeless guy said I could help him forage.$3#$e#I asked how much he paid.$3#$e#You should've seen his face!$3",
+			"22_2": "One of the children asked if I had any snails.#$e#Is that code for something?$3",
+			"23_2": "How much do you think Pam would pay for a life coach?$3",
+			"24_2": "I asked the blacksmith if he needed a bookkeeper.$3#$e#He said he doesn't know what that is.$3#$e#That's why he needs a bookkeeper!$3",
+			"25_2": "What I'd do for some nice, fresh sushi right about now.$3",
+			"26_2": "I think I saw a spider in my room earlier.$3#$e#I can't wait to get out of this place.$3",
+			"27_2": "Robin asked if I'd like to chop wood for her.$3#$e#I asked if she was joking.$3#$e#I haven't seen her since.$3",
+			"28_2": "I'm going to be honest with you.$3#$e#I came back here because this place was familiar to me.$3#$e#But now I'm wondering if I should just take the bus back to Zuzu City.$3",
+
+		}
+	}
+]
 
 }

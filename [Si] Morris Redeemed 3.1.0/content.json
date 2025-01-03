@@ -267,14 +267,10 @@
         },
 	
 		// Schedules //////////////////////////////////////////////////////////
-		
-		// Schedules when Boarding House NOT installed
 
 		{
-			"LogName": "MR Starting Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"FromFile": "assets/Schedules/Si_MR_Morris_CCStartSched.json",
+			"Action": "Include",
+			"FromFile": "assets/Schedules/Si_MR_Morris_StartSched.json",
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220101": true,
 				"HasSeenEvent:hostPlayer |contains=26220104": false
@@ -282,10 +278,8 @@
 		},
 
 		{
-			"LogName": "MR Middle Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"FromFile": "assets/Schedules/Si_MR_Morris_CCMidSched.json",
+			"Action": "Include",
+			"FromFile": "assets/Schedules/Si_MR_Morris_MidSched.json",
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220104": true,
 				"HasSeenEvent:hostPlayer |contains=26220106": false
@@ -293,10 +287,8 @@
 		},
 
 		{
-			"LogName": "MR End Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"FromFile": "assets/Schedules/Si_MR_Morris_CCEndSched.json",
+			"Action": "Include",
+			"FromFile": "assets/Schedules/Si_MR_Morris_EndSched.json",
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220106": true
 			},
@@ -305,9 +297,7 @@
 		// Dialogue //////////////////////////////////////////////////////////
 
 		{
-			"LogName": "MR Starting Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_MR_Morris",
+			"Action": "Include",
 			"FromFile": "assets/Dialogue/Si_MR_Morris_StartDial.json",
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220101": true,
@@ -316,9 +306,7 @@
 		},
 
 		{
-			"LogName": "MR Middle Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_MR_Morris",
+			"Action": "Include",
 			"FromFile": "assets/Dialogue/Si_MR_Morris_MidDial.json",
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220104": true,
@@ -327,9 +315,7 @@
 		},
 
 		{
-			"LogName": "MR End Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_MR_Morris",
+			"Action": "Include",
 			"FromFile": "assets/Dialogue/Si_MR_Morris_EndDial.json",
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220106": true

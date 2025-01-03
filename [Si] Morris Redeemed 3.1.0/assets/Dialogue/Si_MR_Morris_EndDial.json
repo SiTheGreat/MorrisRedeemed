@@ -1,66 +1,78 @@
 {
 
 	// Dialogue for 8+ hearts
+	"Changes": [
 
-	// Specific days (mostly pre-festivals)
-	"spring_12_2": "So this Egg Festival... People just go around collecting eggs off the ground?$3#$e#Eurgh, that sounds horrible.$3",
-	"spring_23_2": "I hear the Flower Dance is all about dancing.$3#$e#I had some pretty good moves back in my day.",
-	"summer_10_2": "I'm considering putting coffee into the {{LuauName}} pot. What do you think?#$e#I mean, it could be worse.#$e#At least it's not kale.",
-	"summer_27_2": "The moonlight jellies are so surreal.#$e#I can't believe I've been missing out on them for all these years.#$e#I honestly thought it was just some local myth.",
-	"fall_15_2": "I heard Gus gives out free burgers during the Fair.$3#$e#Guess I have no choice but to attend!",
-	"fall_26_2": "What should I dress up as for Spirit's Eve?#$e#I'm thinking tax collector.#$e#Or maybe shareholder?",
-	"winter_7_2": "I've never tried ice fishing before. Is it - nICE?#$e#Hahaha, oh that was a good one wasn't it?$1#$e#...What do you mean 'no'?$3",
-	"winter_16_2": "I used to have a few Lupini originals in my house. They're very valuable works, you know.",
-	"winter_24_2": "The Feast of the Winter Star is coming up.#$e#Know who you're getting a gift for yet?#$e#I like freshly cooked dishes, just saying.$1",
-	"summer_20_2": "I'd love a nice bottle of wine. Won't you bring me some?",
-	"winter_6_2": "I'd love a nice bottle of wine. Won't you bring me some?",
-	"summer_3_2": "I've been in a baking mood lately. Here, you can have this. [234]",
-	"spring_3_2": "I've been trying out some new recipes lately. Tell me what you think. [199]",
-	"fall_3_2": "Fall is such a warm season, isn't it? Here, take this. [236]",
-	"winter_3_2": "It's so hard to find fresh ingredients in the winter. Stay warm out there @! [224]",
+	{
+		"LogName": "MR End Dialogue",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Si_MR_Morris",
+		"Entries": {
 
-	// Conditional dialogue
-	"Resort": "Ahh, this place is just what I needed.$1",
-	"rainy": "Have you ever noticed that rain has a distinct scent?#$e#It's actually quite pleasant.",
-	"Forest": "Wonderful day for a walk, isn't it?",
-	"Desert": "It's sweltering out here!#$b#I might need a break in the medical tent.",
-	"MovieInvitation": "A movie sounds delightful! I shall meet you at the theater.",
-	"DumpsterDiveComment": "Eurgh! I could probably cook you something better than you'd find in there.",
-	"GreenRain_2": "Say, is this color of rain... normal?$3#$e#I must have missed it when I used to work long hours.",
-	"AcceptBirthdayGift_Positive": "What a fantastic way to celebrate my birthday!$1#$b#Thank you @.",
-	"AcceptBirthdayGift_Negative": "What a horrible way to celebrate my birthday!",
+			// Specific days (mostly pre-festivals)
+			"spring_12_2": "So this Egg Festival... People just go around collecting eggs off the ground?$3#$e#Eurgh, that sounds horrible.$3",
+			"spring_23_2": "I hear the Flower Dance is all about dancing.$3#$e#I had some pretty good moves back in my day.",
+			"summer_10_2": "I'm considering putting coffee into the {{LuauName}} pot. What do you think?#$e#I mean, it could be worse.#$e#At least it's not kale.",
+			"summer_27_2": "The moonlight jellies are so surreal.#$e#I can't believe I've been missing out on them for all these years.#$e#I honestly thought it was just some local myth.",
+			"fall_15_2": "I heard Gus gives out free burgers during the Fair.$3#$e#Guess I have no choice but to attend!",
+			"fall_26_2": "What should I dress up as for Spirit's Eve?#$e#I'm thinking tax collector.#$e#Or maybe shareholder?",
+			"winter_7_2": "I've never tried ice fishing before. Is it - nICE?#$e#Hahaha, oh that was a good one wasn't it?$1#$e#...What do you mean 'no'?$3",
+			"winter_16_2": "I used to have a few Lupini originals in my house. They're very valuable works, you know.",
+			"winter_24_2": "The Feast of the Winter Star is coming up.#$e#Know who you're getting a gift for yet?#$e#I like freshly cooked dishes, just saying.$1",
+			"summer_20_2": "I'd love a nice bottle of wine. Won't you bring me some?",
+			"winter_6_2": "I'd love a nice bottle of wine. Won't you bring me some?",
+			"summer_3_2": "I've been in a baking mood lately. Here, you can have this. [234]",
+			"spring_3_2": "I've been trying out some new recipes lately. Tell me what you think. [199]",
+			"fall_3_2": "Fall is such a warm season, isn't it? Here, take this. [236]",
+			"winter_3_2": "It's so hard to find fresh ingredients in the winter. Stay warm out there @! [224]",
 
-	// Modded locations
-	"Custom_BoardingHouse_BoardingHouse": "I think I'll spend today socializing with my fellow boarders. They're an interesting bunch you know!",
+			// Conditional dialogue
+			"Resort": "Ahh, this place is just what I needed.$1",
+			"rainy": "Have you ever noticed that rain has a distinct scent?#$e#It's actually quite pleasant.",
+			"Forest": "Wonderful day for a walk, isn't it?",
+			"Desert": "It's sweltering out here!#$b#I might need a break in the medical tent.",
+			"MovieInvitation": "A movie sounds delightful! I shall meet you at the theater.",
+			"DumpsterDiveComment": "Eurgh! I could probably cook you something better than you'd find in there.",
+			"GreenRain_2": "Say, is this color of rain... normal?$3#$e#I must have missed it when I used to work long hours.",
+			"AcceptBirthdayGift_Positive": "What a fantastic way to celebrate my birthday!$1#$b#Thank you @.",
+			"AcceptBirthdayGift_Negative": "What a horrible way to celebrate my birthday!",
 
-	// General dialogue
-	"1_2": "I've been using the Community Center's kitchen to cook hot meals.",
-	"2_2": "Is it just me or does Shane look healthier these days?$3#$e#It's like he's glowing or something.$3#$e#Is that... normal?$3",
-	"3_2": "You're not going to believe this, but I met a wizard!#$e#He did magic in front of me, and there were these little talking fruits with him.#$e#And then he vanished!#$e#You believe me, right?",
-	"4_2": "This fresh valley air is really making me feel energized!$1",
-	"5_2": "Linus made me some maki rolls.#$e#He's a surprisingly good cook for not having a kitchen.",
-	"6_2": "I used to get financial reports about Pelican Town as the Joja Mart manager.#$e#Based on what I've seen I think that vault should look a little more full...$3",
-	"7_2": "I swear I saw a blue chicken the other day.$3#$e#Have you ever heard of something like that?",
-	"8_2": "I've been learning to meal prep for each week.#$e#So efficient!$1",
-	"9_2": "Hello @, how's the farm?",
-	"10_2": "The fireplace is quite warm.#$e#It reminds me of my old house.",
-	"11_2": "Linus brought me a fish from the lake yesterday.#$e#We shared it after I cooked it.#$e#It was delicious!$1",
-	"12_2": "I wish the library was open later.#$e#I'd probably visit more often.#$e#There are some interesting books in there.",
-	"13_2": "What I'd do for some nice, fresh sushi right about now.",
-	"14_2": "Is it just me or does Shane look healthier these days?$3#$e#It's like he's glowing or something.$3#$e#Is that... normal?$3",
-	"15_2": "This fresh valley air is really making me feel energized!$1",
-	"16_2": "I've been using the Community Center's kitchen to cook hot meals.",
-	"17_2": "Linus brought me a fish from the lake yesterday.#$e#We shared it after I cooked it.#$e#It was delicious!$1",
-	"18_2": "I wish the library was open later.#$e#I'd probably visit more often.#$e#There are some interesting books in there.",
-	"19_2": "I've been learning to meal prep for each week.#$e#So efficient!",
-	"20_2": "Hello @, how's the farm?",
-	"21_2": "The fireplace is quite warm.#$e#It reminds me of my old house.",
-	"22_2": "You're not going to believe this, but I met a wizard!#$e#He did magic in front of me, and there were these little talking fruits with him.#$e#And then he vanished!#$e#You believe me, right?",
-	"23_2": "What I'd do for some nice, fresh sushi right about now.",
-	"24_2": "Hello @, how's the farm?",
-	"25_2": "This fresh valley air is really making me feel energized!$1",
-	"26_2": "I swear I saw a blue chicken the other day.#$e#Have you ever heard of something like that?",
-	"27_2": "I used to get financial reports about Pelican Town as the Joja Mart manager.#$e#Based on what I've seen I think that vault should look a little more full...$3",
-	"28_2": "Linus made me some maki rolls.#$e#He's a surprisingly good cook for not having a kitchen.",
+			// Modded locations
+			"Custom_BoardingHouse_BoardingHouse": "I think I'll spend today socializing with my fellow boarders. They're an interesting bunch you know!",
+
+			// General dialogue
+			"1_2": "I've been using the Community Center's kitchen to cook hot meals.",
+			"2_2": "Is it just me or does Shane look healthier these days?$3#$e#It's like he's glowing or something.$3#$e#Is that... normal?$3",
+			"3_2": "You're not going to believe this, but I met a wizard!#$e#He did magic in front of me, and there were these little talking fruits with him.#$e#And then he vanished!#$e#You believe me, right?",
+			"4_2": "This fresh valley air is really making me feel energized!$1",
+			"5_2": "Linus made me some maki rolls.#$e#He's a surprisingly good cook for not having a kitchen.",
+			"6_2": "I used to get financial reports about Pelican Town as the Joja Mart manager.#$e#Based on what I've seen I think that vault should look a little more full...$3",
+			"7_2": "I swear I saw a blue chicken the other day.$3#$e#Have you ever heard of something like that?",
+			"8_2": "I've been learning to meal prep for each week.#$e#So efficient!$1",
+			"9_2": "Hello @, how's the farm?",
+			"10_2": "The fireplace is quite warm.#$e#It reminds me of my old house.",
+			"11_2": "Linus brought me a fish from the lake yesterday.#$e#We shared it after I cooked it.#$e#It was delicious!$1",
+			"12_2": "I wish the library was open later.#$e#I'd probably visit more often.#$e#There are some interesting books in there.",
+			"13_2": "What I'd do for some nice, fresh sushi right about now.",
+			"14_2": "Is it just me or does Shane look healthier these days?$3#$e#It's like he's glowing or something.$3#$e#Is that... normal?$3",
+			"15_2": "This fresh valley air is really making me feel energized!$1",
+			"16_2": "I've been using the Community Center's kitchen to cook hot meals.",
+			"17_2": "Linus brought me a fish from the lake yesterday.#$e#We shared it after I cooked it.#$e#It was delicious!$1",
+			"18_2": "I wish the library was open later.#$e#I'd probably visit more often.#$e#There are some interesting books in there.",
+			"19_2": "I've been learning to meal prep for each week.#$e#So efficient!",
+			"20_2": "Hello @, how's the farm?",
+			"21_2": "The fireplace is quite warm.#$e#It reminds me of my old house.",
+			"22_2": "You're not going to believe this, but I met a wizard!#$e#He did magic in front of me, and there were these little talking fruits with him.#$e#And then he vanished!#$e#You believe me, right?",
+			"23_2": "What I'd do for some nice, fresh sushi right about now.",
+			"24_2": "Hello @, how's the farm?",
+			"25_2": "This fresh valley air is really making me feel energized!$1",
+			"26_2": "I swear I saw a blue chicken the other day.#$e#Have you ever heard of something like that?",
+			"27_2": "I used to get financial reports about Pelican Town as the Joja Mart manager.#$e#Based on what I've seen I think that vault should look a little more full...$3",
+			"28_2": "Linus made me some maki rolls.#$e#He's a surprisingly good cook for not having a kitchen.",
+
+		}
+	}
+
+]
 
 }
