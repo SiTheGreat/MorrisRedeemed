@@ -267,121 +267,38 @@
         },
 	
 		// Schedules //////////////////////////////////////////////////////////
-
-		// Schedules when Boarding House installed
-
-		{
-			"LogName": "MR BH Starting Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"FromFile": "assets/Schedules/Si_MR_Morris_BHStartSched.json",
-			"When": {
-				"HasMod |contains=CPBoardingHouse": "true",
-				"HasSeenEvent:hostPlayer |contains=26220101": true,
-				"HasSeenEvent:hostPlayer |contains=26220104": false,
-				"UntestedCrossoverContent": true,
-			},
-		},
-
-		{
-			"LogName": "MR BH Middle Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"FromFile": "assets/Schedules/Si_MR_Morris_BHMidSched.json",
-			"When": {
-				"HasMod |contains=CPBoardingHouse": "true",
-				"HasSeenEvent:hostPlayer |contains=26220104": true,
-				"HasSeenEvent:hostPlayer |contains=26220106": false,
-				"UntestedCrossoverContent": true,
-			},
-		},
-
-		{
-			"LogName": "MR BH End Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"FromFile": "assets/Schedules/Si_MR_Morris_BHEndSched.json",
-			"When": {
-				"HasMod |contains=CPBoardingHouse": "true",
-				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"UntestedCrossoverContent": true,
-			},
-		},
-
+		
 		// Schedules when Boarding House NOT installed
 
 		{
-			"LogName": "MR Non-BH Starting Schedule",
+			"LogName": "MR Starting Schedule",
 			"Action": "Load",
 			"Target": "Characters/schedules/Si_MR_Morris",
 			"FromFile": "assets/Schedules/Si_MR_Morris_CCStartSched.json",
 			"When": {
-				"HasMod |contains=CPBoardingHouse": "false",
 				"HasSeenEvent:hostPlayer |contains=26220101": true,
 				"HasSeenEvent:hostPlayer |contains=26220104": false
 			},
 		},
 
 		{
-			"LogName": "MR Non-BH Middle Schedule",
+			"LogName": "MR Middle Schedule",
 			"Action": "Load",
 			"Target": "Characters/schedules/Si_MR_Morris",
 			"FromFile": "assets/Schedules/Si_MR_Morris_CCMidSched.json",
 			"When": {
-				"HasMod |contains=CPBoardingHouse": "false",
 				"HasSeenEvent:hostPlayer |contains=26220104": true,
 				"HasSeenEvent:hostPlayer |contains=26220106": false
 			},
 		},
 
 		{
-			"LogName": "MR Non-BH End Schedule",
+			"LogName": "MR End Schedule",
 			"Action": "Load",
 			"Target": "Characters/schedules/Si_MR_Morris",
 			"FromFile": "assets/Schedules/Si_MR_Morris_CCEndSched.json",
 			"When": {
-				"HasMod |contains=CPBoardingHouse": "false",
 				"HasSeenEvent:hostPlayer |contains=26220106": true
-			},
-		},
-
-		// Schedules when Boarding House IS installed AND CrossoverContent = false
-
-		{
-			"LogName": "MR Non-BH Starting Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"FromFile": "assets/Schedules/Si_MR_Morris_CCStartSched.json",
-			"When": {
-				"HasMod |contains=CPBoardingHouse": "true",
-				"HasSeenEvent:hostPlayer |contains=26220101": true,
-				"HasSeenEvent:hostPlayer |contains=26220104": false,
-				"CrossoverContent": false,
-			},
-		},
-
-		{
-			"LogName": "MR Non-BH Middle Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"FromFile": "assets/Schedules/Si_MR_Morris_CCMidSched.json",
-			"When": {
-				"HasMod |contains=CPBoardingHouse": "true",
-				"HasSeenEvent:hostPlayer |contains=26220104": true,
-				"HasSeenEvent:hostPlayer |contains=26220106": false,
-				"CrossoverContent": false,
-			},
-		},
-
-		{
-			"LogName": "MR Non-BH End Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"FromFile": "assets/Schedules/Si_MR_Morris_CCEndSched.json",
-			"When": {
-				"HasMod |contains=CPBoardingHouse": "true",
-				"HasSeenEvent:hostPlayer |contains=26220106": true,
-				"CrossoverContent": false,
 			},
 		},
 

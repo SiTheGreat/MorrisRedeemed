@@ -10,7 +10,7 @@
 	},
 	"Dependencies": [
 		{
-        		"UniqueID": "CPBoardingHouse",
+        		"UniqueID": "FireRedLily.NPCApartments",
         		"IsRequired": false
 		},
 	]
