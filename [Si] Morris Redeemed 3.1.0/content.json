@@ -31,58 +31,37 @@
 	"DynamicTokens": [
 
 		// Housing options
-		
+
 		{
 			"Name": "Res",
-			"Value": "CC",
-			"When": {
-				"Residence": "auto",
-				"HasMod |contains=FireRedLily.NPCApartments": "false",
-			},
-		},
-		
-		{
-			"Name": "Res",
-			"Value": "Apt",
-			"When": {
-				"Residence": "auto",
-				"HasMod |contains=FireRedLily.NPCApartments": "true",
-			},
+			"Value": "{{Residence}}",
 		},
 
 		{
 			"Name": "Res",
-			"Value": "CC",
+			"Value": "CCAttic",
 			"When": {
-				"Residence": "CCAttic",
-			},
-		},
-
-		{
-			"Name": "Res",
-			"Value": "CC",
-			"When": {
-				"Residence": "Loft",
+				"Res": "auto",
 				"HasMod |contains=FireRedLily.NPCApartments": "false",
 			},
 		},
 
 		{
 			"Name": "Res",
-			"Value": "Apt",
+			"Value": "Loft",
 			"When": {
-				"Residence": "Loft",
+				"Res": "auto",
 				"HasMod |contains=FireRedLily.NPCApartments": "true",
 			},
 		},
-
+				
 		// Housing coordinates
 
 		{
 			"Name": "House",
 			"Value": "Custom_Si_MR_Morris_CCRoom 4 6 0",
 			"When": {
-				"Res": "CC",
+				"Res": "CCAttic",
 			},
 		},
 
@@ -90,7 +69,7 @@
 			"Name": "House",
 			"Value": "FRL_NPCApt_Floor3 7 32 3", // Room 3F
 			"When": {
-				"Res": "Apt",
+				"Res": "Loft",
 			},
 		},
 
@@ -269,6 +248,12 @@
 		// Schedules //////////////////////////////////////////////////////////
 
 		{
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_InitSched.json",
+		},
+
+		{
 			"Action": "Include",
 			"FromFile": "assets/Schedules/Si_MR_Morris_StartSched.json",
 			"When": {
@@ -295,6 +280,12 @@
 		},
 
 		// Dialogue //////////////////////////////////////////////////////////
+
+		{
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_MR_Morris",
+			"FromFile": "assets/Schedules/Si_MR_Morris_InitDial.json",
+		},
 
 		{
 			"Action": "Include",
@@ -349,7 +340,7 @@
 			"Action": "Include",
 			"FromFile": "assets/Events/Si_MR_Morris_CCEvents.json",
 			"When": {
-				"Res": "CC",
+				"Res": "CCAttic",
 			},
 		},
 
@@ -359,7 +350,7 @@
 			"Action": "Include",
 			"FromFile": "assets/Events/Si_MR_Morris_LoftEvents.json",
 			"When": {
-				"Res": "Apt",
+				"Res": "Loft",
 			},
 		},
 
@@ -575,7 +566,7 @@
 			],
 		},
 
-		// Add CC attic warp from Town when Res==CC
+		// Add CC attic warp from Town when Res==CCAttic
 		{
 			// Add Community Center attic warp
 			"Action": "EditMap",
@@ -585,11 +576,11 @@
 			],
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=26220101": "true",
-				"Res": "CC",
+				"Res": "CCAttic",
 			},
 		},
 
-		// Add Loft room when Res==Apt
+		// Add Loft room when Res==Loft
 		// tbh I'm just going to use the default room for now
 		// Might make this later
 
