@@ -283,8 +283,8 @@
 
 		{
 			"Action": "Load",
-			"Target": "Characters/schedules/Si_MR_Morris",
-			"FromFile": "assets/Schedules/Si_MR_Morris_InitDial.json",
+			"Target": "Characters/Dialogue/Si_MR_Morris",
+			"FromFile": "assets/Dialogue/Si_MR_Morris_InitDial.json",
 		},
 
 		{
