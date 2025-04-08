@@ -13,5 +13,9 @@
         		"UniqueID": "FireRedLily.NPCApartments",
         		"IsRequired": false
 		},
+		{
+			"UniqueID": "Si.BC",
+			"IsRequired": false
+		},
 	]
 }
