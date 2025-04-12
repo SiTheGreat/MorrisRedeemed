@@ -1,2 +1,0 @@
-# MorrisRedeemed
-Stardew Valley Mod

@@ -16,6 +16,51 @@
 		"Action": "EditData",
 		"Target": "Data/Objects",
 		"Entries": {
+			"Si.BC_MRCleaningBookNote": {
+				"Name": "Si.BC_MRCleaningBookNote",
+				"DisplayName": "{{i18n:Si.BC.MRCleaningBookName}}",
+				"Description": "{{i18n:Si.BC.MRCleaningBookDesc}}",
+				"Type": "asdf",
+				"Category": 0,
+				"Price": 303,
+				"Texture": "Mods/Si.BC/MRCleaningBook",
+				"ExcludeFromShippingCollection": true,
+				"SpriteIndex": 0,
+				"ContextTags": [
+					"bc_book",
+				],
+			}
+		}
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"TargetField": [ "Si.BC_MRCleaningBookNote", "ContextTags" ],
+		"Entries": {
+			"unread_book": "unread_book",
+		},
+		"When": {
+			"HasFlag: |contains=Si.BC_HasMRCleaningBook": true,
+		},
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"TargetField": [ "Si.BC_MRCleaningBookNote", "ContextTags" ],
+		"Entries": {
+			"unread_book": null,
+		},
+		"When": {
+			"HasFlag: |contains=Si.BC_ReceivedMRCleaningBook": true,
+		},
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
 			"Si.BC_MRCleaningBook": {
 				"Name": "Si.BC_MRCleaningBook",
 				"DisplayName": "{{i18n:Si.BC.MRCleaningBookName}}",
@@ -59,10 +104,10 @@
 				"Id": "Si.BC_MRCleaningBookTrigger",
 				"MarkActionApplied": true,
 				"Trigger": "Manual",
-				"Condition": "!PLAYER_HAS_MAIL Current Si.BC_ReceivedMRCleaningBook",
+				"Condition": "!PLAYER_HAS_MAIL Current Si.BC_HasMRCleaningBook",
 				"Actions": [
-					"AddItem Si.BC_MRCleaningBook",
-					"AddMail Current Si.BC_ReceivedMRCleaningBook",
+					"AddItem Si.BC_MRCleaningBookNote",
+					"AddMail Current Si.BC_HasMRCleaningBook",
 				]
 			}
 		},
@@ -113,14 +158,14 @@
 
 			// MRCleaningBook
 
-			"Si.BC_MRCleaningBook": {
+			"Si.BC_MRCleaningBookSNF": {
 				"Title": "{{i18n:Si.BC.MRCleaningBookName}}",
 				"Contents": "{{i18n:Si.BC.MRCleaningBookContent}}",
-				"ObjectId": "(O)Si.BC_MRCleaningBook",
+				"ObjectId": "(O)Si.BC_MRCleaningBookNote",
 				"Location": "null",
 				"NoteTexture": "Mods/Si.BC/blankbook",
 				"NoteTextureIndex": 0,
-				"NoteTextColor": "{{TextColor}}",
+				"NoteTextColor": "rgb(12, 12, 80)",
 				"ActionsOnFirstRead": [
 					"AddMail Current Si.BC_ReceivedMRCleaningBook",
 					"IncrementStat Si_bc_hasbooks 1"
@@ -128,39 +173,6 @@
 			},
 
 		},
-	},
-
-	// Gift Tastes //////////////////////////////////////////////////////////
-
-	{
-		"Action": "EditData",
-		"Target": "Data/NPCGiftTastes",
-		"TextOperations": [
-			// Morris
-			{
-				"Operation": "Append",
-				"Target": ["Fields", "Si_MR_Morris", 1],
-				"Value": "Si.BC_MRCleaningBook mystery_book",
-				"Delimiter": " "
-			},
-		]
-	},
-
-	{
-		"Action": "EditData",
-		"Target": "Data/NPCGiftTastes",
-		"When": {
-			"HasSeenEvent: |contains=26220106": true
-		},
-		"TextOperations": [
-			// Morris
-			{
-				"Operation": "Append",
-				"Target": ["Fields", "Si_MR_Morris", 1],
-				"Value": "nature_book recipe_book",
-				"Delimiter": " "
-			},
-		]
 	},
 
 	// End //////////////////////////////////////////////////////////
