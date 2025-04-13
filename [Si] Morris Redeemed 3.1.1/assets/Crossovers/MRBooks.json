@@ -18,8 +18,8 @@
 		"Entries": {
 			"Si.BC_MRCleaningBookNote": {
 				"Name": "Si.BC_MRCleaningBookNote",
-				"DisplayName": "{{i18n:Si.BC.MRCleaningBookName}}",
-				"Description": "{{i18n:Si.BC.MRCleaningBookDesc}}",
+				"DisplayName": "How to Clean Old Buildings",
+				"Description": "The cover is immaculate.",
 				"Type": "asdf",
 				"Category": 0,
 				"Price": 303,
@@ -63,8 +63,8 @@
 		"Entries": {
 			"Si.BC_MRCleaningBook": {
 				"Name": "Si.BC_MRCleaningBook",
-				"DisplayName": "{{i18n:Si.BC.MRCleaningBookName}}",
-				"Description": "{{i18n:Si.BC.MRCleaningBookDesc}}",
+				"DisplayName": "How to Clean Old Buildings",
+				"Description": "The cover is immaculate.",
 				"Type": "asdf",
 				"Category": 0,
 				"Price": 303,
@@ -159,8 +159,8 @@
 			// MRCleaningBook
 
 			"Si.BC_MRCleaningBookSNF": {
-				"Title": "{{i18n:Si.BC.MRCleaningBookName}}",
-				"Contents": "{{i18n:Si.BC.MRCleaningBookContent}}",
+				"Title": "How to Clean Old Buildings",
+				"Contents": "^^To preserve old construction, avoid the use of harsh chemicals and opt for gentler solutions, including brushes and dry cloths to remove dust.",
 				"ObjectId": "(O)Si.BC_MRCleaningBookNote",
 				"Location": "null",
 				"NoteTexture": "Mods/Si.BC/blankbook",
