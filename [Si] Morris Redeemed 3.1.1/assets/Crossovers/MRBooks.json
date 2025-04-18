@@ -120,6 +120,7 @@
 			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 			"HasSeenEvent: |contains=26220104": true
 		},
+		"Priority": "Late",
 		"MapTiles": [
 			{
 				"Position": { "X": 43, "Y": 18 },
@@ -138,6 +139,7 @@
 			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 			"HasSeenEvent: |contains=26220104": true
 		},
+		"Priority": "Late",
 		"MapTiles": [
 			{
 				"Position": { "X": 43, "Y": 18 },
