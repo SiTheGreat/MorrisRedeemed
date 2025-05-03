@@ -15,6 +15,8 @@
 			"rainy": "Do you have a spare raincoat? My suit is getting soaked.$3",
 			"RejectItem_(O)809": "I'm too busy for a movie, I'm afraid.",
 			"Custom_BoardingHouse_BoardingHouse": "I can't believe I'm having to live in a boarding house now! With other people!$3",
+			"AcceptGift_(O){{ModId}}_MRCleaningBook": "Ugh, I get it.",
+			"AcceptGift_bc_book": "Thanks for the book @.",
 
 			"1_2": "I asked {{PierreName}} if the shop needed an assistant. {{PierreGen}} laughed in my face.$3",
 			"2_2": "How much do you think Pam would pay for a life coach?$3",
