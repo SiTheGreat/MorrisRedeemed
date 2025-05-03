@@ -1,0 +1,144 @@
+{
+
+	"Changes": [
+
+		// Load book sprite
+
+		{
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/MRCleaningBook",
+			"FromFile": "assets/Crossovers/MRCleaningBook.png"
+		},
+
+		// Create both book objects
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+
+				// Create SNF book object
+				"{{ModId}}_MRCleaningBookNote": {
+					"Name": "{{ModId}}_MRCleaningBookNote",
+					"DisplayName": "Keeping Old Buildings Clean",
+					"Description": "The cover is immaculate.",
+					"Type": "asdf",
+					"Category": 0,
+					"Price": 303,
+					"Texture": "Mods/{{ModId}}/MRCleaningBook",
+					"ExcludeFromShippingCollection": true,
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"bc_book",
+					],
+				},
+
+				// Create giftable book object
+				"{{ModId}}_MRCleaningBook": {
+					"Name": "{{ModId}}_MRCleaningBook",
+					"DisplayName": "Keeping Old Buildings Clean",
+					"Description": "The cover is immaculate.",
+					"Type": "asdf",
+					"Category": 0,
+					"Price": 207,
+					"Texture": "Mods/{{ModId}}/MRCleaningBook",
+					"ExcludeFromShippingCollection": true,
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"guide_book",
+						"nonfiction_book",
+						"bc_book",
+					],
+				},
+
+			}
+		},
+
+		// Add the read_book tag to books that have been read
+
+		{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "{{ModId}}_MRCleaningBook", "ContextTags" ],
+            "Entries": {
+                "read_book": "read_book",
+            },
+			"When": {
+				"HasFlag: |contains={{ModId}}_ReceivedMRCleaningBook": true,
+			},
+        },
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "{{ModId}}_MRCleaningBookNote", "ContextTags" ],
+			"Entries": {
+				"unread_book": "unread_book",
+			},
+			"When": {
+				"HasFlag: |contains={{ModId}}_HasMRCleaningBook": true,
+				"HasFlag: |contains={{ModId}}_ReceivedMRCleaningBook": false,
+			},
+		},
+	
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "{{ModId}}_MRCleaningBookNote", "ContextTags" ],
+			"Entries": {
+				"unread_book": null,
+			},
+			"When": {
+				"HasFlag: |contains={{ModId}}_ReceivedMRCleaningBook": true,
+			},
+		},
+
+		// Create secret note entry
+
+		{
+			"Target": "Mods/ichortower.SecretNoteFramework/Notes",
+			"Action": "EditData",
+			"Entries": {
+
+				"{{ModId}}_MRCleaningBookSNF": {
+					"Title": "Keeping Old Buildings Clean",
+					"Contents": "^To preserve old construction, avoid the use of harsh chemicals and opt for gentler solutions, including brushes and dry cloths to remove dust.",
+					"ObjectId": "(O){{ModId}}_MRCleaningBookNote",
+					"Location": "null",
+					"NoteTexture": "Mods/Si.BC/blankbook",
+					"NoteTextureIndex": 0,
+					"NoteTextColor": "rgb(12, 12, 80)",
+					"ActionsOnFirstRead": [
+						"AddMail Current {{ModId}}_ReceivedMRCleaningBook",
+						"IncrementStat bc_hasbooks 1",
+					]
+				},
+
+			}
+
+		},
+
+		// Pierre Shop Entry
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"When": {
+					"HasFlag: |contains={{ModId}}_ReceivedMRCleaningBook": false,
+					"HasSeenEvent: |contains=26220104": true,
+			},
+			"TargetField": [ "SeedShop", "Items" ],
+			"Entries":{
+				"{{ModId}}_PierreMRBook": {
+					"ItemId": "(O){{ModId}}_MRCleaningBookNote",
+					"AvailableStock": 1,
+				},
+			},
+		},
+
+	// End //////////////////////////////////////////////////////////
+
+	]
+
+
+}
