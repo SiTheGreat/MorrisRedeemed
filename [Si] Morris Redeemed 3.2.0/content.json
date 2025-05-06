@@ -24,12 +24,6 @@
 			"Description": "This option is for enabling crossover content with mods that have not yet been updated for 1.6; see Nexus description for details. I'll make updates for those mods when/if they get updated, but in the meantime this option is here in case anyone wants to test them out."
 		},
 
-		"MorrisRedeemedBooks": {
-			"AllowValues": "true, false",
-			"Default": "true",
-			"Description": "When enabled and Book Collecting is installed, will add one additional book."
-		},
-
 	},
 
 	// Dynamic Tokens
@@ -442,8 +436,10 @@
 			"Action": "Include",
 			"FromFile": "assets/Crossovers/MRBooks.json",
 			"When": {
-				"MorrisRedeemedBooks": true,
+				"CrossoverContent": true,
 				"HasMod: |contains=Si.BC": true,
+				"HasWalletItem |contains=MagnifyingGlass": true,
+				"HasWalletItem |contains=BearsKnowledge": true,
 			}
 		},
 
