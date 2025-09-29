@@ -1,0 +1,27 @@
+{
+
+	// Crossover with Across The Aisle by kcspace
+	
+	"Changes": [
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		// {
+		// 	"LogName": "Si MR Across The Aisle Schedule",
+		// 	"Action": "EditData",
+		// 	"Target": "Characters/schedules/Si_MR_Morris",
+		// 	"When": {
+		// 		"Season |contains=Spring, Summer": true,
+		// 	},
+		// 	"Entries": {
+
+		// 		"20": "0 {{House}}/1010 Custom_Ridgeside_RidgesideVillage 90 40 0/1420 Custom_Ridgeside_RidgesideVillage 88 44 2/1840 {{House}}",
+
+		// 	},
+		// },
+	
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

@@ -518,6 +518,17 @@
 			},
 		},
 
+		// Aross The Aisle
+		{
+			"LogName": "MR Across The Aisle Crossover",
+			"Action": "Include",
+			"FromFile": "assets/Crossovers/Si_MR_AcrossTheAisle.json",
+			"When": {
+				"HasMod |contains=kcspace.AcrossTheAisle": true,
+				"CrossoverContent": true,
+			},
+		},
+
 		// Mods not updated for 1.6
 
 		// Stray Catfe - Update
