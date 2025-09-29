@@ -103,7 +103,7 @@
 
 		{
 			"Name": "PierreName",
-			"Value": "Pierre", // UPDATE
+			"Value": "Pierre",
 			"When": {
 				"HasMod |contains=Heliax.PiperAPierreRewrite": "false",
 			},
@@ -111,7 +111,7 @@
 
 		{
 			"Name": "PierreName",
-			"Value": "Piper", // UPDATE
+			"Value": "Piper",
 			"When": {
 				"HasMod |contains=Heliax.PiperAPierreRewrite": "true",
 			},
@@ -119,7 +119,7 @@
 
 		{
 			"Name": "PierreGen",
-			"Value": "He", // UPDATE
+			"Value": "He",
 			"When": {
 				"HasMod |contains=Heliax.PiperAPierreRewrite": "false",
 			},
@@ -127,13 +127,31 @@
 
 		{
 			"Name": "PierreGen",
-			"Value": "She", // UPDATE
+			"Value": "She",
 			"When": {
 				"HasMod |contains=Heliax.PiperAPierreRewrite": "true",
 			},
 		},
 
 	],
+
+	// Mayor Louise compat
+
+		{
+			"Name": "LewisName",
+			"Value": "Lewis",
+			"When": {
+				"HasMod |contains=CC.Louise": "false",
+			},
+		},
+
+		{
+			"Name": "LewisName",
+			"Value": "Louise",
+			"When": {
+				"HasMod |contains=CC.Louise": "true",
+			},
+		},
 
 	// Content //////////////////////////////////////////////////////////
 

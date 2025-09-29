@@ -32,7 +32,7 @@
 			"10_2": "I wish the library was open later.$3#$e#I'd probably visit more often.#$e#There are some interesting books in there.",
 			"11_2": "Why do the townspeople keep talking about a wizard?$3#$e#I'd think I would know if someone like that was living around here.",
 			"12_2": "How's the saloon? Any good drinks?$3#$e#I only drink the finest, of course.",
-			"13_2": "Lewis said there was a rat problem in here, but I haven't seen a single rat.$3#$e#Where do you think they could be hiding?$3",
+			"13_2": "{{LewisName}} said there was a rat problem in here, but I haven't seen a single rat.$3#$e#Where do you think they could be hiding?$3",
 			"14_2": "What, were you expecting me to slack off?$3",
 			"15_2": "Someone left their cups in the sink.$3#$e#Can't they at least put them in the dishwasher?$3",
 			"16_2": "I used to get financial reports about Pelican Town as the Joja Mart manager.$3#$e#Based on what I've seen I think that vault should look a little more full...$3",
@@ -45,7 +45,7 @@
 			"23_2": "Does anyone bother using that bulletin board?$3#$e#I've been putting dog pictures on it, but nobody's noticed.$3",
 			"24_2": "What, were you expecting me to slack off?$3",
 			"25_2": "I wish the library was open later.$3#$e#I'd probably visit more often.#$e#There are some interesting books in there.",
-			"26_2": "Lewis said there was a rat problem in here, but I haven't seen a single rat.$3#$e#Where do you think they could be hiding?$3",
+			"26_2": "{{LewisName}} said there was a rat problem in here, but I haven't seen a single rat.$3#$e#Where do you think they could be hiding?$3",
 			"27_2": "How's the saloon? Any good drinks?$3#$e#I only drink the finest, of course.",
 			"28_2": "Ugh, someone dumped glitter all over the craft room floor again.$3",
 

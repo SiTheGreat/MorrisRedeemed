@@ -17,7 +17,7 @@
 		"Action": "EditData",
 		"Target": "Data/mail",
 		"Entries": {
-			"Si_MR_Morris_Mail_02": "Dear @,^^I'm writing to inform you that, thanks to your referral, Mayor Lewis has decided to let me stay in the community center's attic. An attic! Can you imagine? My room is very small, and it's incredibly dusty in here, but I suppose I'll make do. I'll begin looking for a new position soon. Any idea what the job market is like around here?^^Regards, Morris[#]Morris Moves In",
+			"Si_MR_Morris_Mail_02": "Dear @,^^I'm writing to inform you that, thanks to your referral, Mayor {{LewisName}} has decided to let me stay in the community center's attic. An attic! Can you imagine? My room is very small, and it's incredibly dusty in here, but I suppose I'll make do. I'll begin looking for a new position soon. Any idea what the job market is like around here?^^Regards, Morris[#]Morris Moves In",
 		},
 	},
 
