@@ -133,8 +133,6 @@
 			},
 		},
 
-	],
-
 	// Mayor Louise compat
 
 		{
@@ -152,6 +150,8 @@
 				"HasMod |contains=CC.Louise": "true",
 			},
 		},
+
+	],
 
 	// Content //////////////////////////////////////////////////////////
 
@@ -543,7 +543,7 @@
 			"FromFile": "assets/Crossovers/Si_MR_AcrossTheAisle.json",
 			"When": {
 				"HasMod |contains=kcspace.AcrossTheAisle": true,
-				"CrossoverContent": true,
+				// "CrossoverContent": true, // Not required for this one
 			},
 		},
 
